@@ -1,0 +1,68 @@
+/* Checkboxes / labels group */
+.form-content input[type="checkbox"] {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #B4B7C1;
+	border-radius: 4px;
+	background-color: #F2F2F5;
+	cursor: pointer;
+	transition: all 0.35s ease;
+	position: relative;
+	left: 0;
+	top: 1px;
+	margin: 0px 15px 2px 0px !important;
+	flex-shrink: 0;
+}
+
+.form-content input[type="checkbox"]:hover {
+    border-color: #0151ab;
+    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
+}
+
+.form-content input[type="checkbox"]:active {
+    transition: all 0.6s ease;
+}
+
+.form-content input[type="checkbox"]:checked {
+    background-color: #0151AB;
+    border-color: #0151AB;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.global-confirm-checkbox-block {
+	display: none;
+}
+
+.field-label.control-label {
+	position: relative !important;
+	padding-left: 0px !important;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+	display: flex !important;
+}
+
+.custom-field.type-checkbox .field-label .label-value { /* Подпись на чекбоксе */
+	display: block;
+	margin-left: 0px;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 0px;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	padding-bottom: 1px;
+}
+
+@media screen and (max-width: 450px) {
+.custom-field.type-checkbox .field-label .label-value {
+	font-size: 11px !important;
+	padding-top: 0px !important;
+	margin-left: 5px !important;
+}
+.field-label.control-label {
+	margin-bottom: -6px !important;
+	padding-left: 0px !important;
+}
+}

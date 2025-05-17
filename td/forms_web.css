@@ -1,0 +1,339 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
+font-family: 'Montserrat', serif !important;
+}
+
+.p-0{
+	padding:0px !important;
+}
+
+.p-5{
+	padding:5px !important;
+}
+
+.p-10{
+	padding:10px !important;
+}
+
+.m-t-b10{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.p-15{
+	padding:15px !important;
+}
+
+.m-t-b15{
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
+}
+
+.p-20{
+	padding:20px !important;
+}
+
+.m-t-b20{
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.p-30{
+	padding:30px !important;
+}
+
+.button-md {
+	position: relative !important;
+	font-weight: 600 !important;
+	font-size: 18px !important;
+	line-height: 160% !important;
+	text-align: center !important;
+	color: #FFF !important;
+	margin-top: 10px !important;
+	border-radius: 8px !important;
+	min-height: 55px !important;
+	font-family: Montserrat,sans-serif !important;
+	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
+	/*background-color: #3035c4 !important;*/
+}
+
+.button-md:hover {
+	/*background: #6f74ff !important;*/
+}
+
+.part-button {
+	margin-bottom: 15px !important;
+	margin-top: 0px !important;
+}
+
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 5px !important;
+}
+
+.builder-item.part-total {
+	font-size: 16px !important;
+}
+
+.f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
+	color: #b82525;
+}
+
+.sub-label {
+	font-size: 17px;
+}
+
+hr {
+	margin-top: 18px !important;
+}
+
+.field-label-custom{
+font-size: 15px !important;
+}
+
+.part-userField{
+margin-bottom:16px !important;
+}
+
+.field-content > .field-label{
+font-size: 15px !important;
+}
+
+.lt-form {
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+	padding-bottom: 5px !important;
+}
+
+.form-position {
+	display: block !important;
+	cursor: pointer !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-right: 10px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.form-position-price.pull-right {
+	background-color: #ffeec6 !important;
+	padding: 7px !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	margin-bottom: 4px !important;
+	margin-top: 7px !important;
+	/* color: white; */
+}
+
+.form-position.selected {
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
+}
+
+.f-text {
+	font-weight: 400 !important;
+	font-size: 17px;
+}
+
+.text-muted {
+	color: #777 !important;
+	padding-left: 40px !important;
+}
+
+.f-header {
+	font-weight: 800 !important;
+	line-height: 1.23;
+}
+
+.lt-text-header-expand .text {
+	padding-top: 8px !important;
+	margin-left: -11px;
+}
+
+.dotted-link {
+	font-size: 14px !important;
+}
+
+.strike::before {
+	display: none !important;
+}
+
+.popup__subtitle {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 16px;
+	margin: 0 0 32px 0;
+	color: #050505;
+}
+
+.pull-left.form-position-title {
+	float: initial !important;
+}
+
+.offer-title {
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	display: block !important;
+	padding-left: 38px !important;
+	padding-bottom: 7px !important;
+}
+
+.builder-item.part-position {
+	background: #fff !important;
+	padding: 0px !important;
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
+
+.builder-item.part-total {
+	font-size: 18px !important;
+}
+
+.f-input {
+	border: 1px solid rgb(198, 198, 198) !important;
+	height: 52px !important;
+	font-size: 15px !important;
+	color: #7d7d7d !important;
+	border-radius: 5px !important;
+}
+
+.chkbox-label {
+	font-size: 13px;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.custom-field.type-checkbox .field-label .label-value {
+	display: block !important;
+	margin-left: 24px;
+}
+
+.global-confirm-checkbox-block {
+	display: none;
+}
+
+.custom-field-input.custom-field.type-checkbox {
+	font-size: 13px;
+}
+
+.part-manyPositions {
+	background: #fff !important;
+	border: 1px solid #f2f2f2 !important;
+	margin-bottom: 5px !important;
+}
+
+.footer {
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -40px;
+	margin-right: -40px;
+	background: #f7f7f7 !important;
+}
+
+.footer_text {
+	font-size: 11.5px;
+	font-weight: 400;
+}
+
+.fw-700 .field-label {
+	font-weight: 700;
+}
+
+.fw-600 .field-label {
+	font-weight: 600;
+}
+
+.fw-500 .field-label {
+	font-weight: 500;
+}
+
+.fw-400 .field-label {
+	font-weight: 400;
+}
+
+.fw-300 .field-label {
+	font-weight: 300;
+}
+
+.fw-200 .field-label {
+	font-weight: 200;
+}
+
+
+@media screen and (max-width: 490px) {
+}
+
+@media screen and (max-width: 450px) {
+	
+.f-text {
+    font-size: 15px;
+  }
+	
+.text-accurate {
+	font-size: 12px;
+}
+	
+.field-description-block {
+	font-size: 11px;
+}
+	
+.text-normal.f-text {
+	font-size: 13px;
+}
+
+.f-subheader.f-subheader-sm {
+	font-size: 14px !important;
+}
+
+.field-content > .field-label {
+	font-size: 13px !important;
+	font-weight: 500;
+}
+.sub-label {
+	padding-top: 5px !important;
+	font-size: 15px !important;
+	line-height: 1.3 !important;
+}
+}
+
+@media screen and (max-width: 420px) {
+.f-input {
+	height: 45px !important;
+	font-size: 14px !important;
+}
+	.f-subheader.f-subheader-sm {
+	font-size: 14px !important;
+	display: none !important;
+	}
+	.f-header.f-header-26 {
+	font-size: 20px !important;
+	line-height: 1.23 !important;
+	margin-top:-20px !important;
+}
+	.field-label {
+	font-size: 12px !important;
+}
+.block-set {
+	font-size: 14px !important;
+}
+}
+
+@media screen and (max-width: 400px) {
+	.footer {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+	.lt-form {
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+	padding-bottom: 5px !important;
+}
+	.button-md {
+	font-size: 16px !important;
+}}

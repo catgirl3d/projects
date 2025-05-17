@@ -1,0 +1,97 @@
+.form-position {
+	display: block !important;
+	cursor: pointer !important;
+	padding: 20px 12px !important;
+	margin-bottom: 0px !important;
+	border: 1px solid #f0f0f0;
+	line-height: 1.2;
+	background: white;
+  	border-radius: 4px;
+	margin-top: 6px !important;
+}
+
+.form-position-price.pull-right {
+	background-color: #ffeec6 !important;
+	padding: 7px !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	margin-bottom: 4px !important;
+	margin-top: 7px !important;
+	/* color: white; */
+}
+
+.form-position.selected {
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
+	border-left: 5px solid #8c8b8a;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.05);
+}
+
+.offer-title {
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	display: block;
+	padding-left: 38px;
+	padding-bottom: 7px;
+	padding-right: 3px;
+}
+
+.text-muted {
+	color: #777 !important;
+	padding-left: 40px !important;
+	font-size: 13px !important;
+	font-weight: 400;
+}
+
+.part-position {
+	background: #fff !important;
+	/*padding: 0px !important;*/
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
+
+.builder-item.part-total {
+	margin-bottom: 12px !important;
+	font-size: 16px !important;
+}
+
+.part-total > div {
+	margin-top: 0px !important;
+	padding-top: 5px !important;
+}
+
+.part-manyPositions {
+	background: #fff !important;
+	/*border: 1px solid #f2f2f2 !important;*/
+	margin-bottom: 5px !important;
+}
+
+.pull-left.form-position-checker {
+	position: absolute;
+}
+
+/*.pull-left.form-position-title {
+	float: initial !important;
+}*/
+
+@media screen and (max-width: 450px) {
+.offer-title {
+	font-size: 12px !important;
+    padding-left: 34px !important;
+}
+.text-muted {
+	padding-left: 34px !important;
+}
+.builder-item.part-total {
+	font-size: 16px !important;
+}
+.pull-left.form-position-title {
+	float: initial !important;
+}
+.form-position-price.pull-right {
+    padding: 6px 6px !important;
+	margin-bottom: -3px !important;
+	margin-top: 12px !important;
+    font-size: 14px !important;
+}
+}

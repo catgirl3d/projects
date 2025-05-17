@@ -1,0 +1,117 @@
+.part-header, .part-header p {
+    margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.part-header .f-header, .part-header .f-header p {
+	font-weight: 800 !important;
+	line-height: 1.23;
+	font-size: clamp(19px, 5vw, 25px) !important;
+}
+
+.part-subheader, .part-subheader p {
+	padding-bottom: 0px !important;
+	margin-bottom: 2px !important;
+	color: #b82525;
+	font-size: 15px !important;
+    display: none;
+}
+
+/* Подзаголовок формы */
+.sub-label {
+	margin-bottom: 0px !important;
+}
+
+.sub-label p, .c-subheader p {
+	font-size: 17px !important;
+	padding-top:2px;
+}
+/*--*/
+
+.text-normal.f-text {
+	font-weight: 400 !important;
+	font-size: 17px;
+}
+
+.lt-text-header-expand .text {
+	padding-top: 8px !important;
+	margin-left: -11px;
+}
+
+.dotted-link {
+	font-size: 14px !important;
+}
+
+.strike::before {
+	display: none !important;
+}
+
+.popup__subtitle {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 16px;
+	margin: 0 0 32px 0;
+	color: #050505;
+}
+
+.label-value a:link {
+  text-decoration: underline !important;
+}
+
+.iti__country-list {
+	font-size: 14px !important;
+	font-weight: 500 !important;
+}
+
+@media screen and (max-width: 450px) {
+.part-header .f-header, .part-header .f-header p {
+	font-size: clamp(17px, 4vw, 30px) !important;
+	margin-top:0px !important;
+}
+
+.sub-label p, .c-subheader p {
+    padding-top: 5px !important;
+	font-size: 15px !important;
+	line-height: 1.3 !important;
+}
+
+.part-subheader, .part-subheader p {
+	margin-bottom: 2px !important;
+	font-size: 12px !important;
+    display: none !important;
+}
+
+.text-accurate {
+	font-size: 12px;
+}
+
+.field-description-block {
+	font-size: 11px;
+}
+
+.text-normal.f-text {
+	font-size: 13.5px !important;
+}
+
+.iti__country-list {
+	font-size: 12px;
+}
+}
+
+@media screen and (max-width: 420px) {
+.f-subheader.f-subheader- {
+	font-size: 14px !important;
+	display: none !important;
+	}
+}
+
+@media screen and (max-width: 330px) {
+.f-header {
+	font-size: 17px !important;
+}
+.footer-form {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+}

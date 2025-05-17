@@ -1,0 +1,404 @@
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-utils.css');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.lt-form-inner {
+	padding: 30px 35px 30px 35px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
+}
+
+.lt-block-wrapper {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+/* Buttons group */
+.button-md {
+	position: relative !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
+	line-height: 160% !important;
+	text-align: center !important;
+	color: #FFF !important;
+	margin-top: 10px !important;
+	min-height: 55px !important;
+	font-family: Montserrat,sans-serif !important;
+	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+  	width: 75% !important;
+	border-radius: 40px !important;
+	-webkit-transition: all .3s ease 0s !important;
+    -o-transition: all .3s ease 0s !important;
+    transition: all .3s ease 0s !important;
+    padding: 16px !important;
+}
+
+.button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_red_button > .button-md {
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+}
+
+.c_red_button > .button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_blue_button > .button-md {
+	background-color: #3035C3 !important;
+	border: 2px solid #3035C3 !important;
+}
+
+.c_blue_button > .button-md:hover {
+	background: #fff !important;
+  	color: #3035C3 !important;
+}
+
+#button_01, .c_red_button > .button-md {
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+}
+
+#button_01:hover, .c_red_button > .button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+#button_02, .c_blue_button > .button-md {
+	background-color: #3035C3 !important;
+	border: 2px solid #3035C3 !important;
+}
+
+#button_02:hover, .c_blue_button  > .button-md:hover {
+	background: #fff !important;
+  	color: #3035C3 !important;
+}
+
+.part-button {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 5px !important;
+}
+
+.builder-item.part-userField.c-recaptcha {
+	margin-bottom: 0px !important;
+}
+
+.c-recaptcha div {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+/* Text / headers group (and shared font family rules) */
+.block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
+font-family: 'Montserrat', serif !important;
+}
+
+.text-normal.f-text {
+    font-size: 16px !important;
+	font-weight: 400 !important;
+    line-height: 140% !important;
+  }
+
+.iti__country-list {
+	font-weight: 500 !important;
+	font-size: 14px !important;
+}
+
+.f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
+	color: #b82525;
+}
+
+.sub-label {
+	font-size: 17px;
+}
+
+hr {
+	margin-top: 18px !important;
+}
+
+.f-text {
+	font-weight: 400 !important;
+}
+
+.text.f-text {
+	font-size: 17px !important;
+}
+
+.text-muted {
+	color: #777 !important;
+	padding-left: 40px !important;
+}
+
+.f-header > p {
+	color: #333 !important;
+	font-weight: 800 !important;
+	line-height: 1.23;
+
+}
+
+.blue > .f-header > p{
+	color: #3035C3 !important;
+}
+
+.lt-text-header-expand .text {
+	padding-top: 8px !important;
+	margin-left: -11px;
+	text-align: center !important;
+}
+
+.dotted-link {
+	font-size: 14px !important;
+}
+
+.strike::before {
+	display: none !important;
+}
+
+.popup__subtitle {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 16px;
+	margin: 0 0 32px 0;
+	color: #050505;
+}
+
+/* Fields / forms group */
+.field-label-custom{
+font-size: 15px !important;
+}
+
+.part-userField{
+margin-bottom:16px !important;
+}
+
+.field-content > .field-label{
+font-size: 15px !important;
+}
+
+.form-position {
+	display: block !important;
+	cursor: pointer !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-right: 10px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.form-position-price.pull-right {
+	background-color: #ffeec6 !important;
+	padding: 7px !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	margin-bottom: 4px !important;
+	margin-top: 7px !important;
+	/* color: white; */
+}
+
+.form-position.selected {
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
+}
+
+.f-input {
+	background: #f2f2f5;
+	height: 55px !important;
+	padding: 19.5px 20px;
+	font-size: 16px !important;
+	border: 1px solid #0151ab !important;
+	border-radius: 8px !important;
+	font-weight: 400 !important;
+}
+
+.pull-left.form-position-title {
+	float: initial !important;
+}
+
+/* Checkboxes / labels group */
+input[type="checkbox"] {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #B4B7C1;
+	border-radius: 4px;
+	background-color: #F2F2F5;
+	cursor: pointer;
+	transition: all 0.35s ease;
+	position: relative;
+	left: 0;
+	top: 1px;
+	margin: 0px 0px 2px 0px;
+	padding-right: 22px;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #0151ab;
+    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
+}
+
+input[type="checkbox"]:active {
+    transition: all 0.6s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0151AB;
+    border-color: #0151AB;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.field-label.control-label {
+	position: relative !important;
+	padding-left: 0px !important;
+	line-height: 1.4 !important;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+	display: flex !important;
+}
+
+.label-value a:link {
+  text-decoration: underline !important;
+}
+
+.chkbox-label {
+	font-size: 13px;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.custom-field.type-checkbox .field-label .label-value {
+	display: block;
+	margin-left: 0px;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 0px;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	padding-bottom: 1px;
+}
+
+.global-confirm-checkbox-block {
+	display: none;
+}
+
+/*.custom-field-input.custom-field.type-checkbox {
+	font-size: 13px;
+}*/
+
+/* Misc / parts */
+.builder-item.part-total {
+	font-size: 16px !important;
+}
+
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 5px !important;
+}
+
+.builder-item.part-position {
+	background: #fff !important;
+	padding: 0px !important;
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
+
+.builder-item.part-total {
+	font-size: 18px !important;
+}
+
+.offer-title {
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	display: block !important;
+	padding-left: 38px !important;
+	padding-bottom: 7px !important;
+}
+
+.part-manyPositions {
+	background: #fff !important;
+	border: 1px solid #f2f2f2 !important;
+	margin-bottom: 5px !important;
+}
+
+@media screen and (max-width: 450px) {
+.f-subheader.f-subheader-sm {
+	font-size: 14px !important;
+}
+.sub-label {
+	padding-top: 5px !important;
+	font-size: 15px !important;
+	line-height: 1.3 !important;
+}
+}
+
+@media screen and (max-width: 420px) {
+.f-input {
+	height: 50px !important;
+	font-size: 13.5px !important;
+}
+.f-subheader.f-subheader-sm {
+	font-size: 14px !important;
+	display: none !important;
+	}
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+.f-header {
+	font-size: 21px !important;
+	margin-top:0px !important;
+}
+.field-label {
+	font-size: 12px !important;
+}
+.block-set {
+	font-size: 14px !important;
+}
+.button-md {
+	font-size: 16px !important;
+	width: 95% !important;
+	min-height: 53px !important;
+  	padding: 13px !important;
+}
+.custom-field.type-checkbox .field-label .label-value {
+	font-size: 11px !important;
+	padding-top: 0px !important;
+	margin-left: 5px !important;
+}
+.field-label.control-label {
+	margin-bottom: -6px !important;
+	padding-left: 0px !important;
+}
+.iti__country-list  {
+	font-weight: 500 !important;
+	font-size: 12px !important;
+}
+.text-normal.f-text {
+	font-size: 14px !important;
+}
+}
+
+@media screen and (max-width: 400px) {
+.lt-form-inner {
+	padding: 20px !important;
+}}

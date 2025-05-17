@@ -1,0 +1,68 @@
+.part-button {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.button-md {
+	position: relative !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
+	line-height: 160% !important;
+	text-align: center !important;
+	color: #FFF !important;
+	margin-top: 10px !important;
+	min-height: 55px !important;
+	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
+	width: clamp(250px, 69vw, 350px) !important;
+	-webkit-transition: all .3s ease 0s !important;
+	-o-transition: all .3s ease 0s !important;
+	transition: all .3s ease 0s !important;
+	padding: 16px !important;
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+	border-radius: 40px !important;
+}
+
+.button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+#button_01, .c_red_button > .button-md {
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+}
+
+#button_01:hover, .c_red_button > .button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+#button_02, .c_blue_button > .button-md {
+	background-color: #3035C3 !important;
+	border: 2px solid #3035C3 !important;
+}
+
+#button_02:hover, .c_blue_button  > .button-md:hover {
+	background: #fff !important;
+  	color: #3035C3 !important;
+}
+
+#button_03, .c_gray_button > .button-md {
+	background-color: #4f4f4f !important;
+	border: 2px solid #4f4f4f !important;
+}
+
+#button_03:hover, .c_gray_button  > .button-md:hover {
+	background: #fff !important;
+  	color: #4f4f4f !important;
+}
+
+@media screen and (max-width: 450px) {
+.button-md {
+	font-size: 16px !important;
+	width: 95% !important;
+	min-height: 53px !important;
+  	padding: 13px !important;
+}
+}

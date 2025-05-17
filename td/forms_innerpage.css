@@ -1,0 +1,53 @@
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-buttons.css');
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-utils.css');
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-checkboxes.css');
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-input.css');
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-offer-parts.css');
+@import url('https://catgirl3d.github.io/projects/td/css/modules/module-text.css');
+
+:root {
+    --f-input-height: 53px;
+	--mob-f-input-height: 45px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.f-input, .f-input-wrapper select, .block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
+font-family: 'Montserrat', serif !important;
+}
+
+.lt-form-inner {
+	padding: 30px 35px 30px 35px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
+}
+
+
+.footer_form {
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -40px;
+	margin-right: -40px;
+	background: #f7f7f7 !important;
+}
+
+.footer_form_text {
+	font-size: 11.5px;
+	font-weight: 400;
+}
+
+
+@media screen and (max-width: 450px) {
+.lt-form-inner {
+	padding: 20px 20px 20px 20px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
+}
+.container {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+}
+}

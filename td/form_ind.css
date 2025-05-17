@@ -1,0 +1,89 @@
+.form-position {
+padding-left: 0px !important;
+  padding-top: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  border-bottom: none !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.form-position-price.pull-right {
+	background-color: transparent !important;
+	padding: 0px !important;
+	font-size: 18px !important;
+	font-weight: 600 !important;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	color: #0151ab;
+	line-height: 120%;
+	margin-left: auto;
+}
+
+.offer-title {
+	font-size: 16px !important;
+	font-weight: 600;
+	display: block !important;
+	padding-left: 0px !important;
+	padding-bottom: 0px !important;
+	line-height: 150%;
+	color: #333;
+	width: clamp(130px, 60vw, 292px)
+}
+	
+.form-position.selected {
+  background: transparent !important;
+}
+
+.builder-item.part-position {
+  background: transparent !important;
+  margin-bottom: 16px !important;
+  margin-top: 0px !important;
+}
+
+.form-position {
+  padding-left: 0px !important;
+  padding-top: 5px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  border-bottom: none !important;
+}
+
+.pull-left {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.pull-left.form-position-title {
+	flex-shrink: 0;
+	padding: 0 10px;
+}
+
+.final-price {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120%;
+	color: #0151ab;
+	font-family: "Montserrat", sans-serif;
+}
+.form-position .form-position-checker {
+	display: flex;
+	padding-right: 0px;
+}
+label:has(input[type="checkbox"]:checked) .offer-title {
+    color: #0151ab;
+}
+@media screen and (max-width: 420px) {
+.offer-title {
+	font-size: 14px !important;
+	line-height: 140%;
+}
+.pull-left.form-position-title {
+	    width: calc(100% - 100px);
+}
+.final-price {
+	font-size: 18px;
+}
+}
