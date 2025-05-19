@@ -1,6 +1,3 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
 .button-md {
 	position: relative !important;
 	font-weight: 600 !important;
