@@ -20,7 +20,7 @@
 	border-style: solid !important;
 	background-color: #FFF !important;
 	transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
-	width: 60%;
+	width: 60% !important;;
 }
 
 .btn_form1 > button:hover {
