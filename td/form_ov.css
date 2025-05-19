@@ -1,18 +1,18 @@
 .button-md {
-	position: relative;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 160%;
-	text-align: center;
-	color: #FFF;
-	border-radius: 8px;
-	font-family: Montserrat,sans-serif;
+	position: relative !important;
+	font-weight: 600 !important;
+	font-size: 18px !important;
+	line-height: 160% !important;
+	text-align: center !important;
+	color: #FFF !important;
+	border-radius: 8px !important;
+	font-family: Montserrat,sans-serif !important;
 	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
-	background-color: #3035c4;
+	background-color: #3035c4 !important;
 }
 
 .button-md:hover {
-	background: #6f74ff;
+	background: #6f74ff !important;
 }
 
 .popup__subtitle {
@@ -25,7 +25,7 @@
 }
 
 .builder-item.part-total {
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 .f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
@@ -41,7 +41,7 @@ font-size:13px;
 }
 
 .custom-field.type-checkbox .field-label .label-value {
-	display: block;
+	display: block !important;
 	margin-left: 24px;
 }
 
@@ -79,7 +79,7 @@ font-size: 15px;
 		margin-top:-20px;
 }
 	.field-label {
-	font-size: 12px;
+	font-size: 12px !important;
 }
 .block-set {
 	font-size: 14px;
@@ -95,16 +95,16 @@ font-size: 15px;
 }
 
 .lt-form {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 5px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	padding-bottom: 5px !important;
 }
 
 @media screen and (max-width: 400px) {
 	.lt-form {
-	padding-left: 3px;
-	padding-right: 3px;
-	padding-bottom: 5px;
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+	padding-bottom: 5px !important;
 	}}
 
 .footer {
@@ -112,7 +112,7 @@ font-size: 15px;
 	padding-bottom: 10px;
 	margin-left: -40px;
 	margin-right: -40px;
-	background: #f7f7f7;
+	background: #f7f7f7 !important;
 }
 
 @media screen and (max-width: 400px) {
@@ -124,95 +124,95 @@ font-size: 15px;
 }
 
 .lt-text-header-expand .text {
-	padding-top: 8px;
+	padding-top: 8px !important;
 }
 
 .text.f-text {
-	font-size: 17px;
+	font-size: 17px !important;
 }
 
 .f-text {
-	font-family: 'roboto',serif;
-	font-weight: 300;
+	font-family: 'roboto',serif !important;
+	font-weight: 300 !important;
 }
 
 .builder-item.part-total {
-	font-size: 18px;
+	font-size: 18px !important;
 }
 
 .dotted-link {
-	font-size: 14px;
+	font-size: 14px !important;
 }
 
 .strike::before {
-	display: none;
+	display: none !important;
 }
 
 .f-header.f-header-26 {
-	margin-top: -15px;
+	margin-top: -15px !important;
 }
 
 .text-muted {
-	color: #777;
-	padding-left: 40px;
+	color: #777 !important;
+	padding-left: 40px !important;
 }
 
 .offer-title {
-	padding-bottom: 7px;
+	padding-bottom: 7px !important;
 }
 
 .pull-left.form-position-title {
-	float: initial;
+	float: initial !important;
 }
 
 .offer-title {
-	font-size: 15px;
-	display: block;
-	padding-left: 38px;
+	font-size: 15px !important;
+	display: block !important;
+	padding-left: 38px !important;
 }
 
 .builder-item.part-position {
-	background: #fff;
-	padding: 0px;
-	margin-bottom: 10px;
+	background: #fff !important;
+	padding: 0px !important;
+	margin-bottom: 10px !important;
 }
 
 .form-position {
-	display: block;
-	cursor: pointer;
-	padding-left: 15px;
-	padding-top: 5px;
-	padding-right: 10px;
-	padding-bottom: 5px;
-	margin-bottom: 0px;
+	display: block !important;
+	cursor: pointer !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-right: 10px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
 }
 
 .form-position-price.pull-right {
-	background-color: #ffeec6;
-	padding: 7px;;
-	font-size: 15px;;
-	font-weight: 600;;
-	margin-bottom: 4px;;
-	margin-top: 7px;;
+	background-color: #ffeec6 !important;
+	padding: 7px !important;;
+	font-size: 15px !important;;
+	font-weight: 600 !important;;
+	margin-bottom: 4px !important;;
+	margin-top: 7px !important;;
 	/* color: white; */
 }
 
 .form-position.selected {
-	background: #9999991f;
-	margin-bottom: 0px;
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
 }
 
 .f-input {
-	border: 1px solid rgb(204, 204, 204);
-	height: 52px;
-	font-size: 15px;
-	color: #7d7d7d;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border: 1px solid rgb(204, 204, 204) !important;
+	height: 52px !important;
+	font-size: 15px !important;
+	color: #7d7d7d !important;
+	border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
 }
 
 .part-manyPositions {
-	background: #fff;
-	border: 1px solid #f2f2f2;
+	background: #fff !important;
+	border: 1px solid #f2f2f2 !important;
 }
