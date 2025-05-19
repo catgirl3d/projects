@@ -145,6 +145,7 @@ margin-bottom: 15px !important;
 	padding-right: 10px !important;
 	padding-bottom: 5px !important;
 	margin-bottom: 0px !important;
+	border-bottom: 1px solid #f0f0f0;
 }
 
 .form-position-price.pull-right {
