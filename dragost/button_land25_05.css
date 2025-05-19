@@ -23,11 +23,9 @@
 	color: white !important;
 }
 
-.lt-form {
-	background-color: #ffffff;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	border: 0px solid #999999;
+.lt-form-inner {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
 }
