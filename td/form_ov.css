@@ -172,6 +172,10 @@ margin-bottom: 15px !important;
 	-webkit-border-radius: 5px !important;
 }
 
+.custom-field-input.custom-field.type-checkbox {
+	font-size: 13px;
+}
+
 .part-manyPositions {
 	background: #fff !important;
 	border: 1px solid #f2f2f2 !important;
