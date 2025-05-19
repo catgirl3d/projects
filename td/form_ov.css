@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .button-md {
 	position: relative !important;
 	font-weight: 600 !important;
@@ -25,18 +29,15 @@
 }
 
 .builder-item.part-total {
-	font-size: 18px !important;
+	font-size: 16px !important;
 }
 
 .f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
 	color: #b82525;
 }
 
-	.sub-label {
-	padding-top: 5px;
-	font-size: 15px;
-	line-height: 1.3;
-}
+.sub-label {
+	font-size: 17px;
 }
 
 .chkbox-label{
@@ -58,31 +59,34 @@ margin-bottom: 15px !important;
 }
 
 
-.f-header.f-header-26 {
-	margin-top: -15px !important;
-}
-
-	.field-label {
-	font-size: 12px !important;
-}
-.block-set {
-	font-size: 14px;
-}
-}
 .btn.f-btn.button-md {
 	min-height: 55px;
 }
 
 .lt-text-header-expand .text {
-	padding-top: 8px !important;
+	padding-top: 8px;
+	margin-left: -11px;
 }
 
 .lt-form {
-	padding-left: 3px !important;
-	padding-right: 3px !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
 	padding-bottom: 5px !important;
-	}}
-	
+}
+
+.footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -40px;
+	margin-right: -40px;
+	background: #f7f7f7 !important;
+}
+
+
+.lt-text-header-expand .text {
+	padding-top: 8px !important;
+}
+
 .text.f-text {
 	font-size: 17px !important;
 }
@@ -90,6 +94,10 @@ margin-bottom: 15px !important;
 .f-text {
 	font-family: 'roboto',serif !important;
 	font-weight: 300 !important;
+}
+
+.builder-item.part-total {
+	font-size: 18px !important;
 }
 
 .dotted-link {
@@ -100,19 +108,27 @@ margin-bottom: 15px !important;
 	display: none !important;
 }
 
+.f-header.f-header-26 {
+	margin-top: -15px !important;
+}
+
 .text-muted {
 	color: #777 !important;
 	padding-left: 40px !important;
 }
 
 .offer-title {
-	font-size: 15px !important;
-	display: block !important;
-	padding-left: 38px !important;
+	padding-bottom: 7px !important;
 }
 
 .pull-left.form-position-title {
 	float: initial !important;
+}
+
+.offer-title {
+	font-size: 15px !important;
+	display: block !important;
+	padding-left: 38px !important;
 }
 
 .builder-item.part-position {
@@ -146,8 +162,62 @@ margin-bottom: 15px !important;
 	margin-bottom: 0px !important;
 }
 
+.f-input {
+	border: 1px solid rgb(204, 204, 204) !important;
+	height: 52px !important;
+	font-size: 15px !important;
+	color: #7d7d7d !important;
+	border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
+}
+
 .part-manyPositions {
 	background: #fff !important;
 	border: 1px solid #f2f2f2 !important;
 }
 
+@media screen and (max-width: 450px) {
+.f-subheader.f-subheader-sm {
+	font-size: 14px;
+}
+	.sub-label {
+	padding-top: 5px;
+	font-size: 15px;
+	line-height: 1.3;
+}
+}
+
+@media screen and (max-width: 420px) {
+.f-input {
+	height: 45px;
+	font-size: 14px;
+}
+	.f-subheader.f-subheader-sm {
+	font-size: 14px;
+		display: none;
+	}
+	.f-header.f-header-26 {
+	font-size: 20px;
+	line-height: 1.23;
+		margin-top:-20px;
+}
+	.field-label {
+	font-size: 12px !important;
+}
+.block-set {
+	font-size: 14px;
+}
+}
+
+@media screen and (max-width: 400px) {
+	.footer {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+	.lt-form {
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+	padding-bottom: 5px !important;
+}
