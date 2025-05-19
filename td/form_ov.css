@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.block-set, .f-text, .description, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, #ltBlock2158691448, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
+.block-set, .f-text, .description, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
 font-family: 'Montserrat', serif !important;
 }
 
@@ -14,6 +14,7 @@ font-family: 'Montserrat', serif !important;
 	text-align: center !important;
 	color: #FFF !important;
 	border-radius: 8px !important;
+	min-height: 55px !important;
 	font-family: Montserrat,sans-serif !important;
 	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
 	/*background-color: #3035c4 !important;*/
@@ -29,7 +30,6 @@ font-family: 'Montserrat', serif !important;
 	line-height: 16px;
 	margin: 0 0 32px 0;
 	color: #050505;
-	font-family: Montserrat,sans-serif !important;
 }
 
 .builder-item.part-total {
@@ -63,10 +63,6 @@ margin-bottom: 15px !important;
 }
 
 
-.btn.f-btn.button-md {
-	min-height: 55px;
-}
-
 .lt-text-header-expand .text {
 	padding-top: 8px;
 	margin-left: -11px;
@@ -76,6 +72,32 @@ margin-bottom: 15px !important;
 	padding-left: 20px !important;
 	padding-right: 20px !important;
 	padding-bottom: 5px !important;
+}
+
+.form-position {
+	display: block !important;
+	cursor: pointer !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-right: 10px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.form-position-price.pull-right {
+	background-color: #ffeec6 !important;
+	padding: 7px !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	margin-bottom: 4px !important;
+	margin-top: 7px !important;
+	/* color: white; */
+}
+
+.form-position.selected {
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
 }
 
 .footer {
@@ -116,13 +138,11 @@ margin-bottom: 15px !important;
 }
 
 .f-header {
-font-family: 'Montserrat', serif !important;
 	font-weight: 800 !important;
 	line-height: 1.23;
 }
 
 .offer-title {
-	font-family: 'Montserrat', serif !important;
 	font-weight: 600 !important;
 	padding-bottom: 7px !important;
 }
@@ -148,31 +168,6 @@ font-family: 'Montserrat', serif !important;
 	margin-bottom: 10px !important;
 }
 
-.form-position {
-	display: block !important;
-	cursor: pointer !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
-	padding-right: 10px !important;
-	padding-bottom: 5px !important;
-	margin-bottom: 0px !important;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.form-position-price.pull-right {
-	background-color: #ffeec6 !important;
-	padding: 7px !important;
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	margin-bottom: 4px !important;
-	margin-top: 7px !important;
-	/* color: white; */
-}
-
-.form-position.selected {
-	background: #9999991f !important;
-	margin-bottom: 0px !important;
-}
 
 .f-input {
 	border: 1px solid rgb(204, 204, 204) !important;
