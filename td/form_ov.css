@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-
+.block-set, .f-text, .description, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, #ltBlock2158691448, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
+font-family: 'Montserrat', serif !important;
+}
 
 .button-md {
 	position: relative !important;
@@ -27,7 +29,7 @@
 	line-height: 16px;
 	margin: 0 0 32px 0;
 	color: #050505;
-	font-family: Montserrat,sans-serif;
+	font-family: Montserrat,sans-serif !important;
 }
 
 .builder-item.part-total {
@@ -94,7 +96,6 @@ margin-bottom: 15px !important;
 }
 
 .f-text {
-	font-family: 'roboto',serif !important;
 	font-weight: 300 !important;
 }
 
