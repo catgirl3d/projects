@@ -1,0 +1,33 @@
+.btn.f-btn.button-md {
+	color: #0B1010 !important;
+	font-size: 12px !important;
+	font-family: 'Fira Sans',Arial,sans-serif;
+	line-height: 1.4;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-transform: uppercase !important;
+	border-width: 1px;
+	border-radius: 0px 0px 0px 0px !important;
+	background-position: center center;
+	border-color: #0b1010 !important;
+	border-style: solid !important;
+	background-color: #FFF !important;
+	transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
+	width: 60%;
+}
+
+.btn.f-btn.button-md:hover {
+	background-color: #d40100 !important;
+	background-image: none !important;
+	border-color: #d40100 !important;
+	color: white !important;
+}
+
+.lt-form {
+	background-color: #ffffff;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: 0px solid #999999;
+}
