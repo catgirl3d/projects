@@ -53,6 +53,30 @@ font-size:13px;
 	margin-left: 24px;
 }
 
+.fw-700 .field-label {
+	font-weight: 700;
+}
+
+.fw-600 .field-label {
+	font-weight: 600;
+}
+
+.fw-500 .field-label {
+	font-weight: 500;
+}
+
+.fw-400 .field-label {
+	font-weight: 400;
+}
+
+.fw-300 .field-label {
+	font-weight: 300;
+}
+
+.fw-200 .field-label {
+	font-weight: 200;
+}
+
 .field-label-custom{
 font-size: 15px !important;
 margin-bottom: 15px !important;
