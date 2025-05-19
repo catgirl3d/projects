@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 .button-md {
 	position: relative !important;
 	font-weight: 600 !important;
@@ -112,13 +114,21 @@ margin-bottom: 15px !important;
 	margin-top: -15px !important;
 }
 
-.text-muted {
-	color: #777 !important;
-	padding-left: 40px !important;
+.f-header {
+font-family: 'Montserrat', serif !important;
+	font-weight: 800 !important;
+	line-height: 1.23;
 }
 
 .offer-title {
+	font-family: 'Montserrat', serif !important;
+	font-weight: 600 !important;
 	padding-bottom: 7px !important;
+}
+
+.text-muted {
+	color: #777 !important;
+	padding-left: 40px !important;
 }
 
 .pull-left.form-position-title {
