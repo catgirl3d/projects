@@ -1,3 +1,10 @@
+.lt-form-inner {
+	padding-left: 40px !important;
+	padding-right: 40px !important;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
 .btn_form1 > button {
 	color: #0B1010 !important;
 	font-size: 12px !important;
@@ -23,9 +30,6 @@
 	color: white !important;
 }
 
-.lt-form-inner {
-	padding-left: 40px !important;
-	padding-right: 40px !important;
-	padding-top: 30px !important;
-	padding-bottom: 30px !important;
+.btn_form1 {
+	margin-bottom: 20px !important;
 }
