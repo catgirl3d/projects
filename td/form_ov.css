@@ -185,7 +185,7 @@ font-size:13px;
 }
 
 .footer {
-	margin-top: 12px;
+	margin-top: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-left: -20px;
@@ -267,3 +267,6 @@ font-size:13px;
 	padding-right: 3px !important;
 	padding-bottom: 5px !important;
 }
+	.button-md {
+	font-size: 16px !important;
+}}
