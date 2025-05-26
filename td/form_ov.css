@@ -156,10 +156,6 @@ font-size: 15px !important;
 	margin-left: -11px;
 }
 
-.builder-item.part-total {
-	font-size: 18px !important;
-}
-
 .dotted-link {
 	font-size: 14px !important;
 }
@@ -192,6 +188,11 @@ font-size: 15px !important;
 	background: #fff !important;
 	padding: 0px !important;
 	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
+
+.builder-item.part-total {
+	font-size: 18px !important;
 }
 
 .f-input {
@@ -257,7 +258,6 @@ font-size:13px;
 .fw-200 .field-label {
 	font-weight: 200;
 }
-
 
 
 @media screen and (max-width: 500px) {
