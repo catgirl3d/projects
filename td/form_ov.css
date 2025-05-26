@@ -221,8 +221,12 @@ font-size:13px;
 }
 
 .p-15{
-padding:15px !important;
+	padding:15px !important;
 }
+.p-30{
+	padding:15px !important;
+}
+
 @media screen and (max-width: 500px) {
   .f-text {
     font-size: 15px !important;
