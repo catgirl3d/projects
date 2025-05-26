@@ -6,6 +6,45 @@
 font-family: 'Montserrat', serif !important;
 }
 
+.p-0{
+	padding:0px !important;
+}
+
+.p-5{
+	padding:5px !important;
+}
+
+.p-10{
+	padding:10px !important;
+}
+
+.m-t-b10{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.p-15{
+	padding:15px !important;
+}
+
+.m-t-b15{
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
+}
+
+.p-20{
+	padding:20px !important;
+}
+
+.m-t-b20{
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.p-30{
+	padding:30px !important;
+}
+
 .button-md {
 	position: relative !important;
 	font-weight: 600 !important;
@@ -219,44 +258,7 @@ font-size:13px;
 	font-weight: 200;
 }
 
-.p-0{
-	padding:0px !important;
-}
 
-.p-5{
-	padding:5px !important;
-}
-
-.p-10{
-	padding:10px !important;
-}
-
-.m-t-b10{
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-}
-
-.p-15{
-	padding:15px !important;
-}
-
-.m-t-b15{
-	margin-top: 15px !important;
-	margin-bottom: 15px !important;
-}
-
-.p-20{
-	padding:20px !important;
-}
-
-.m-t-b20{
-	margin-top: 20px !important;
-	margin-bottom: 20px !important;
-}
-
-.p-30{
-	padding:30px !important;
-}
 
 @media screen and (max-width: 500px) {
   .f-text {
