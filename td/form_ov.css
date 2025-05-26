@@ -231,13 +231,18 @@ font-size:13px;
 	padding:10px !important;
 }
 
-.m-30{
-	margin-top: 30px !important;
-	margin-bottom: 30px !important;
+.m-t-b10{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
 }
 
 .p-15{
 	padding:15px !important;
+}
+
+.m-t-b15{
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
 }
 
 .p-20{
