@@ -30,10 +30,6 @@ font-family: 'Montserrat', serif !important;
 	margin-top: 0px !important;
 }
 
-.part-userField{
-margin-bottom:16px !important;
-}
-
 .builder-item.part-total {
 	font-size: 16px !important;
 }
@@ -52,7 +48,10 @@ hr {
 
 .field-label-custom{
 font-size: 15px !important;
-margin-bottom: 15px !important;
+}
+
+.part-userField{
+margin-bottom:16px !important;
 }
 
 .field-content > .field-label{
