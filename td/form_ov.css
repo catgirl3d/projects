@@ -46,6 +46,10 @@ margin-bottom:16px !important;
 	font-size: 17px;
 }
 
+hr {
+	margin-top: 18px !important;
+}
+
 .field-label-custom{
 font-size: 15px !important;
 margin-bottom: 15px !important;
@@ -54,7 +58,6 @@ margin-bottom: 15px !important;
 .field-content > .field-label{
 font-size: 15px !important;
 }
-
 
 .lt-form {
 	padding-left: 20px !important;
