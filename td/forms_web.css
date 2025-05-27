@@ -259,7 +259,7 @@ font-size: 15px !important;
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 490px) {
   .f-text {
     font-size: 15px;
   }
