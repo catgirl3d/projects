@@ -131,7 +131,7 @@ font-size: 15px !important;
 
 .f-text {
 	font-weight: 400 !important;
-	font-size: 17px !important;
+	font-size: 17px;
 }
 
 .text-muted {
@@ -261,7 +261,7 @@ font-size: 15px !important;
 
 @media screen and (max-width: 500px) {
   .f-text {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 .text-accurate {
 	font-size: 12px;
