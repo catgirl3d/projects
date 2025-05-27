@@ -272,8 +272,8 @@ font-size: 15px !important;
 	font-size: 11px;
 }
 	
-.sub-label.f-text{
-font-size: 14px !important;
+.text-normal.f-text {
+	font-size: 13px;
 }
 }
 
