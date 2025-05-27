@@ -263,11 +263,17 @@ font-size: 15px !important;
   .f-text {
     font-size: 15px;
   }
+	
 .text-accurate {
 	font-size: 12px;
 }
+	
 .field-description-block {
 	font-size: 11px;
+}
+	
+.sub-label.f-text{
+font-size: 14px !important;
 }
 }
 
