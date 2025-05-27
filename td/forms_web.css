@@ -131,9 +131,6 @@ font-size: 15px !important;
 
 .f-text {
 	font-weight: 400 !important;
-}
-
-.text.f-text {
 	font-size: 17px !important;
 }
 
@@ -266,6 +263,9 @@ font-size: 15px !important;
   .f-text {
     font-size: 15px !important;
   }
+.text-accurate {
+	font-size: 12px;
+}
 }
 
 @media screen and (max-width: 450px) {
