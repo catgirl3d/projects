@@ -77,6 +77,10 @@ font-family: 'Montserrat', serif !important;
 	color: #b82525;
 }
 
+.sm-header1{
+font-size: 15px;
+}
+
 .sub-label {
 	font-size: 17px;
 }
