@@ -294,22 +294,37 @@ font-size: 15px !important;
 	height: 45px !important;
 	font-size: 14px !important;
 }
-	.f-subheader.f-subheader-sm {
+	.offer-title {
+	font-size: 13px !important;
+}
+	
+.f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 	display: none !important;
 	}
-	.f-header.f-header-26 {
+	
+.f-header.f-header-26 {
 	font-size: 16px !important;
 	min-width: 0;
 	word-break: break-word;
 	line-height: 1.23 !important;
 	margin-top:-20px !important;
 }
-	.field-label {
+	
+.form-position-price.pull-right {
+	font-size: 13px !important;
+}
+	
+.field-label {
 	font-size: 12px !important;
 }
+	
 .block-set {
 	font-size: 14px !important;
+}
+	
+.part-total {
+	font-size: 16px !important;
 }
 }
 
