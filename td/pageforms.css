@@ -223,15 +223,6 @@ font-size: 15px !important;
 	margin-bottom: 5px !important;
 }
 
-.footer {
-	margin-top: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: -40px;
-	margin-right: -40px;
-	background: #f7f7f7 !important;
-}
-
 .fw-700 .field-label {
 	font-weight: 700;
 }
