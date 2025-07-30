@@ -1,5 +1,7 @@
-// Проверяем, содержит ли URL подстроку /notifications/control/mailings/update/id/
-if (window.location.pathname.includes('/notifications/control/mailings/update/id/')) {
+console.log('Инициализация скрипта mailing_copy_buttons.js')
+
+// Проверяем, содержит ли URL подстроку /notifications/control/mailings/update
+if (window.location.pathname.includes('/notifications/control/mailings/update')) {
     // Находим целевой контейнер
     const targetContainer = document.querySelector('#yw0');
 
