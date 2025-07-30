@@ -728,5 +728,5 @@ border-left: 3px solid;
 */
 
 .mailing-tip{
-	display: none;
+	display: none !important;
 }
