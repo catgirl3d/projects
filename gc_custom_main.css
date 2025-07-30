@@ -726,3 +726,7 @@ border-left: 3px solid;
 	font-weight: lighter;
 }
 */
+
+.mailing-tip{
+	display: none;
+}
