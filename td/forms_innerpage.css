@@ -69,10 +69,6 @@ font-family: 'Montserrat', serif !important;
 	margin-top: 0px !important;
 }
 
-.builder-item.part-total {
-	font-size: 16px !important;
-}
-
 .f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
 	color: #b82525;
 }
@@ -189,8 +185,10 @@ font-size: 15px !important;
 }
 
 .builder-item.part-total {
-	font-size: 18px !important;
+	margin-bottom: 5px !important;
+	font-size: 16px !important;
 }
+
 
 .f-input {
 	border: 1px solid rgb(198, 198, 198) !important;
@@ -269,35 +267,49 @@ font-size: 15px !important;
 
 @media screen and (max-width: 450px) {
 	
-.f-text {
+	.f-text {
     font-size: 15px;
   }
 	
-.text-accurate {
+	.text-accurate {
 	font-size: 12px;
 }
 	
-.field-description-block {
+	.field-description-block {
 	font-size: 11px;
 }
 	
-.text-normal.f-text {
+	.text-normal.f-text {
 	font-size: 13px;
 }
 
-.f-subheader.f-subheader-sm {
+	.f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 }
 
-.field-content > .field-label {
+	.field-content > .field-label {
 	font-size: 13px !important;
 	font-weight: 500;
 }
-.sub-label {
+	.sub-label {
 	padding-top: 5px !important;
 	font-size: 15px !important;
 	line-height: 1.3 !important;
 }
+	.offer-title {
+	font-size: 12px !important;
+}
+	.f-subheader.f-subheader-.f-text-transform-uppercase > p {
+	font-size: 13px !important;
+	padding-bottom: 4px !important;
+}
+	.form-position-price.pull-right {
+	font-size: 14px !important;
+}
+	.builder-item.part-total {
+	font-size: 16px !important;
+}
+	
 }
 
 @media screen and (max-width: 420px) {
@@ -310,7 +322,7 @@ font-size: 15px !important;
 	display: none !important;
 	}
 	.f-header.f-header-26 {
-	font-size: 20px !important;
+	font-size: 18.7px !important;
 	line-height: 1.23 !important;
 	margin-top:-20px !important;
 }
