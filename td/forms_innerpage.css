@@ -307,7 +307,10 @@ font-size: 15px !important;
 	padding-right: 10px !important;
 	padding-left: 10px !important;
 }
-	
+	hr {
+	margin-top: 15px !important;
+	margin-bot: 15px !important;
+}
 }
 
 @media screen and (max-width: 420px) {
