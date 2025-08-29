@@ -99,6 +99,10 @@ font-size: 15px !important;
 	padding-bottom: 5px !important;
 }*/
 
+.lt-form-inner {
+	padding-bottom: 10px !important;
+}
+
 .form-position {
 	display: block !important;
 	cursor: pointer !important;
