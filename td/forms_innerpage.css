@@ -266,27 +266,21 @@ font-size: 15px !important;
 }
 
 @media screen and (max-width: 450px) {
-	
 	.f-text {
     font-size: 15px;
   }
-	
 	.text-accurate {
 	font-size: 12px;
 }
-	
 	.field-description-block {
 	font-size: 11px;
 }
-	
 	.text-normal.f-text {
 	font-size: 13px;
 }
-
 	.f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 }
-
 	.field-content > .field-label {
 	font-size: 13px !important;
 	font-weight: 500;
@@ -308,6 +302,10 @@ font-size: 15px !important;
 }
 	.builder-item.part-total {
 	font-size: 16px !important;
+}
+	.container {
+	padding-right: 10px !important;
+	padding-left: 10px !important;
 }
 	
 }
@@ -341,8 +339,8 @@ font-size: 15px !important;
 	margin-bottom: 10px;
 }
 	.lt-form-inner {
-	padding-left: 10px !important;
-	padding-right: 10px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
 	padding-bottom: 5px !important;
 }
 	.button-md {
