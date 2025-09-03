@@ -112,10 +112,7 @@ margin-bottom:16px !important;
 .form-position {
 	display: block !important;
 	cursor: pointer !important;
-	padding-left: 15px !important;
-	padding-top: 7px !important;
-	padding-right: 10px !important;
-	padding-bottom: 5px !important;
+	padding: 7px 12px !important;
 	margin-bottom: 0px !important;
 	border-bottom: 1px solid #f0f0f0;
 }
@@ -171,9 +168,9 @@ margin-bottom:16px !important;
 	color: #050505;
 }
 
-.pull-left.form-position-title {
+/*.pull-left.form-position-title {
 	float: initial !important;
-}
+}*/
 
 .offer-title {
 	font-size: 15px !important;
@@ -341,6 +338,9 @@ margin-bottom:16px !important;
 }
 	.form-position-price.pull-right {
 	padding: 4px 6px !important;
+}
+	.pull-left.form-position-title {
+	float: initial !important;
 }
 	.block-box {
 	background-color: #ffffff;
