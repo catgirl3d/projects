@@ -240,7 +240,7 @@ margin-bottom:16px !important;
 	margin-bottom: 5px !important;
 }
 
-.footer {
+.footer_form {
 	margin-top: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -249,7 +249,7 @@ margin-bottom:16px !important;
 	background: #f7f7f7 !important;
 }
 
-.footer_text {
+.footer_form_text {
 	font-size: 11.5px;
 	font-weight: 400;
 }
