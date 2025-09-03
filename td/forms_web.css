@@ -69,6 +69,11 @@ font-family: 'Montserrat', serif !important;
 	margin-top: 0px !important;
 }
 
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 5px !important;
+}
+
 .builder-item.part-total {
 	font-size: 16px !important;
 }
@@ -142,10 +147,6 @@ font-size: 15px !important;
 .f-header {
 	font-weight: 800 !important;
 	line-height: 1.23;
-}
-
-.f-header.f-header-26 {
-	margin-top: -15px !important;
 }
 
 .lt-text-header-expand .text {
