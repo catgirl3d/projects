@@ -297,7 +297,11 @@ font-size: 15px !important;
 	.f-header.f-header-26 {
 	font-size: 20px !important;
 	line-height: 1.23 !important;
-	margin-top:-20px !important;
+	margin-top:0px !important;
+}
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
 }
 	.field-label {
 	font-size: 12px !important;
@@ -321,5 +325,6 @@ font-size: 15px !important;
 	.button-md {
 	font-size: 16px !important;
 }}
+
 
 
