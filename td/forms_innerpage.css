@@ -382,7 +382,7 @@ margin-bottom:16px !important;
 }
 
 @media screen and (max-width: 400px) {
-	.footer {
+	.footer-form {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 10px;
