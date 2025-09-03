@@ -10,6 +10,5 @@ $(document).ready(function(){
             $(this).val(currentUrl);
         });
     } else {
-        console.error('Поле <textarea> внутри элемента с классом "URL" не найдено. Проверьте HTML-структуру.');
     }
 });
