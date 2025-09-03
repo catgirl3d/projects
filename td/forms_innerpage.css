@@ -199,6 +199,17 @@ font-size: 15px !important;
 	border-radius: 5px !important;
 }
 
+.lt-form .f-input-wrapper select {
+	border: 1px solid rgb(204, 204, 204);
+	height: 52px;
+	font-size: 15px;
+	color: #7d7d7d;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: white;
+}
+
 .chkbox-label {
 	font-size: 13px;
 	margin-top: 10px !important;
@@ -325,6 +336,20 @@ font-size: 15px !important;
 }
 	.form-position-price.pull-right {
 	padding: 4px 6px !important;
+}
+	.block-box {
+	background-color: #ffffff;
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+	padding-top: 10px !important;
+	padding-bottom: 0px;
+	border: 0px solid #999999;
+}
+
+.lt-form .f-input-wrapper select {
+	font-size: 12px !important;
+	padding: 0 15px;
+  	height: 35px;
 }
 }
 
