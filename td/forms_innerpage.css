@@ -108,7 +108,7 @@ font-size: 15px !important;
 	display: block !important;
 	cursor: pointer !important;
 	padding-left: 15px !important;
-	padding-top: 5px !important;
+	padding-top: 7px !important;
 	padding-right: 10px !important;
 	padding-bottom: 5px !important;
 	margin-bottom: 0px !important;
@@ -323,10 +323,16 @@ font-size: 15px !important;
 	.button-md {
 	min-height: 48px !important;
 }
+	.part-text {
+	margin: 0px !important;
+}
+	.form-position-price.pull-right {
+	padding: 4px 6px !important;
+}
 }
 
 @media screen and (max-width: 420px) {
-.f-input {
+	.f-input {
 	height: 45px !important;
 	font-size: 14px !important;
 }
@@ -335,13 +341,12 @@ font-size: 15px !important;
 	display: none !important;
 	}
 	.f-header.f-header-26 {
-	font-size: 18.7px !important;
-	line-height: 1.23 !important;
+	font-size: 17px !important;
 }
 	.field-label {
 	font-size: 12px !important;
 }
-.block-set {
+	.block-set {
 	font-size: 14px !important;
 }
 }
