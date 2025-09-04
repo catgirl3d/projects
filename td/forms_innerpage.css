@@ -179,6 +179,10 @@ margin-bottom:16px !important;
 	float: initial !important;
 }*/
 
+.pull-left.form-position-checker {
+	position: absolute;
+}
+
 .offer-title {
 	font-size: 15px !important;
 	font-weight: 600 !important;
