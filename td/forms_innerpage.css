@@ -64,6 +64,10 @@ font-family: 'Montserrat', serif !important;
 	margin-top: 0px !important;
 }
 
+.part-header{
+margin-bottom: 0px !important;
+}
+
 .part-subheader {
 	padding-bottom: 0px !important;
 	margin-bottom: 3px !important;
