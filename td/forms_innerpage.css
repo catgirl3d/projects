@@ -362,10 +362,16 @@ margin-bottom:16px !important;
 	border: 0px solid #999999;
 }
 
-.lt-form .f-input-wrapper select {
+	.lt-form .f-input-wrapper select {
 	font-size: 12px !important;
 	padding: 0 15px;
   	height: 35px;
+}
+	.lt-form-inner {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-bottom: 5px !important;
+	padding-top: 10px !important;
 }
 }
 
@@ -395,12 +401,6 @@ margin-bottom:16px !important;
 	margin-right: 0px;
 	margin-bottom: 10px;
 }
-	.lt-form-inner {
-	padding-left: 15px !important;
-	padding-right: 15px !important;
-	padding-bottom: 5px !important;
-	padding-top: 10px !important;
-}
 	.button-md {
-	font-size: 16px !important;
+	font-size: 15px !important;
 }}
