@@ -57,12 +57,12 @@ font-family: 'Montserrat', serif !important;
 	min-height: 55px !important;
 	font-family: Montserrat,sans-serif !important;
 	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
-	background-color: #3035c4 !important;
-  width: 60% !important;;
+	background-color: #e6514a !important;
+  	width: 60% !important;
 }
 
 .button-md:hover {
-	background: #6f74ff !important;
+	background: #ee4848 !important;
 }
 
 .part-button {
