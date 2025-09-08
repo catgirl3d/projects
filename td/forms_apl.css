@@ -45,7 +45,7 @@ font-family: 'Montserrat', serif !important;
 	padding:30px !important;
 }
 
-/*.button-md {
+.button-md {
 	position: relative !important;
 	font-weight: 600 !important;
 	font-size: 18px !important;
@@ -53,36 +53,17 @@ font-family: 'Montserrat', serif !important;
 	text-align: center !important;
 	color: #FFF !important;
 	margin-top: 10px !important;
-	border-radius: 8px !important;
 	min-height: 55px !important;
 	font-family: Montserrat,sans-serif !important;
-	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
+	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
 	background-color: #e6514a !important;
   	width: 60% !important;
-}*/
-
-button.btn {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center !important;
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    align-items: center !important;
-    text-align: center !important;
-    font-weight: 700 !important;
-    font-size: 16px !important;
-    text-align: center !important;
-    color: #fff !important;
-    border: 2px solid #e6514a !important;
-    border-radius: 40px !important;
-    padding: 16px !important;
-    background-color: #e6514a !important;
-    -webkit-transition: all .3s ease 0s !important;
+	border: 2px solid #e6514a !important;
+	border-radius: 40px !important;
+	-webkit-transition: all .3s ease 0s !important;
     -o-transition: all .3s ease 0s !important;
     transition: all .3s ease 0s !important;
+    padding: 16px !important;
 }
 
 .button-md:hover {
