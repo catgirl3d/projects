@@ -265,18 +265,7 @@ input[type="checkbox"]:checked {
 	margin-bottom: -5px !important;
 }
 
-.label-value {
-  line-height: 1.4 !important;
-  display: inline !important;
-  position: relative !important;
-  align-items: baseline !important;
-  vertical-align: middle !important;
-}
 
-.label-value a {
-  vertical-align: baseline !important;
-  display: inline !important;
-}
 .label-value a:link {
   text-decoration: underline !important;
 }
@@ -287,11 +276,12 @@ input[type="checkbox"]:checked {
 	margin-bottom: 10px !important;
 }
 
-/*.custom-field.type-checkbox .field-label .label-value {
+.custom-field.type-checkbox .field-label .label-value {
 	display: block !important;
 	margin-left: 24px;
 	font-size: 12px !important;
-}*/
+	line-height: 1.4 !important;
+}
 
 .global-confirm-checkbox-block {
 	display: none;
