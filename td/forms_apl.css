@@ -113,9 +113,9 @@ margin-bottom:16px !important;
 font-size: 15px !important;
 }
 
-.lt-form {
-	padding-left: 20px !important;
-	padding-right: 20px !important;
+.lt-form-inner {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
 	padding-bottom: 5px !important;
 }
 
@@ -358,12 +358,7 @@ input[type="checkbox"]:checked {
 }
 
 @media screen and (max-width: 400px) {
-	.footer {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 10px;
-}
-	.lt-form {
+	.lt-form-inner {
 	padding-left: 3px !important;
 	padding-right: 3px !important;
 	padding-bottom: 5px !important;
