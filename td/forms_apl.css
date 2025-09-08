@@ -41,6 +41,12 @@
 	padding:30px !important;
 }	
 
+.f-s30 > div > p {
+	font-size: 30px;
+	margin-bottom: 16px !important;
+}
+
+
 .lt-block-wrapper {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -399,9 +405,13 @@ input[type="checkbox"]:checked {
 }
 .f-header.f-header-26 {
 	font-size: 20px !important;
-	line-height: 1.23 !important;
 	margin-top:0px !important;
 }
+.f-s30 > div > p {
+	font-size: 21px;
+	margin-bottom: 16px !important;
+}
+
 .field-label {
 	font-size: 12px !important;
 }
@@ -426,6 +436,9 @@ input[type="checkbox"]:checked {
 }
 #iti-0__country-listbox {
 	font-size: 12px;
+}
+.text-normal.f-text {
+	font-size: 14px !important;
 }
 }
 
