@@ -120,7 +120,7 @@ font-family: 'Montserrat', serif !important;
   }
 
 #iti-0__country-listbox {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
@@ -423,6 +423,9 @@ input[type="checkbox"]:checked {
 }
 .field-label.control-label {
 	margin-bottom: -6px !important;
+}
+#iti-0__country-listbox {
+	font-size: 12px;
 }
 }
 
