@@ -268,11 +268,11 @@ input[type="checkbox"]:checked {
 }
 
 .custom-field.type-checkbox .field-label .label-value {
-	display: block !important;
+	display: block;
 	margin-left: 24px;
-	font-size: 12px !important;
-	line-height: 100% !important;
-	padding: 0px !important;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 0px;
 }
 
 
@@ -280,9 +280,9 @@ input[type="checkbox"]:checked {
 	display: none;
 }
 
-.custom-field-input.custom-field.type-checkbox {
+/*.custom-field-input.custom-field.type-checkbox {
 	font-size: 13px;
-}
+}*/
 
 /* Misc / parts */
 .builder-item.part-total {
@@ -363,21 +363,21 @@ input[type="checkbox"]:checked {
 
 @media screen and (max-width: 420px) {
 .f-input {
-	height: 45px !important;
-	font-size: 14px !important;
+	height: 50px !important;
+	font-size: 13.5px !important;
 }
 .f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 	display: none !important;
 	}
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
 .f-header.f-header-26 {
 	font-size: 20px !important;
 	line-height: 1.23 !important;
 	margin-top:0px !important;
-}
-.part-subheader {
-	padding-bottom: 0px !important;
-	margin-bottom: 0px !important;
 }
 .field-label {
 	font-size: 12px !important;
@@ -390,8 +390,16 @@ input[type="checkbox"]:checked {
 	width: 95% !important;
 	min-height: 53px !important;
 	border: 2px solid #e6514a !important;
-  	padding: 16px !important;
-}}
+  	padding: 13px !important;
+}
+.custom-field.type-checkbox .field-label .label-value {
+	font-size: 11px !important;
+	padding-top: 2px !important;
+}
+.field-label.control-label {
+	margin-bottom: -6px !important;
+}
+}
 
 @media screen and (max-width: 400px) {
 .lt-form-inner {
