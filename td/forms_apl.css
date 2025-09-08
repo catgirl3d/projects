@@ -85,8 +85,10 @@ font-family: 'Montserrat', serif !important;
 	font-size: 16px !important;
 }
 
-.text-normal.f-text {
-    font-size: 17px !important;
+.text-normal.f-text p {
+    font-size: 16px !important;
+	font-weight: 400 !important;
+    line-height: 140% !important;
   }
 
 .f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
