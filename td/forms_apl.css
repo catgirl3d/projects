@@ -165,6 +165,10 @@ font-size: 15px !important;
 	line-height: 1.23;
 }
 
+.f-header > p {
+	color: #333 !important;
+}
+
 .lt-text-header-expand .text {
 	padding-top: 8px !important;
 	margin-left: -11px;
