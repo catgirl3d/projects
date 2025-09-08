@@ -260,6 +260,7 @@ input[type="checkbox"]:checked {
 	line-height: 1.4 !important;
 	display: block !important;
 	padding-top: 0px !important;
+	margin-bottom: -5px !important;
 }
 
 .chkbox-label {
