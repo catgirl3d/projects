@@ -256,15 +256,14 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     background-position: center;
 }
-
-/*.field-label.control-label {
+*.field-label.control-label {
 	position: relative !important;
 	padding-left: 10px !important;
 	line-height: 1.4 !important;
 	display: block !important;
 	padding-top: 0px !important;
 	margin-bottom: -5px !important;
-}*/
+}
 
 .label-value {
   line-height: 1.4 !important;
@@ -282,18 +281,17 @@ input[type="checkbox"]:checked {
   text-decoration: underline !important;
 }
 
-
 .chkbox-label {
 	font-size: 13px;
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }
 
-.custom-field.type-checkbox .field-label .label-value {
+/*.custom-field.type-checkbox .field-label .label-value {
 	display: block !important;
 	margin-left: 24px;
 	font-size: 12px !important;
-}
+}*/
 
 .global-confirm-checkbox-block {
 	display: none;
