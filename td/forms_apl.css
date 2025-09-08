@@ -54,13 +54,25 @@
 	font-family: Montserrat,sans-serif !important;
 	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
 	background-color: #e6514a !important;
-  	width: 60% !important;
+  	width: 75% !important;
 	border: 2px solid #e6514a !important;
 	border-radius: 40px !important;
 	-webkit-transition: all .3s ease 0s !important;
     -o-transition: all .3s ease 0s !important;
     transition: all .3s ease 0s !important;
     padding: 16px !important;
+}
+
+/* Added per request: reset lt-block wrapper paddings */
+.lt-block-wrapper {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* Added per request: remove left/right padding from bootstrap-like column classes */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .button-md:hover {
@@ -192,9 +204,9 @@ font-size: 15px !important;
 
 .f-input {
 	background: #f2f2f5;
-	height: 53px !important;
-	padding: 5px 20px;
-	font-size: 15px !important;
+	height: 55px !important;
+	padding: 19.5px 20px;
+	font-size: 16px !important;
 	border: 1px solid #0151ab !important;
 	border-radius: 8px !important;
 	font-weight: 400 !important;
@@ -207,16 +219,16 @@ font-size: 15px !important;
 /* Checkboxes / labels group */
 input[type="checkbox"] {
 	appearance: none;
-	width: 23px;
+	width: 24px;
 	height: 24px;
-	border: 2px solid #ccc;
+	border: 1px solid #B4B7C1;
 	border-radius: 4px;
-	background-color: white;
+	background-color: #F2F2F5;
 	cursor: pointer;
 	transition: all 0.35s ease;
 	position: absolute;
 	left: 0;
-	top: 0.15em;
+	top: 1px;
 	margin: 0;
 }
 
@@ -230,14 +242,8 @@ input[type="checkbox"]:active {
 }
 
 input[type="checkbox"]:checked {
-    background-color: #0151ab;
-    border-color: #0151ab;
-}
-
-input[type="checkbox"]:checked {
-	transform: scale(1.1);
-    background-color: #0151ab;
-    border-color: #0151ab;
+    background-color: #0151AB;
+    border-color: #0151AB;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: center;
@@ -249,7 +255,7 @@ input[type="checkbox"]:checked {
 	line-height: 1.4 !important;
 	display: block !important;
 	padding-top: 0px !important;
-	margin-bottom: -13px !important;
+	margin-bottom: 0px !important;
 }
 
 
@@ -341,7 +347,7 @@ input[type="checkbox"]:checked {
 
 
 @media screen and (max-width: 500px) {
-  .f-text {
+.f-text {
     font-size: 15px !important;
   }
 }
@@ -350,7 +356,7 @@ input[type="checkbox"]:checked {
 .f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 }
-	.sub-label {
+.sub-label {
 	padding-top: 5px !important;
 	font-size: 15px !important;
 	line-height: 1.3 !important;
@@ -362,11 +368,11 @@ input[type="checkbox"]:checked {
 	height: 45px !important;
 	font-size: 14px !important;
 }
-	.f-subheader.f-subheader-sm {
+.f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 	display: none !important;
 	}
-	.f-header.f-header-26 {
+.f-header.f-header-26 {
 	font-size: 20px !important;
 	line-height: 1.23 !important;
 	margin-top:0px !important;
@@ -375,20 +381,20 @@ input[type="checkbox"]:checked {
 	padding-bottom: 0px !important;
 	margin-bottom: 0px !important;
 }
-	.field-label {
+.field-label {
 	font-size: 12px !important;
 }
 .block-set {
 	font-size: 14px !important;
 }
-}
+.button-md {
+	font-size: 16px !important;
+	width: 90%;
+}}
 
 @media screen and (max-width: 400px) {
-	.lt-form-inner {
-	padding-left: 3px !important;
-	padding-right: 3px !important;
-	padding-bottom: 5px !important;
-}
-	.button-md {
-	font-size: 16px !important;
+.lt-form-inner {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	padding-bottom: 0px !important;
 }}
