@@ -209,15 +209,15 @@ input[type="checkbox"] {
 	appearance: none;
 	width: 23px;
 	height: 24px;
-	border: 2px solid #ccc !important;
+	border: 2px solid #ccc;
 	border-radius: 4px;
 	background-color: white;
-	cursor: pointer !important;
-	transition: all 0.3s ease !important;
-	position: absolute !important;
-	left: 0 !important;
-	top: 0.15em !important;
-	margin: 0 !important;
+	cursor: pointer;
+	transition: all 0.35s ease;
+	position: absolute;
+	left: 0;
+	top: 0.15em;
+	margin: 0;
 }
 
 input[type="checkbox"]:hover {
@@ -226,7 +226,7 @@ input[type="checkbox"]:hover {
 }
 
 input[type="checkbox"]:active {
-    transition: all 0.6s ease !important;
+    transition: all 0.6s ease;
 }
 
 input[type="checkbox"]:checked {
