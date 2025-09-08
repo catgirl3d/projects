@@ -252,7 +252,7 @@ input[type="checkbox"] {
 	position: relative;
 	left: 0;
 	top: 1px;
-	margin: 0;
+	margin: 0px 0px 2px 0px;
 }
 
 input[type="checkbox"]:hover {
