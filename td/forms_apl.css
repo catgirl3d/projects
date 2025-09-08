@@ -426,8 +426,8 @@ input[type="checkbox"]:checked {
 	font-size: 21px !important;
 	margin-top:0px !important;
 }
-	.f-header.f-header-36 {
-	font-size: 21px !important;;
+.f-header.f-header-36 {
+	font-size: 21px !important;
 }
 .f-s30-b32{
 	margin-bottom: 32px !important;
@@ -449,7 +449,6 @@ input[type="checkbox"]:checked {
 	font-size: 16px !important;
 	width: 95% !important;
 	min-height: 53px !important;
-	border: 2px solid #e6514a !important;
   	padding: 13px !important;
 }
 .custom-field.type-checkbox .field-label .label-value {
