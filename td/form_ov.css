@@ -56,13 +56,13 @@ font-family: 'Montserrat', serif !important;
 	min-height: 55px !important;
 	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
   	width: 75% !important;
-	border-radius: 40px !important;
 	-webkit-transition: all .3s ease 0s !important;
     -o-transition: all .3s ease 0s !important;
     transition: all .3s ease 0s !important;
     padding: 16px !important;
 	background-color: #e6514a !important;
 	border: 2px solid #e6514a !important;
+	border-radius: 40px !important;
 }
 
 .button-md:hover {
@@ -339,7 +339,7 @@ margin-bottom:16px !important;
 	margin-left: -40px;
 	margin-right: -40px;
 	background: #f7f7f7 !important;
-	display: none;
+	display: none !important;
 }
 
 .footer_text {
