@@ -95,7 +95,7 @@
 font-family: 'Montserrat', serif !important;
 }
 
-.text-normal.f-text p {
+.text-normal.f-text {
     font-size: 16px !important;
 	font-weight: 400 !important;
     line-height: 140% !important;
@@ -347,7 +347,7 @@ input[type="checkbox"]:checked {
 
 
 @media screen and (max-width: 500px) {
-.f-text {
+.text-normal.f-text {
     font-size: 15px !important;
   }
 }
