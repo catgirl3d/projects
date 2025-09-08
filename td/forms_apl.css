@@ -41,11 +41,18 @@
 	padding:30px !important;
 }	
 
+.f-s30-b32{
+	margin-bottom: 32px !important;
+}
+
+.f-s30-b32 > div > p {
+	font-size: 30px;
+}
+
 .f-s30 > div > p {
 	font-size: 30px;
 	margin-bottom: 16px !important;
 }
-
 
 .lt-block-wrapper {
   padding-top: 0px !important;
@@ -407,11 +414,16 @@ input[type="checkbox"]:checked {
 	font-size: 20px !important;
 	margin-top:0px !important;
 }
+.f-s30-b32{
+	margin-bottom: 32px !important;
+}
+.f-s30-b32 > div > p {
+		font-size: 21px;
+}
 .f-s30 > div > p {
 	font-size: 21px;
 	margin-bottom: 16px !important;
 }
-
 .field-label {
 	font-size: 12px !important;
 }
