@@ -47,27 +47,129 @@ font-family: 'Montserrat', serif !important;
 
 .button-md {
 	position: relative !important;
-	font-weight: 600 !important;
-	font-size: 18px !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
 	line-height: 160% !important;
 	text-align: center !important;
 	color: #FFF !important;
 	margin-top: 10px !important;
-	border-radius: 8px !important;
 	min-height: 55px !important;
-	font-family: Montserrat,sans-serif !important;
-	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
-	/*background-color: #3035c4 !important;*/
+	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
+  	width: 75% !important;
+	border-radius: 40px !important;
+	-webkit-transition: all .3s ease 0s !important;
+    -o-transition: all .3s ease 0s !important;
+    transition: all .3s ease 0s !important;
+    padding: 16px !important;
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
 }
 
 .button-md:hover {
-	/*background: #6f74ff !important;*/
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_red_button > .button-md {
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+}
+
+.c_red_button > .button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_blue_button > .button-md {
+	background-color: #3035C3 !important;
+	border: 2px solid #3035C3 !important;
+}
+
+.c_blue_button > .button-md:hover {
+	background: #fff !important;
+  	color: #3035C3 !important;
+}
+
+/* Checkboxes / labels group */
+input[type="checkbox"] {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #B4B7C1;
+	border-radius: 4px;
+	background-color: #F2F2F5;
+	cursor: pointer;
+	transition: all 0.35s ease;
+	position: relative;
+	left: 0;
+	top: 1px;
+	margin: 0px 0px 2px 0px;
+	padding-right: 22px;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #0151ab;
+    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
+}
+
+input[type="checkbox"]:active {
+    transition: all 0.6s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0151AB;
+    border-color: #0151AB;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.field-label.control-label {
+	position: relative !important;
+	padding-left: 0px !important;
+	line-height: 1.4 !important;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+	display: flex !important;
+}
+
+#iti-0__country-listbox {
+	font-size: 14px;
+}
+
+.custom-field.type-checkbox .field-label .label-value {
+	display: block;
+	margin-left: 0px;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 0px;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	padding-bottom: 1px;
+}
+
+.f-subheader.f-subheader-sm {
+	font-size: 15px;
+	display:none;
+}
+
+.label-value a:link {
+  text-decoration: underline !important;
 }
 
 .part-button {
 	margin-bottom: 15px !important;
 	margin-top: 0px !important;
 }
+
+.lt-block-wrapper {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	color: #333333;
+}
+
+
+
 
 .part-subheader {
 	padding-bottom: 0px !important;
@@ -102,14 +204,14 @@ font-size: 15px !important;
 margin-bottom:16px !important;
 }
 
-.field-content > .field-label{
-font-size: 15px !important;
+.field-content > .field-label {
+	font-size: 14px !important;
+	font-weight: 500;
 }
 
-.lt-form {
-	padding-left: 20px !important;
-	padding-right: 20px !important;
-	padding-bottom: 5px !important;
+.lt-form-inner {
+	padding: 0px 20px 0px 20px !important;
+	margin-bottom: 10px !important;
 }
 
 .form-position {
@@ -201,23 +303,20 @@ font-size: 15px !important;
 }
 
 .f-input {
-	border: 1px solid rgb(198, 198, 198) !important;
-	height: 52px !important;
-	font-size: 15px !important;
-	color: #7d7d7d !important;
+	background: #f2f2f5;
+	height: 55px !important;
+	padding: 19.5px 20px;
+	font-size: 16px !important;
+	border: 1px solid #0151ab !important;
 	border-radius: 8px !important;
+	font-weight: 400 !important;
 }
-
+/*
 .chkbox-label {
 	font-size: 13px;
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
-}
-
-.custom-field.type-checkbox .field-label .label-value {
-	display: block !important;
-	margin-left: 24px;
-}
+}*/
 
 .global-confirm-checkbox-block {
 	display: none;
@@ -271,18 +370,8 @@ font-size: 15px !important;
 	font-weight: 200;
 }
 
-
-@media screen and (max-width: 500px) {
-  .f-text {
-    font-size: 15px !important;
-  }
-}
-
 @media screen and (max-width: 450px) {
-.f-subheader.f-subheader-sm {
-	font-size: 14px !important;
-}
-	.sub-label {
+.sub-label {
 	padding-top: 5px !important;
 	font-size: 15px !important;
 	line-height: 1.3 !important;
@@ -291,46 +380,66 @@ font-size: 15px !important;
 
 @media screen and (max-width: 420px) {
 .f-input {
-	height: 45px !important;
-	font-size: 14px !important;
+	height: 50px !important;
+	font-size: 13.5px !important;
 }
-	.f-subheader.f-subheader-sm {
+.f-subheader.f-subheader-sm {
 	font-size: 14px !important;
 	display: none !important;
 	}
-	.f-header.f-header-26 {
-	font-size: 20px !important;
-	line-height: 1.23 !important;
-	margin-top:0px !important;
-}
 .part-subheader {
 	padding-bottom: 0px !important;
 	margin-bottom: 0px !important;
 }
-	.field-label {
+.f-header.f-header-26 {
+	font-size: 21px !important;
+	margin-top:0px !important;
+}
+.f-header.f-header-36 {
+	font-size: 21px !important;
+}
+.f-s30-b32{
+	margin-bottom: 32px !important;
+}
+.f-s30-b32 > div > p {
+		font-size: 21px;
+}
+.f-s30 > div > p {
+	font-size: 21px;
+	margin-bottom: 16px !important;
+}
+.field-label {
 	font-size: 12px !important;
 }
 .block-set {
 	font-size: 14px !important;
 }
+.button-md {
+	font-size: 16px !important;
+	width: 95% !important;
+	min-height: 53px !important;
+  	padding: 13px !important;
+}
+.custom-field.type-checkbox .field-label .label-value {
+	font-size: 11px !important;
+	padding-top: 0px !important;
+	margin-left: 5px !important;
+}
+.field-label.control-label {
+	margin-bottom: -6px !important;
+	padding-left: 0px !important;
+}
+#iti-0__country-listbox {
+	font-size: 12px;
+}
+.text-normal.f-text {
+	font-size: 14px !important;
+}
 }
 
 @media screen and (max-width: 400px) {
-	.footer {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 10px;
-}
-	.lt-form {
-	padding-left: 3px !important;
-	padding-right: 3px !important;
-	padding-bottom: 5px !important;
-}
-	.button-md {
-	font-size: 16px !important;
+.lt-form-inner {
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	padding-bottom: 0px !important;
 }}
-
-
-
-
-

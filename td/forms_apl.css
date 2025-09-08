@@ -89,8 +89,8 @@
 	font-family: Montserrat,sans-serif !important;
 	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
 	background-color: #e6514a !important;
-  	width: 75% !important;
 	border: 2px solid #e6514a !important;
+  	width: 75% !important;
 	border-radius: 40px !important;
 	-webkit-transition: all .3s ease 0s !important;
     -o-transition: all .3s ease 0s !important;
