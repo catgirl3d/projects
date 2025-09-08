@@ -207,11 +207,11 @@ font-size: 15px !important;
 /* Checkboxes / labels group */
 input[type="checkbox"] {
 	appearance: none;
-	width: 23px !important;
-	height: 24px !important;
+	width: 23px;
+	height: 24px;
 	border: 2px solid #ccc !important;
-	border-radius: 4px !important;
-	background-color: white !important;
+	border-radius: 4px;
+	background-color: white;
 	cursor: pointer !important;
 	transition: all 0.3s ease !important;
 	position: absolute !important;
