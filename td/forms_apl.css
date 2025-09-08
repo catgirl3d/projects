@@ -2,11 +2,7 @@
   box-sizing: border-box;
 }
 
-.block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
-font-family: 'Montserrat', serif !important;
-}
-
-.p-0{
+  .p-0{
 	padding:0px !important;
 }
 
@@ -45,6 +41,7 @@ font-family: 'Montserrat', serif !important;
 	padding:30px !important;
 }
 
+/* Buttons group */
 .button-md {
 	position: relative !important;
 	font-weight: 700 !important;
@@ -81,8 +78,9 @@ font-family: 'Montserrat', serif !important;
 	margin-bottom: 5px !important;
 }
 
-.builder-item.part-total {
-	font-size: 16px !important;
+/* Text / headers group (and shared font family rules) */
+.block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
+font-family: 'Montserrat', serif !important;
 }
 
 .text-normal.f-text p {
@@ -101,50 +99,6 @@ font-family: 'Montserrat', serif !important;
 
 hr {
 	margin-top: 18px !important;
-}
-
-.field-label-custom{
-font-size: 15px !important;
-}
-
-.part-userField{
-margin-bottom:16px !important;
-}
-
-.field-content > .field-label{
-font-size: 15px !important;
-}
-
-.lt-form-inner {
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-	padding-bottom: 0px !important;
-}
-
-.form-position {
-	display: block !important;
-	cursor: pointer !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
-	padding-right: 10px !important;
-	padding-bottom: 5px !important;
-	margin-bottom: 0px !important;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.form-position-price.pull-right {
-	background-color: #ffeec6 !important;
-	padding: 7px !important;
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	margin-bottom: 4px !important;
-	margin-top: 7px !important;
-	/* color: white; */
-}
-
-.form-position.selected {
-	background: #9999991f !important;
-	margin-bottom: 0px !important;
 }
 
 .f-text {
@@ -191,27 +145,49 @@ font-size: 15px !important;
 	color: #050505;
 }
 
-.pull-left.form-position-title {
-	float: initial !important;
+/* Fields / forms group */
+.field-label-custom{
+font-size: 15px !important;
 }
 
-.offer-title {
+.part-userField{
+margin-bottom:16px !important;
+}
+
+.field-content > .field-label{
+font-size: 15px !important;
+}
+
+.lt-form-inner {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.form-position {
+	display: block !important;
+	cursor: pointer !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-right: 10px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.form-position-price.pull-right {
+	background-color: #ffeec6 !important;
+	padding: 7px !important;
 	font-size: 15px !important;
 	font-weight: 600 !important;
-	display: block !important;
-	padding-left: 38px !important;
-	padding-bottom: 7px !important;
+	margin-bottom: 4px !important;
+	margin-top: 7px !important;
+	/* color: white; */
 }
 
-.builder-item.part-position {
-	background: #fff !important;
-	padding: 0px !important;
-	margin-bottom: 10px !important;
-	margin-top: 10px !important;
-}
-
-.builder-item.part-total {
-	font-size: 18px !important;
+.form-position.selected {
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
 }
 
 .f-input {
@@ -224,6 +200,11 @@ font-size: 15px !important;
 	font-weight: 400 !important;
 }
 
+.pull-left.form-position-title {
+	float: initial !important;
+}
+
+/* Checkboxes / labels group */
 input[type="checkbox"] {
     appearance: none;
     width: 20px;
@@ -297,6 +278,35 @@ input[type="checkbox"]:checked {
 
 .custom-field-input.custom-field.type-checkbox {
 	font-size: 13px;
+}
+
+/* Misc / parts */
+.builder-item.part-total {
+	font-size: 16px !important;
+}
+
+.part-subheader {
+	padding-bottom: 0px !important;
+	margin-bottom: 5px !important;
+}
+
+.builder-item.part-position {
+	background: #fff !important;
+	padding: 0px !important;
+	margin-bottom: 10px !important;
+	margin-top: 10px !important;
+}
+
+.builder-item.part-total {
+	font-size: 18px !important;
+}
+
+.offer-title {
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	display: block !important;
+	padding-left: 38px !important;
+	padding-bottom: 7px !important;
 }
 
 .part-manyPositions {
