@@ -70,22 +70,22 @@ font-family: 'Montserrat', serif !important;
 	color: #e6514a !important;
 }
 
-.c_red_button > .button-md {
+.c_red_button, .red_b, .b_r {
 	background-color: #e6514a !important;
 	border: 2px solid #e6514a !important;
 }
 
-.c_red_button > .button-md:hover {
+.c_red_button, .red_b, .b_r > .button-md:hover {
 	background: #fff !important;
 	color: #e6514a !important;
 }
 
-.c_blue_button > .button-md {
+.c_blue_button, .blue_b, .b_b > .button-md {
 	background-color: #3035C3 !important;
 	border: 2px solid #3035C3 !important;
 }
 
-.c_blue_button > .button-md:hover {
+.c_blue_button, .blue_b, .b_b > .button-md:hover {
 	background: #fff !important;
   	color: #3035C3 !important;
 }
