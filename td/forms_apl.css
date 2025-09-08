@@ -168,6 +168,7 @@ font-size: 15px !important;
 .lt-text-header-expand .text {
 	padding-top: 8px !important;
 	margin-left: -11px;
+	text-align: center !important;
 }
 
 .dotted-link {
@@ -256,14 +257,31 @@ input[type="checkbox"]:checked {
     background-position: center;
 }
 
-.field-label.control-label {
+/*.field-label.control-label {
 	position: relative !important;
 	padding-left: 10px !important;
 	line-height: 1.4 !important;
 	display: block !important;
 	padding-top: 0px !important;
 	margin-bottom: -5px !important;
+}*/
+
+.label-value {
+  line-height: 1.4 !important;
+  display: inline !important;
+  position: relative !important;
+  align-items: baseline !important;
+  vertical-align: middle !important;
 }
+
+.label-value a {
+  vertical-align: baseline !important;
+  display: inline !important;
+}
+.label-value a:link {
+  text-decoration: underline !important;
+}
+
 
 .chkbox-label {
 	font-size: 13px;
