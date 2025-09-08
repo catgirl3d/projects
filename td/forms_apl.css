@@ -249,7 +249,7 @@ input[type="checkbox"] {
 	background-color: #F2F2F5;
 	cursor: pointer;
 	transition: all 0.35s ease;
-	position: absolute;
+	position: relative;
 	left: 0;
 	top: 1px;
 	margin: 0;
