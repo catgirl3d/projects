@@ -78,6 +78,26 @@
 	color: #e6514a !important;
 }
 
+.c_red_button > .button-md {
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+}
+
+.c_red_button > .button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_blue_button > .button-md {
+	background-color: #3035C3 !important;
+	border: 2px solid #3035C3 !important;
+}
+
+.c_blue_button > .button-md:hover {
+	background: #fff !important;
+  	color: #3035C3 !important;
+}
+
 .part-button {
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
@@ -98,6 +118,10 @@ font-family: 'Montserrat', serif !important;
 	font-weight: 400 !important;
     line-height: 140% !important;
   }
+
+#iti-0__country-listbox {
+	font-size: 12px;
+}
 
 .f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
 	color: #b82525;
@@ -124,13 +148,14 @@ hr {
 	padding-left: 40px !important;
 }
 
-.f-header {
+.f-header > p {
+	color: #333 !important;
 	font-weight: 800 !important;
 	line-height: 1.23;
 }
 
-.f-header > p {
-	color: #333 !important;
+.blue > .f-header > p{
+	color: #3035C3 !important;
 }
 
 .lt-text-header-expand .text {
