@@ -373,12 +373,6 @@ input[type="checkbox"]:checked {
 }
 
 
-@media screen and (max-width: 500px) {
-.text-normal.f-text {
-    font-size: 14px !important;
-  }
-}
-
 @media screen and (max-width: 450px) {
 .f-subheader.f-subheader-sm {
 	font-size: 14px !important;
@@ -429,7 +423,6 @@ input[type="checkbox"]:checked {
 .field-label.control-label {
 	margin-bottom: -6px !important;
 	padding-left: 0px !important;
-}
 }
 #iti-0__country-listbox {
 	font-size: 12px;
