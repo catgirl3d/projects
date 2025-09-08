@@ -275,7 +275,7 @@ input[type="checkbox"]:checked {
 
 .field-label.control-label {
 	position: relative !important;
-	padding-left: 10px !important;
+	padding-left: 0px !important;
 	line-height: 1.4 !important;
 	padding-top: 0px !important;
 	margin-bottom: 0px !important;
