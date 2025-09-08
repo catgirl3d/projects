@@ -253,6 +253,7 @@ input[type="checkbox"] {
 	left: 0;
 	top: 1px;
 	margin: 0px 0px 2px 0px;
+	padding-right: 22px;
 }
 
 input[type="checkbox"]:hover {
@@ -276,9 +277,9 @@ input[type="checkbox"]:checked {
 	position: relative !important;
 	padding-left: 10px !important;
 	line-height: 1.4 !important;
-	display: block !important;
 	padding-top: 0px !important;
 	margin-bottom: 0px !important;
+	display: flex !important;
 }
 
 
@@ -294,10 +295,13 @@ input[type="checkbox"]:checked {
 
 .custom-field.type-checkbox .field-label .label-value {
 	display: block;
-	margin-left: 24px;
+	margin-left: 0px;
 	font-size: 12px;
 	line-height: 100%;
 	padding: 0px;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	padding-bottom: 1px;
 }
 
 
@@ -419,10 +423,13 @@ input[type="checkbox"]:checked {
 }
 .custom-field.type-checkbox .field-label .label-value {
 	font-size: 11px !important;
-	padding-top: 2px !important;
+	padding-top: 0px !important;
+	margin-left: 5px !important;
 }
 .field-label.control-label {
 	margin-bottom: -6px !important;
+	padding-left: 0px !important;
+}
 }
 #iti-0__country-listbox {
 	font-size: 12px;
