@@ -62,27 +62,27 @@ font-family: 'Montserrat', serif !important;
 }*/
 
 button.btn {
-    display: -webkit-box !important;;
-    display: -ms-flexbox !important;;
-    display: flex !important;;
-    -webkit-box-pack: center !important;;
-    -ms-flex-pack: center !important;;
-    justify-content: center !important;;
-    -webkit-box-align: center !important;;
-    -ms-flex-align: center !important;;
-    align-items: center !important;;
-    text-align: center !important;;
-    font-weight: 700 !important;;
-    font-size: 16px !important;;
-    text-align: center !important;;
-    color: #fff !important;;
-    border: 2px solid #e6514a !important;;
-    border-radius: 40px !important;;
-    padding: 16px !important;;
-    background-color: #e6514a !important;;
-    -webkit-transition: all .3s ease 0s !important;;
-    -o-transition: all .3s ease 0s !important;;
-    transition: all .3s ease 0s !important;;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    color: #fff !important;
+    border: 2px solid #e6514a !important;
+    border-radius: 40px !important;
+    padding: 16px !important;
+    background-color: #e6514a !important;
+    -webkit-transition: all .3s ease 0s !important;
+    -o-transition: all .3s ease 0s !important;
+    transition: all .3s ease 0s !important;
 }
 
 .button-md:hover {
