@@ -62,7 +62,8 @@ font-family: 'Montserrat', serif !important;
 }
 
 .button-md:hover {
-	background: #ee4848 !important;
+	background: #fff !important;
+	color: #e6514a !important;
 }
 
 .part-button {
