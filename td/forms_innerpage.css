@@ -1,5 +1,5 @@
 @import url('https://lisova-minds.pp.ua/projects/offer-part.css');
-/*@import url('https://catgirl3d.github.io/projects/td/part-forms-paddings(0).css');*/
+@import url('https://catgirl3d.github.io/projects/td/part-forms-paddings(inner).css');
 
 
 :root {
@@ -281,17 +281,6 @@ margin-bottom:16px !important;
 }
 
 @media screen and (max-width: 450px) {
-.lt-form-inner {
-	padding: 20px 20px 20px 20px !important;
-	margin-bottom: 0px !important;
-	border-radius: 40px !important;
-}
-
-.container {
-	padding-right: 15px !important;
-	padding-left: 15px !important;
-}
-
 .part-header p {
 	font-size: 20px !important;
 }
