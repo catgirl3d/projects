@@ -109,10 +109,6 @@ input[type="checkbox"]:checked {
 	padding-bottom: 1px;
 }
 
-.custom-field-input.custom-field.type-checkbox {
-	font-size: 13px;
-}
-
 #iti-0__country-listbox {
 	font-size: 14px;
 }
@@ -277,7 +273,7 @@ margin-bottom:16px !important;
 	padding-bottom: 7px !important;
 }
 
-.text-muted { /*Название иродукта в блоке предложний*/
+.text-muted { /*Название продукта в блоке предложний*/
 	color: #777 !important;
 	padding-left: 40px !important;
 }
