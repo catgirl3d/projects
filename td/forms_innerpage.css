@@ -45,23 +45,115 @@ font-family: 'Montserrat', serif !important;
 	padding:30px !important;
 }
 
+.part-button {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
 .button-md {
 	position: relative !important;
-	font-weight: 600 !important;
-	font-size: 18px !important;
+	font-weight: 700 !important;
+	font-size: 16px !important;
 	line-height: 160% !important;
 	text-align: center !important;
 	color: #FFF !important;
 	margin-top: 10px !important;
-	border-radius: 8px !important;
 	min-height: 55px !important;
-	font-family: Montserrat,sans-serif !important;
-	transition: background-color 0.3s cubic-bezier(0,0,0,.7);
+	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
+	width: 75% !important;
+	-webkit-transition: all .3s ease 0s !important;
+	-o-transition: all .3s ease 0s !important;
+	transition: all .3s ease 0s !important;
+	padding: 16px !important;
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+	border-radius: 40px !important;
 }
 
-.part-button {
-	margin-bottom: 15px !important;
-	margin-top: 0px !important;
+.button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_red_button > .button-md {
+	background-color: #e6514a !important;
+	border: 2px solid #e6514a !important;
+}
+
+.c_red_button > .button-md:hover {
+	background: #fff !important;
+	color: #e6514a !important;
+}
+
+.c_blue_button > .button-md {
+	background-color: #3035C3 !important;
+	border: 2px solid #3035C3 !important;
+}
+
+.c_blue_button  > .button-md:hover {
+	background: #fff !important;
+  	color: #3035C3 !important;
+}
+
+/* Checkboxes / labels group */
+input[type="checkbox"] {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #B4B7C1;
+	border-radius: 4px;
+	background-color: #F2F2F5;
+	cursor: pointer;
+	transition: all 0.35s ease;
+	position: relative;
+	left: 0;
+	top: 1px;
+	margin: 0px 15px 2px 0px !important;
+	flex-shrink: 0;
+}
+
+input[type="checkbox"]:hover {
+    border-color: #0151ab;
+    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
+}
+
+input[type="checkbox"]:active {
+    transition: all 0.6s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0151AB;
+    border-color: #0151AB;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.field-label.control-label {
+	position: relative !important;
+	padding-left: 0px !important;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+	display: flex !important;
+}
+
+.custom-field.type-checkbox .field-label .label-value {
+	display: block;
+	margin-left: 0px;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 0px;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	padding-bottom: 1px;
+}
+
+.custom-field-input.custom-field.type-checkbox {
+	font-size: 13px;
+}
+
+#iti-0__country-listbox {
+	font-size: 14px;
 }
 
 .part-header{
@@ -203,18 +295,25 @@ margin-bottom:16px !important;
 	font-size: 16px !important;
 }
 
+.label-value a:link {
+  text-decoration: underline !important;
+}
+
+
 
 .f-input {
-	border: 1px solid rgb(198, 198, 198) !important;
-	height: 52px !important;
-	font-size: 15px !important;
-	color: #7d7d7d !important;
-	border-radius: 5px !important;
+	background: #f2f2f5;
+	height: 53px !important;
+	padding: 19.5px 20px;
+	font-size: 16px !important;
+	border: 1px solid #0151ab !important;
+	border-radius: 8px !important;
+	font-weight: 400 !important;
 }
 
 .lt-form .f-input-wrapper select {
 	border: 1px solid rgb(204, 204, 204);
-	height: 52px;
+	height: 53px;
 	font-size: 15px;
 	color: #7d7d7d;
 	border-radius: 5px;
@@ -223,23 +322,14 @@ margin-bottom:16px !important;
 	background: white;
 }
 
-.chkbox-label {
+/*.chkbox-label {
 	font-size: 13px;
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
-}
-
-.custom-field.type-checkbox .field-label .label-value {
-	display: block !important;
-	margin-left: 24px;
-}
+}*/
 
 .global-confirm-checkbox-block {
 	display: none;
-}
-
-.custom-field-input.custom-field.type-checkbox {
-	font-size: 13px;
 }
 
 .part-manyPositions {
@@ -291,69 +381,70 @@ margin-bottom:16px !important;
 }
 
 @media screen and (max-width: 450px) {
-	.text-normal.f-text {
-    font-size: 15px;
-  }
-	.text-accurate {
+.f-input {
+	height: 50px !important;
+	font-size: 13.5px !important;
+}
+.text-accurate {
 	font-size: 12px;
 }
-	.field-description-block {
+.field-description-block {
 	font-size: 11px;
 }
-	.text-normal.f-text {
+.text-normal.f-text {
 	font-size: 13px;
 }
-	.f-subheader.f-subheader- {
+.f-subheader.f-subheader- {
 	font-size: 14px !important;
 }
-	.field-content > .field-label {
+.field-content > .field-label {
 	font-size: 13px !important;
 	font-weight: 500;
 }
-	.sub-label {
+.sub-label {
 	padding-top: 5px !important;
 	font-size: 15px !important;
 	line-height: 1.3 !important;
 }
-	.offer-title {
+.offer-title {
 	font-size: 12px !important;
 }
-	.f-subheader.f-subheader-.f-text-transform-uppercase > p {
+.f-subheader.f-subheader-.f-text-transform-uppercase > p {
 	font-size: 13px !important;
 	padding-bottom: 4px !important;
 }
-	.form-position-price.pull-right {
+.form-position-price.pull-right {
 	font-size: 14px !important;
 }
-	.builder-item.part-total {
+.builder-item.part-total {
 	font-size: 16px !important;
 }
-	.container {
+.container {
 	padding-right: 10px !important;
 	padding-left: 10px !important;
 }
-	hr {
+hr {
 	margin-top: 15px !important;
-	margin-bot: 15px !important;
+	margin-botom: 15px !important;
 }
-	.f-header.f-header-26 {
+.f-header{
 	font-size: 20px !important;
 	margin-top:0px !important;
 }
-	.part-subheader {
+.part-subheader {
 	padding-bottom: 0px !important;
 	margin-bottom: 0px !important;
 }
-	.button-md {
+.button-md {
 	min-height: 48px !important;
 }
-	.form-position-price.pull-right {
+.form-position-price.pull-right {
 	padding: 4px 6px !important;
 }
-	.pull-left.form-position-title {
+.pull-left.form-position-title {
 	float: initial !important;
 }
-	.block-box {
+.block-box {
 	background-color: #ffffff;
 	padding-left: 7px !important;
 	padding-right: 7px !important;
@@ -362,17 +453,18 @@ margin-bottom:16px !important;
 	border: 0px solid #999999;
 }
 
-	.lt-form .f-input-wrapper select {
+.lt-form .f-input-wrapper select {
 	font-size: 12px !important;
 	padding: 0 15px;
   	height: 35px;
 }
-	.lt-form-inner {
+.lt-form-inner {
 	padding-left: 15px !important;
 	padding-right: 15px !important;
 	padding-bottom: 5px !important;
 	padding-top: 10px !important;
 }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -401,6 +493,4 @@ margin-bottom:16px !important;
 	margin-right: 0px;
 	margin-bottom: 10px;
 }
-	.button-md {
-	font-size: 15px !important;
 }}

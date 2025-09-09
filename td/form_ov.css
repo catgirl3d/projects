@@ -117,6 +117,10 @@ input[type="checkbox"]:checked {
 	font-size: 14px;
 }
 
+.label-value a:link {
+  text-decoration: underline !important;
+}
+
 .f-input {
 	background: #f2f2f5;
 	height: 55px !important;
@@ -128,15 +132,11 @@ input[type="checkbox"]:checked {
 }
 
 
-
 .f-subheader.f-subheader-sm {
 	font-size: 15px;
 	display:none;
 }
 
-.label-value a:link {
-  text-decoration: underline !important;
-}
 
 /* FORMS PADDINGS/MARGINS/ETC / labels group */
 .lt-block-wrapper {
