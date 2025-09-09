@@ -64,8 +64,8 @@ input[type="checkbox"] {
 	position: relative;
 	left: 0;
 	top: 1px;
-	margin: 0px 0px 2px 0px;
-	padding-right: 22px;
+	margin: 0px 15px 2px 0px !important;
+	flex-shrink: 0;
 }
 
 input[type="checkbox"]:hover {
@@ -88,7 +88,6 @@ input[type="checkbox"]:checked {
 .field-label.control-label {
 	position: relative !important;
 	padding-left: 0px !important;
-	line-height: 1.4 !important;
 	padding-top: 0px !important;
 	margin-bottom: 0px !important;
 	display: flex !important;
