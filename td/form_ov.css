@@ -143,7 +143,8 @@ input[type="checkbox"]:checked {
 }
 .lt-form-inner {
 	padding: 0px 20px 0px 20px !important;
-	margin-bottom: 10px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
 }
 
 .row {
