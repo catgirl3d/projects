@@ -51,7 +51,8 @@
 }
 
 .part-total > div {
-	margin-top: 5px !important;
+	margin-top: 0px !important;
+	padding-top: 5px !important;
 }
 
 .part-manyPositions {
@@ -64,25 +65,28 @@
 	position: absolute;
 }
 
+/*.pull-left.form-position-title {
+	float: initial !important;
+}*/
+
 @media screen and (max-width: 450px) {
 .offer-title {
 	font-size: 12px !important;
-    padding-left: 30px !important;
+    padding-left: 34px !important;
 }
 .text-muted {
-	padding-left: 30px !important;
-}
-.form-position-price.pull-right {
-	font-size: 14px !important;
+	padding-left: 34px !important;
 }
 .builder-item.part-total {
 	font-size: 16px !important;
 }
-.form-position-price.pull-right {
-	padding: 4px 6px !important;
-}
 .pull-left.form-position-title {
 	float: initial !important;
 }
-
+.form-position-price.pull-right {
+    padding: 6px 6px !important;
+	margin-bottom: -3px !important;
+	margin-top: 12px !important;
+    font-size: 14px !important;
+}
 }

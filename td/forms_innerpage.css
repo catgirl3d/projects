@@ -13,6 +13,12 @@
 font-family: 'Montserrat', serif !important;
 }
 
+.lt-form-inner {
+	padding: 30px 35px 30px 35px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
+}
+
 .part-button {
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
@@ -28,7 +34,7 @@ font-family: 'Montserrat', serif !important;
 	margin-top: 10px !important;
 	min-height: 55px !important;
 	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
-	width: 75% !important;
+	width: 50% !important;
 	-webkit-transition: all .3s ease 0s !important;
 	-o-transition: all .3s ease 0s !important;
 	transition: all .3s ease 0s !important;
@@ -124,7 +130,6 @@ input[type="checkbox"]:checked {
 	font-size: 14px;
 }
 
-
 .part-subheader, .part-subheader p {
 	padding-bottom: 0px !important;
 	margin-bottom: 2px !important;
@@ -138,12 +143,6 @@ input[type="checkbox"]:checked {
 
 hr {
 	margin-top: 18px !important;
-}
-
-.lt-form-inner {
-	padding: 30px 20px 30px 20px !important;
-	margin-bottom: 0px !important;
-	border-radius: 40px !important;
 }
 
 .text-normal.f-text {
@@ -178,10 +177,6 @@ hr {
 	color: #050505;
 }
 
-/*.pull-left.form-position-title {
-	float: initial !important;
-}*/
-
 .label-value a:link {
   text-decoration: underline !important;
 }
@@ -189,7 +184,7 @@ hr {
 /*--- Блок  полей ---*/
 .f-input, .f-input-wrapper select {
 	height: var(--f-input-height) !important;
-	background: #f2f2f5;
+	background: #f2f2f5 !important;
 	padding: 0px 20px;
 	font-size: 16px !important;
 	border: 1px solid #0151ab !important;
@@ -283,16 +278,36 @@ margin-bottom:16px !important;
 	padding:30px !important;
 }
 
-
-
-
 @media screen and (max-width: 450px) {
+.lt-form-inner {
+	padding: 20px 20px 20px 20px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
+}
+
+.part-header p {
+	font-size: 20px !important;
+}
+
+.sub-label {
+	padding-top: 5px !important;
+	font-size: 15px !important;
+	line-height: 1.3 !important;
+}
+
+.part-subheader, .part-subheader p {
+	margin-bottom: 2px !important;
+	font-size: 12px !important;
+}
+
 .text-accurate {
 	font-size: 12px;
 }
+
 .field-description-block {
 	font-size: 11px;
 }
+
 .text-normal.f-text {
 	font-size: 13px;
 }
@@ -302,40 +317,14 @@ hr {
 	margin-bottom: 15px !important;
 }
 
-.part-header p {
-	font-size: 20px !important;
-}
-
-
-.part-subheader, .part-subheader p {
-	margin-bottom: 2px !important;
-	font-size: 12px !important;
-}
-
-.sub-label {
-	padding-top: 5px !important;
-	font-size: 15px !important;
-	line-height: 1.3 !important;
-}
 .button-md {
 	min-height: 48px !important;
 }
 
-.lt-form-inner {
-	padding: 20px 20px 20px 20px !important;
-	margin-bottom: 0px !important;
-	border-radius: 40px !important;
-}
 .container {
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 }
-
-/*.f-input {
-	height: var(--mob-f-input-height) !important;
-	font-size: 13.5px !important;
-	padding: 5px 20px !important;
-}*/
 
 .lt-form .f-input {
 	color: black !important;
@@ -365,6 +354,7 @@ hr {
 	font-weight: 500 !important;
 }
 }
+
 @media screen and (max-width: 420px) {
 .f-subheader.f-subheader- {
 	font-size: 14px !important;
