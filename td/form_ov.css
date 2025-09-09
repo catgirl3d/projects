@@ -6,45 +6,6 @@
 font-family: 'Montserrat', serif !important;
 }
 
-.p-0{
-	padding:0px !important;
-}
-
-.p-5{
-	padding:5px !important;
-}
-
-.p-10{
-	padding:10px !important;
-}
-
-.m-t-b10{
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-}
-
-.p-15{
-	padding:15px !important;
-}
-
-.m-t-b15{
-	margin-top: 15px !important;
-	margin-bottom: 15px !important;
-}
-
-.p-20{
-	padding:20px !important;
-}
-
-.m-t-b20{
-	margin-top: 20px !important;
-	margin-bottom: 20px !important;
-}
-
-.p-30{
-	padding:30px !important;
-}
-
 .button-md {
 	position: relative !important;
 	font-weight: 700 !important;
@@ -55,11 +16,11 @@ font-family: 'Montserrat', serif !important;
 	margin-top: 10px !important;
 	min-height: 55px !important;
 	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
-  	width: 75% !important;
+	width: 75% !important;
 	-webkit-transition: all .3s ease 0s !important;
-    -o-transition: all .3s ease 0s !important;
-    transition: all .3s ease 0s !important;
-    padding: 16px !important;
+	-o-transition: all .3s ease 0s !important;
+	transition: all .3s ease 0s !important;
+	padding: 16px !important;
 	background-color: #e6514a !important;
 	border: 2px solid #e6514a !important;
 	border-radius: 40px !important;
@@ -137,6 +98,18 @@ input[type="checkbox"]:checked {
 	font-size: 14px;
 }
 
+.f-input {
+	background: #f2f2f5;
+	height: 55px !important;
+	padding: 19.5px 20px;
+	font-size: 16px !important;
+	border: 1px solid #0151ab !important;
+	border-radius: 8px !important;
+	font-weight: 400 !important;
+}
+
+
+
 .custom-field.type-checkbox .field-label .label-value {
 	display: block;
 	margin-left: 0px;
@@ -162,10 +135,25 @@ input[type="checkbox"]:checked {
 	margin-top: 0px !important;
 }
 
+/* FORMS PADDINGS/MARGINS/ETC / labels group */
 .lt-block-wrapper {
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 	color: #333333;
+}
+.lt-form-inner {
+	padding: 0px 20px 0px 20px !important;
+	margin-bottom: 10px !important;
+}
+
+.row {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+.container {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
 }
 
 
@@ -175,6 +163,8 @@ input[type="checkbox"]:checked {
 	padding-bottom: 0px !important;
 	margin-bottom: 5px !important;
 }
+
+
 
 .builder-item.part-total {
 	font-size: 16px !important;
@@ -204,15 +194,12 @@ font-size: 15px !important;
 margin-bottom:16px !important;
 }
 
+/* Имя поля (емейл, телефон, имя и т.д) */
 .field-content > .field-label {
 	font-size: 14px !important;
 	font-weight: 500;
 }
 
-.lt-form-inner {
-	padding: 0px 20px 0px 20px !important;
-	margin-bottom: 10px !important;
-}
 
 .form-position {
 	display: block !important;
@@ -248,10 +235,6 @@ margin-bottom:16px !important;
 	font-size: 17px !important;
 }
 
-.text-muted {
-	color: #777 !important;
-	padding-left: 40px !important;
-}
 
 .f-header {
 	font-weight: 800 !important;
@@ -283,12 +266,19 @@ margin-bottom:16px !important;
 	float: initial !important;
 }
 
+
+
 .offer-title {
 	font-size: 15px !important;
 	font-weight: 600 !important;
 	display: block !important;
 	padding-left: 38px !important;
 	padding-bottom: 7px !important;
+}
+
+.text-muted {
+	color: #777 !important;
+	padding-left: 40px !important;
 }
 
 .builder-item.part-position {
@@ -302,15 +292,10 @@ margin-bottom:16px !important;
 	font-size: 18px !important;
 }
 
-.f-input {
-	background: #f2f2f5;
-	height: 55px !important;
-	padding: 19.5px 20px;
-	font-size: 16px !important;
-	border: 1px solid #0151ab !important;
-	border-radius: 8px !important;
-	font-weight: 400 !important;
-}
+
+
+
+
 /*
 .chkbox-label {
 	font-size: 13px;
@@ -369,6 +354,45 @@ margin-bottom:16px !important;
 
 .fw-200 .field-label {
 	font-weight: 200;
+}
+
+.p-0{
+	padding:0px !important;
+}
+
+.p-5{
+	padding:5px !important;
+}
+
+.p-10{
+	padding:10px !important;
+}
+
+.m-t-b10{
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.p-15{
+	padding:15px !important;
+}
+
+.m-t-b15{
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
+}
+
+.p-20{
+	padding:20px !important;
+}
+
+.m-t-b20{
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.p-30{
+	padding:30px !important;
 }
 
 @media screen and (max-width: 450px) {
@@ -440,7 +464,5 @@ margin-bottom:16px !important;
 
 @media screen and (max-width: 400px) {
 .lt-form-inner {
-	padding-left: 2px !important;
-	padding-right: 2px !important;
-	padding-bottom: 0px !important;
+	padding: 0px 2px 0px 2px !important;
 }}
