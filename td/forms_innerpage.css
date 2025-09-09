@@ -1,4 +1,6 @@
 @import url('https://lisova-minds.pp.ua/projects/offer-part.css');
+/*@import url('https://catgirl3d.github.io/projects/td/part-forms-paddings(0).css');*/
+
 
 :root {
     --f-input-height: 53px;
@@ -12,12 +14,12 @@
 .f-input, .f-input-wrapper select, .block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
 font-family: 'Montserrat', serif !important;
 }
-
+/*
 .lt-form-inner {
 	padding: 30px 35px 30px 35px !important;
 	margin-bottom: 0px !important;
 	border-radius: 40px !important;
-}
+}*/
 
 .part-button {
 	margin-bottom: 0px !important;
@@ -285,6 +287,11 @@ margin-bottom:16px !important;
 	border-radius: 40px !important;
 }
 
+.container {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+}
+
 .part-header p {
 	font-size: 20px !important;
 }
@@ -318,12 +325,10 @@ hr {
 }
 
 .button-md {
-	min-height: 48px !important;
-}
-
-.container {
-	padding-right: 0px !important;
-	padding-left: 0px !important;
+	font-size: 16px !important;
+	width: 95% !important;
+	min-height: 53px !important;
+  	padding: 13px !important;
 }
 
 .lt-form .f-input {

@@ -1,6 +1,6 @@
 /* FORMS PADDINGS/MARGINS/ETC / labels group */
 .lt-form-inner {
-	padding: 0px 0px 0px 0px !important;
+	padding: 30px 35px 30px 35px !important;
 	margin-bottom: 0px !important;
 	border-radius: 40px !important;
 }
@@ -28,6 +28,11 @@
 /*--- END OF FORMS PADDINGS/MARGINS/ETC ---*/
 
 @media screen and (max-width: 450px) {
+.lt-form-inner {
+	padding: 20px 20px 20px 20px !important;
+	margin-bottom: 0px !important;
+	border-radius: 40px !important;
+}
 .container {
 	padding-right: 0px !important;
 	padding-left: 0px !important;
