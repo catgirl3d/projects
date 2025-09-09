@@ -98,6 +98,21 @@ input[type="checkbox"]:checked {
 	display: flex !important;
 }
 
+.custom-field.type-checkbox .field-label .label-value {
+	display: block;
+	margin-left: 0px;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 0px;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	padding-bottom: 1px;
+}
+
+.custom-field-input.custom-field.type-checkbox {
+	font-size: 13px;
+}
+
 #iti-0__country-listbox {
 	font-size: 14px;
 }
@@ -112,16 +127,7 @@ input[type="checkbox"]:checked {
 	font-weight: 400 !important;
 }
 
-.custom-field.type-checkbox .field-label .label-value {
-	display: block;
-	margin-left: 0px;
-	font-size: 12px;
-	line-height: 100%;
-	padding: 0px;
-	margin-top: auto !important;
-	margin-bottom: auto !important;
-	padding-bottom: 1px;
-}
+
 
 .f-subheader.f-subheader-sm {
 	font-size: 15px;
@@ -303,23 +309,10 @@ margin-bottom:16px !important;
 
 */------------------*/
 
-
-
-
-/*
-.chkbox-label {
-	font-size: 13px;
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-}*/
-
 .global-confirm-checkbox-block {
 	display: none;
 }
 
-.custom-field-input.custom-field.type-checkbox {
-	font-size: 13px;
-}
 
 
 .footer {
@@ -496,10 +489,13 @@ margin-bottom:16px !important;
 }
 .lt-form-inner {
 	padding: 0px 20px 10px 20px !important;
-
-}}
+}
+.field-content > .field-label {
+	font-size: 13px !important;
+}
+}
 
 @media screen and (max-width: 330px) {
 .lt-form-inner {
 	padding: 0px 12px 10px 12px !important;
-}
+}}
