@@ -6,6 +6,11 @@
 font-family: 'Montserrat', serif !important;
 }
 
+.part-button {
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
 .button-md {
 	position: relative !important;
 	font-weight: 700 !important;
@@ -107,8 +112,6 @@ input[type="checkbox"]:checked {
 	font-weight: 400 !important;
 }
 
-
-
 .custom-field.type-checkbox .field-label .label-value {
 	display: block;
 	margin-left: 0px;
@@ -127,11 +130,6 @@ input[type="checkbox"]:checked {
 
 .label-value a:link {
   text-decoration: underline !important;
-}
-
-.part-button {
-	margin-bottom: 15px !important;
-	margin-top: 0px !important;
 }
 
 /* FORMS PADDINGS/MARGINS/ETC / labels group */
@@ -160,30 +158,15 @@ input[type="checkbox"]:checked {
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 }
-
-
+/*--- END OF FORMS PADDINGS/MARGINS/ETC ---*/
 
 .part-subheader {
 	padding-bottom: 0px !important;
-	margin-bottom: 5px !important;
+	margin-bottom: 0px !important;
 }
 
-
-
-.builder-item.part-total {
-	font-size: 16px !important;
-}
-
-.text-normal.f-text {
-    font-size: 17px !important;
-  }
-
-.f-subheader.f-subheader-sm.f-text-transform-uppercase.redactor-click-to-edit {
+.f-subheader.f-subheader-sm {
 	color: #b82525;
-}
-
-.sub-label {
-	font-size: 17px;
 }
 
 hr {
@@ -198,47 +181,33 @@ font-size: 15px !important;
 margin-bottom:16px !important;
 }
 
+/* Подзаголовок формы */
+.sub-label {
+	margin-bottom: 0px !important;
+}
+.sub-label p, .c-subheader p {
+	font-size: 17px !important;
+}
+
+
 /* Имя поля (емейл, телефон, имя и т.д) */
 .field-content > .field-label {
 	font-size: 14px !important;
 	font-weight: 500;
+	margin-bottom: 5px;
 }
 
-
-.form-position {
-	display: block !important;
-	cursor: pointer !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
-	padding-right: 10px !important;
-	padding-bottom: 5px !important;
-	margin-bottom: 0px !important;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.form-position-price.pull-right {
-	background-color: #ffeec6 !important;
-	padding: 7px !important;
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	margin-bottom: 4px !important;
-	margin-top: 7px !important;
-	/* color: white; */
-}
-
-.form-position.selected {
-	background: #9999991f !important;
-	margin-bottom: 0px !important;
-}
 
 .f-text {
 	font-weight: 400 !important;
 }
+.text-normal.f-text {
+    font-size: 17px !important;
+  }
 
 .text.f-text {
 	font-size: 17px !important;
 }
-
 
 .f-header {
 	font-weight: 800 !important;
@@ -266,11 +235,32 @@ margin-bottom:16px !important;
 	color: #050505;
 }
 
-.pull-left.form-position-title {
-	float: initial !important;
+/*-- Предложения формы и блок отвечающий за предложения --*/
+.form-position {
+	display: block !important;
+	cursor: pointer !important;
+	padding-left: 15px !important;
+	padding-top: 5px !important;
+	padding-right: 10px !important;
+	padding-bottom: 5px !important;
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #f0f0f0;
 }
 
+.form-position-price.pull-right {
+	background-color: #ffeec6 !important;
+	padding: 7px !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	margin-bottom: 4px !important;
+	margin-top: 7px !important;
+	/* color: white; */
+}
 
+.form-position.selected {
+	background: #9999991f !important;
+	margin-bottom: 0px !important;
+}
 
 .offer-title {
 	font-size: 15px !important;
@@ -280,9 +270,19 @@ margin-bottom:16px !important;
 	padding-bottom: 7px !important;
 }
 
-.text-muted {
+.text-muted { /*Название иродукта в блоке предложний*/
 	color: #777 !important;
 	padding-left: 40px !important;
+}
+	
+.pull-left.form-position-title {
+	float: initial !important;
+}
+
+.part-manyPositions {
+	background: #fff !important;
+	border: 1px solid #f2f2f2 !important;
+	margin-bottom: 5px !important;
 }
 
 .builder-item.part-position {
@@ -293,9 +293,14 @@ margin-bottom:16px !important;
 }
 
 .builder-item.part-total {
-	font-size: 18px !important;
+	font-size: 17px !important;
+} 
+
+.pull-left.form-position-checker {
+	position: absolute;
 }
 
+*/------------------*/
 
 
 
@@ -315,11 +320,6 @@ margin-bottom:16px !important;
 	font-size: 13px;
 }
 
-.part-manyPositions {
-	background: #fff !important;
-	border: 1px solid #f2f2f2 !important;
-	margin-bottom: 5px !important;
-}
 
 .footer {
 	margin-top: 15px;
@@ -367,9 +367,42 @@ margin-bottom:16px !important;
 .p-5{
 	padding:5px !important;
 }
+.pt-5, .pt5{
+	padding-top:5px !important;
+}
+.pb-5, .pb5{
+	padding-bottom:5px !important;
+}
+.mt-5, .mt5{
+	margin-top:5px !important;
+}
+.mb-5, .mb5{
+	margin-bottom:5px !important;
+}
+.mt-2, .mt2{
+	margin-top:2px !important;
+}
+.mb-2, .mb2{
+	margin-bottom:2px !important;
+}
 
-.p-10{
+.p-10, .p10{
 	padding:10px !important;
+}
+.pt-10, .pt10{
+	padding-top:10px !important;
+}
+.pb-10, .pb10{
+	padding-bottom:10px !important;
+}
+.m-10, .m10{
+	margin:10px !important;
+}
+.mt-10, .mt10{
+	margin-top:10px !important;
+}
+.mb-10, .mb10{
+	margin-bottom:10px !important;
 }
 
 .m-t-b10{
@@ -400,7 +433,7 @@ margin-bottom:16px !important;
 }
 
 @media screen and (max-width: 450px) {
-.sub-label {
+.sub-label p, .c-subheader p {
 	padding-top: 5px !important;
 	font-size: 15px !important;
 	line-height: 1.3 !important;
@@ -408,6 +441,10 @@ margin-bottom:16px !important;
 }
 
 @media screen and (max-width: 420px) {
+.f-header {
+	font-size: 21px !important;
+	margin-top:0px !important;
+}
 .f-input {
 	height: 50px !important;
 	font-size: 13.5px !important;
@@ -419,13 +456,6 @@ margin-bottom:16px !important;
 .part-subheader {
 	padding-bottom: 0px !important;
 	margin-bottom: 0px !important;
-}
-.f-header.f-header-26 {
-	font-size: 21px !important;
-	margin-top:0px !important;
-}
-.f-header.f-header-36 {
-	font-size: 21px !important;
 }
 .f-s30-b32{
 	margin-bottom: 32px !important;
