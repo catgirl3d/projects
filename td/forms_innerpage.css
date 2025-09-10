@@ -64,7 +64,6 @@ font-family: 'Montserrat', serif !important;
 	border: 2px solid #3035C3 !important;
 }
 
-
 .c_blue_button:hover, .c_blue_button  > .button-md:hover {
 	background: #fff !important;
   	color: #3035C3 !important;
@@ -247,9 +246,42 @@ margin-bottom:16px !important;
 .p-5{
 	padding:5px !important;
 }
+.pt-5, .pt5{
+	padding-top:5px !important;
+}
+.pb-5, .pb5{
+	padding-bottom:5px !important;
+}
+.mt-5, .mt5{
+	margin-top:5px !important;
+}
+.mb-5, .mb5{
+	margin-bottom:5px !important;
+}
+.mt-2, .mt2{
+	margin-top:2px !important;
+}
+.mb-2, .mb2{
+	margin-bottom:2px !important;
+}
 
-.p-10{
+.p-10, .p10{
 	padding:10px !important;
+}
+.pt-10, .pt10{
+	padding-top:10px !important;
+}
+.pb-10, .pb10{
+	padding-bottom:10px !important;
+}
+.m-10, .m10{
+	margin:10px !important;
+}
+.mt-10, .mt10{
+	margin-top:10px !important;
+}
+.mb-10, .mb10{
+	margin-bottom:10px !important;
 }
 
 .m-t-b10{
