@@ -18,7 +18,7 @@ font-family: 'Montserrat', serif !important;
 	color: #333333;
 }
 .lt-form-inner {
-	padding: 0px 20px 10px 20px !important;
+	padding: 0px 20px 20px 20px !important;
 	margin-bottom: 0px !important;
 	border-radius: 40px !important;
 }
@@ -161,8 +161,8 @@ font-family: 'Montserrat', serif !important;
 .builder-item.part-position {
 	background: #fff !important;
 	padding: 0px !important;
-	margin-bottom: 0px !important;
 	margin-top: 10px !important;
+	margin-bottom: 0px !important;
 }
 
 .builder-item.part-total {
