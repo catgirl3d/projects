@@ -70,7 +70,6 @@ font-family: 'Montserrat', serif !important;
 	padding-top:2px;
 }
 
-
 .f-text {
 	font-weight: 400 !important;
 }
@@ -172,6 +171,10 @@ font-family: 'Montserrat', serif !important;
 
 .pull-left.form-position-checker {
 	position: absolute;
+}
+
+.footer {
+	display: none !important;
 }
 
 .footer {

@@ -1,3 +1,7 @@
+:root {
+    --f-input-height: 53px;
+	--mob-f-input-height: 45px;
+}
 .f-input, .f-input-wrapper select {
 	height: var(--f-input-height) !important;
 	background: #f2f2f5 !important;
