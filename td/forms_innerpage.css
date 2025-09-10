@@ -1,4 +1,7 @@
 @import url('https://catgirl3d.github.io/projects/td/offer-part.css');
+@import url('https://catgirl3d.github.io/projects/td/module-buttons.css');
+@import url('https://catgirl3d.github.io/projects/td/module-utils.css');
+@import url('https://catgirl3d.github.io/projects/td/module-checkboxes.css');
 
 :root {
     --f-input-height: 53px;
@@ -19,113 +22,6 @@ font-family: 'Montserrat', serif !important;
 	border-radius: 40px !important;
 }
 
-.part-button {
-	margin-bottom: 0px !important;
-	margin-top: 0px !important;
-}
-
-.button-md {
-	position: relative !important;
-	font-weight: 700 !important;
-	font-size: 16px !important;
-	line-height: 160% !important;
-	text-align: center !important;
-	color: #FFF !important;
-	margin-top: 10px !important;
-	min-height: 55px !important;
-	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
-	width: 50% !important;
-	-webkit-transition: all .3s ease 0s !important;
-	-o-transition: all .3s ease 0s !important;
-	transition: all .3s ease 0s !important;
-	padding: 16px !important;
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
-	border-radius: 40px !important;
-}
-
-.button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
-}
-
-.c_red_button > .button-md {
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
-}
-
-.c_red_button > .button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
-}
-
-.c_blue_button, .c_blue_button > .button-md {
-	background-color: #3035C3 !important;
-	border: 2px solid #3035C3 !important;
-}
-
-.c_blue_button:hover, .c_blue_button  > .button-md:hover {
-	background: #fff !important;
-  	color: #3035C3 !important;
-}
-
-/* Checkboxes / labels group */
-.form-content input[type="checkbox"] {
-	appearance: none;
-	width: 24px;
-	height: 24px;
-	border: 1px solid #B4B7C1;
-	border-radius: 4px;
-	background-color: #F2F2F5;
-	cursor: pointer;
-	transition: all 0.35s ease;
-	position: relative;
-	left: 0;
-	top: 1px;
-	margin: 0px 15px 2px 0px !important;
-	flex-shrink: 0;
-}
-
-.form-content input[type="checkbox"]:hover {
-    border-color: #0151ab;
-    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
-}
-
-.form-content input[type="checkbox"]:active {
-    transition: all 0.6s ease;
-}
-
-.form-content input[type="checkbox"]:checked {
-    background-color: #0151AB;
-    border-color: #0151AB;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.global-confirm-checkbox-block {
-	display: none;
-}
-
-.field-label.control-label {
-	position: relative !important;
-	padding-left: 0px !important;
-	padding-top: 0px !important;
-	margin-bottom: 0px !important;
-	display: flex !important;
-}
-
-.custom-field.type-checkbox .field-label .label-value { /* Подпись на чекбоксе */
-	display: block;
-	margin-left: 0px;
-	font-size: 12px;
-	line-height: 100%;
-	padding: 0px;
-	margin-top: auto !important;
-	margin-bottom: auto !important;
-	padding-bottom: 1px;
-}
-
 #iti-0__country-listbox {
 	font-size: 14px;
 }
@@ -139,10 +35,6 @@ font-family: 'Montserrat', serif !important;
 
 .sub-label {
 	font-size: 17px;
-}
-
-hr {
-	margin-top: 18px !important;
 }
 
 .text-normal.f-text {
@@ -181,7 +73,7 @@ hr {
   text-decoration: underline !important;
 }
 
-/*--- Блок  полей ---*/
+/*--- Блок полей ---*/
 .f-input, .f-input-wrapper select {
 	height: var(--f-input-height) !important;
 	background: #f2f2f5 !important;
@@ -196,7 +88,7 @@ hr {
 	font-size: 15px !important;
 	padding: 0px !important;
 }
-.part-userField{ /* отступ от пользовательскиъ полей */
+.part-userField{ /* отступ пользовательских полей */
 margin-bottom:16px !important;
 }
 /*--- Блок полей ---*/
@@ -215,101 +107,6 @@ margin-bottom:16px !important;
 	font-weight: 400;
 }
 
-.fw-700 .field-label {
-	font-weight: 700;
-}
-
-.fw-600 .field-label {
-	font-weight: 600;
-}
-
-.fw-500 .field-label {
-	font-weight: 500;
-}
-
-.fw-400 .field-label {
-	font-weight: 400;
-}
-
-.fw-300 .field-label {
-	font-weight: 300;
-}
-
-.fw-200 .field-label {
-	font-weight: 200;
-}
-
-.p-0{
-	padding:0px !important;
-}
-
-.p-5{
-	padding:5px !important;
-}
-.pt-5, .pt5{
-	padding-top:5px !important;
-}
-.pb-5, .pb5{
-	padding-bottom:5px !important;
-}
-.mt-5, .mt5{
-	margin-top:5px !important;
-}
-.mb-5, .mb5{
-	margin-bottom:5px !important;
-}
-.mt-2, .mt2{
-	margin-top:2px !important;
-}
-.mb-2, .mb2{
-	margin-bottom:2px !important;
-}
-
-.p-10, .p10{
-	padding:10px !important;
-}
-.pt-10, .pt10{
-	padding-top:10px !important;
-}
-.pb-10, .pb10{
-	padding-bottom:10px !important;
-}
-.m-10, .m10{
-	margin:10px !important;
-}
-.mt-10, .mt10{
-	margin-top:10px !important;
-}
-.mb-10, .mb10{
-	margin-bottom:10px !important;
-}
-
-.m-t-b10{
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
-}
-
-.p-15{
-	padding:15px !important;
-}
-
-.m-t-b15{
-	margin-top: 15px !important;
-	margin-bottom: 15px !important;
-}
-
-.p-20{
-	padding:20px !important;
-}
-
-.m-t-b20{
-	margin-top: 20px !important;
-	margin-bottom: 20px !important;
-}
-
-.p-30{
-	padding:30px !important;
-}
 
 @media screen and (max-width: 450px) {
 .lt-form-inner {
@@ -321,6 +118,29 @@ margin-bottom:16px !important;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 }
+
+.lt-form .f-input {
+	color: black !important;
+}
+
+.f-input, .f-input-wrapper select {
+	height: var(--mob-f-input-height) !important;
+	font-size: 13.5px !important;
+	padding: 5px 20px !important;
+	appearance: none;
+	color: #000 !important;
+}
+
+
+/*@media (pointer: coarse) {
+    .lt-form .f-input-wrapper select {
+        padding: 0px 20px !important;
+        height: var(--mob-f-input-height) !important;
+        -webkit-appearance: none;
+        appearance: none;
+		font-size: 13.5px !important;
+    }
+}*/
 
 .part-header p {
 	font-size: 20px !important;
@@ -354,39 +174,13 @@ hr {
 	margin-bottom: 15px !important;
 }
 
-.button-md {
-	font-size: 16px !important;
-	width: 95% !important;
-	min-height: 53px !important;
-  	padding: 13px !important;
-}
-
-.lt-form .f-input {
-	color: black !important;
-}
-
-.f-input, .f-input-wrapper select {
-	height: var(--mob-f-input-height) !important;
-	font-size: 13.5px !important;
-	padding: 5px 20px !important;
-	appearance: none;
-	color: #000 !important;
-}
-
-
-/*@media (pointer: coarse) {
-    .lt-form .f-input-wrapper select {
-        padding: 0px 20px !important;
-        height: var(--mob-f-input-height) !important;
-        -webkit-appearance: none;
-        appearance: none;
-		font-size: 13.5px !important;
-    }
-}*/
-
 .field-label {
 	font-size: 12px !important;
 	font-weight: 500 !important;
+}
+
+#iti-0__country-listbox {
+	font-size: 12px;
 }
 }
 

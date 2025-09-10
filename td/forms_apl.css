@@ -307,7 +307,6 @@ input[type="checkbox"]:checked {
 	display: flex !important;
 }
 
-
 .label-value a:link {
   text-decoration: underline !important;
 }
@@ -328,7 +327,6 @@ input[type="checkbox"]:checked {
 	margin-bottom: auto !important;
 	padding-bottom: 1px;
 }
-
 
 .global-confirm-checkbox-block {
 	display: none;
