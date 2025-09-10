@@ -12,6 +12,8 @@
 	font-size: 15px !important;
 	padding: 0px !important;
 	font-weight: 500 !important;
+    font-size: 14px !important;
+    margin-bottom: 5px;
 }
 .part-userField{ /* отступ пользовательских полей */
 margin-bottom:16px !important;
@@ -25,6 +27,10 @@ margin-bottom:16px !important;
 .field-label {
 	font-size: 12px !important;
 	font-weight: 500 !important;
+}
+
+.field-content > .field-label {
+	font-size: 12px !important;
 }
 
 .f-input, .f-input-wrapper select {

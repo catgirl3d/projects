@@ -1,8 +1,11 @@
-@import url('https://catgirl3d.github.io/projects/td/offer-part.css');
 @import url('https://catgirl3d.github.io/projects/td/module-buttons.css');
 @import url('https://catgirl3d.github.io/projects/td/module-utils.css');
 @import url('https://catgirl3d.github.io/projects/td/module-checkboxes.css');
-@import url('https://catgirl3d.github.io/projects/td/module-input.css');
+/*@import url('https://lisova-minds.pp.ua/projects/module-input.css');*/
+/*@import url('https://catgirl3d.github.io/projects/td/module-input.css');*/
+@import url('https://catgirl3d.github.io/projects/td/module-offer-parts.css');
+
+/*@import url('https://lisova-minds.pp.ua/projects/module-utils.css');*/
 
 :root {
     --f-input-height: 53px;
@@ -23,8 +26,10 @@ font-family: 'Montserrat', serif !important;
 	border-radius: 40px !important;
 }
 
-#iti-0__country-listbox {
-	font-size: 14px;
+.part-header, .part-header p {
+	margin-bottom: 0px !important;
+	font-weight: 800 !important;
+	font-size: 24px !important;
 }
 
 .part-subheader, .part-subheader p {
@@ -41,12 +46,6 @@ font-family: 'Montserrat', serif !important;
 .text-normal.f-text {
 	font-weight: 400 !important;
 	font-size: 17px;
-}
-
-.part-header, .part-header p {
-	margin-bottom: 0px !important;
-	font-weight: 800 !important;
-	font-size: 24px !important;
 }
 
 .lt-text-header-expand .text {
@@ -72,6 +71,10 @@ font-family: 'Montserrat', serif !important;
 
 .label-value a:link {
   text-decoration: underline !important;
+}
+
+#iti-0__country-listbox {
+	font-size: 14px;
 }
 
 .footer_form {
@@ -126,7 +129,6 @@ font-family: 'Montserrat', serif !important;
 .text-normal.f-text {
 	font-size: 13px;
 }
-
 
 #iti-0__country-listbox {
 	font-size: 12px;
