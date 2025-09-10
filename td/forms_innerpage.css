@@ -65,7 +65,7 @@ font-family: 'Montserrat', serif !important;
 }
 
 
-.c_blue_button, .c_blue_button  > .button-md:hover {
+.c_blue_button:hover, .c_blue_button  > .button-md:hover {
 	background: #fff !important;
   	color: #3035C3 !important;
 }
