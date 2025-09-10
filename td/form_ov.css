@@ -2,6 +2,8 @@
 @import url('https://catgirl3d.github.io/projects/td/module-utils.css');
 @import url('https://catgirl3d.github.io/projects/td/module-checkboxes.css');
 @import url('https://catgirl3d.github.io/projects/td/module-input.css');
+@import url('https://catgirl3d.github.io/projects/td/module-offer-parts.css');
+@import url('https://catgirl3d.github.io/projects/td/module-text.css');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -18,7 +20,7 @@ font-family: 'Montserrat', serif !important;
 	color: #333333;
 }
 .lt-form-inner {
-	padding: 0px 20px 20px 20px !important;
+	padding: 0px 20px 25px 20px !important;
 	margin-bottom: 0px !important;
 	border-radius: 40px !important;
 }
@@ -39,139 +41,6 @@ font-family: 'Montserrat', serif !important;
 }
 /*--- END OF FORMS PADDINGS/MARGINS/ETC ---*/
 
-#iti-0__country-listbox {
-	font-size: 14px;
-}
-
-.label-value a:link {
-  text-decoration: underline !important;
-}
-
-.f-subheader.f-subheader-sm {
-	font-size: 15px;
-	display:none;
-}
-
-.part-subheader {
-	padding-bottom: 0px !important;
-	margin-bottom: 0px !important;
-}
-
-.f-subheader.f-subheader-sm {
-	color: #b82525;
-}
-
-/* Подзаголовок формы */
-.sub-label {
-	margin-bottom: 0px !important;
-}
-.sub-label p, .c-subheader p {
-	font-size: 17px !important;
-	padding-top:2px;
-}
-
-.f-text {
-	font-weight: 400 !important;
-}
-
-.text.f-text {
-	font-size: 17px !important;
-}
-
-.text-normal.f-text {
-    font-size: 17px !important;
-  }
-
-.f-header {
-	font-weight: 800 !important;
-	line-height: 1.23;
-}
-
-.lt-text-header-expand .text {
-	padding-top: 8px !important;
-	margin-left: -11px;
-}
-
-.dotted-link {
-	font-size: 14px !important;
-}
-
-.strike::before {
-	display: none !important;
-}
-
-.popup__subtitle {
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 16px;
-	margin: 0 0 32px 0;
-	color: #050505;
-}
-
-/*-- Предложения формы и блок отвечающий за предложения --*/
-.form-position {
-	display: block !important;
-	cursor: pointer !important;
-	padding-left: 15px !important;
-	padding-top: 5px !important;
-	padding-right: 10px !important;
-	padding-bottom: 5px !important;
-	margin-bottom: 0px !important;
-	border-bottom: 1px solid #f0f0f0;
-}
-
-.form-position-price.pull-right {
-	background-color: #ffeec6 !important;
-	padding: 7px !important;
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	margin-bottom: 4px !important;
-	margin-top: 7px !important;
-	/* color: white; */
-}
-
-.form-position.selected {
-	background: #9999991f !important;
-	margin-bottom: 0px !important;
-}
-
-.offer-title {
-	font-size: 15px !important;
-	font-weight: 600 !important;
-	display: block !important;
-	padding-left: 38px !important;
-	padding-bottom: 7px !important;
-}
-
-.text-muted { /*Название продукта в блоке предложний*/
-	color: #777 !important;
-	padding-left: 40px !important;
-}
-	
-.pull-left.form-position-title {
-	float: initial !important;
-}
-
-.part-manyPositions {
-	background: #fff !important;
-	border: 1px solid #f2f2f2 !important;
-	margin-bottom: 5px !important;
-}
-
-.builder-item.part-position {
-	background: #fff !important;
-	padding: 0px !important;
-	margin-top: 10px !important;
-	margin-bottom: 0px !important;
-}
-
-.builder-item.part-total {
-	font-size: 17px !important;
-}
-
-.pull-left.form-position-checker {
-	position: absolute;
-}
 
 .footer {
 	display: none !important;
@@ -190,38 +59,11 @@ font-family: 'Montserrat', serif !important;
 
 @media screen and (max-width: 450px) {
 .lt-form-inner {
-	padding: 0px 20px 12px 20px !important;
-}
-
-.sub-label p, .c-subheader p {
-	font-size: 15px !important;
-	line-height: 1.3 !important;
-}
-.f-header {
-	font-size: 21px !important;
-	margin-top:0px !important;
-}
-.f-subheader.f-subheader-sm {
-	font-size: 14px !important;
-	display: none !important;
-	}
-.part-subheader {
-	padding-bottom: 0px !important;
-	margin-bottom: 0px !important;
-}
-.block-set {
-	font-size: 14px !important;
-}
-
-#iti-0__country-listbox {
-	font-size: 12px;
-}
-.text-normal.f-text {
-	font-size: 14px !important;
+	padding: 0px 20px 15px 20px !important;
 }
 }
 
 @media screen and (max-width: 330px) {
 .lt-form-inner {
-	padding: 0px 12px 10px 12px !important;
+	padding: 0px 12px 15px 12px !important;
 }}

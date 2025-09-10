@@ -13,7 +13,7 @@
 	margin-top: 10px !important;
 	min-height: 55px !important;
 	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
-	width: 50% !important;
+	width: clamp(250px, 69vw, 370px) !important;
 	-webkit-transition: all .3s ease 0s !important;
 	-o-transition: all .3s ease 0s !important;
 	transition: all .3s ease 0s !important;
@@ -33,7 +33,7 @@
 	border: 2px solid #e6514a !important;
 }
 
-#button_01, .c_red_button > .button-md:hover {
+#button_01:hover, .c_red_button > .button-md:hover {
 	background: #fff !important;
 	color: #e6514a !important;
 }
@@ -43,7 +43,7 @@
 	border: 2px solid #3035C3 !important;
 }
 
-#button_02, .c_blue_button  > .button-md:hover {
+#button_02:hover, .c_blue_button  > .button-md:hover {
 	background: #fff !important;
   	color: #3035C3 !important;
 }

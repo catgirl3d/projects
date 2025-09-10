@@ -1,11 +1,9 @@
 @import url('https://catgirl3d.github.io/projects/td/module-buttons.css');
 @import url('https://catgirl3d.github.io/projects/td/module-utils.css');
 @import url('https://catgirl3d.github.io/projects/td/module-checkboxes.css');
-/*@import url('https://lisova-minds.pp.ua/projects/module-input.css');*/
 @import url('https://catgirl3d.github.io/projects/td/module-input.css');
 @import url('https://catgirl3d.github.io/projects/td/module-offer-parts.css');
-
-/*@import url('https://lisova-minds.pp.ua/projects/module-utils.css');*/
+@import url('https://catgirl3d.github.io/projects/td/module-text.css');
 
 :root {
     --f-input-height: 53px;
@@ -26,56 +24,6 @@ font-family: 'Montserrat', serif !important;
 	border-radius: 40px !important;
 }
 
-.part-header, .part-header p {
-	margin-bottom: 0px !important;
-	font-weight: 800 !important;
-	font-size: 24px !important;
-}
-
-.part-subheader, .part-subheader p {
-	padding-bottom: 0px !important;
-	margin-bottom: 2px !important;
-	color: #b82525;
-	font-size: 15px !important;
-}
-
-.sub-label {
-	font-size: 17px;
-}
-
-.text-normal.f-text {
-	font-weight: 400 !important;
-	font-size: 17px;
-}
-
-.lt-text-header-expand .text {
-	padding-top: 8px !important;
-	margin-left: -11px;
-}
-
-.dotted-link {
-	font-size: 14px !important;
-}
-
-.strike::before {
-	display: none !important;
-}
-
-.popup__subtitle {
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 16px;
-	margin: 0 0 32px 0;
-	color: #050505;
-}
-
-.label-value a:link {
-  text-decoration: underline !important;
-}
-
-#iti-0__country-listbox {
-	font-size: 14px;
-}
 
 .footer_form {
 	margin-top: 15px;
@@ -101,54 +49,5 @@ font-family: 'Montserrat', serif !important;
 .container {
 	padding-right: 15px !important;
 	padding-left: 15px !important;
-}
-
-.part-header p {
-	font-size: 20px !important;
-}
-
-.sub-label {
-	padding-top: 5px !important;
-	font-size: 15px !important;
-	line-height: 1.3 !important;
-}
-
-.part-subheader, .part-subheader p {
-	margin-bottom: 2px !important;
-	font-size: 12px !important;
-}
-
-.text-accurate {
-	font-size: 12px;
-}
-
-.field-description-block {
-	font-size: 11px;
-}
-
-.text-normal.f-text {
-	font-size: 13px;
-}
-
-#iti-0__country-listbox {
-	font-size: 12px;
-}
-}
-
-@media screen and (max-width: 420px) {
-.f-subheader.f-subheader- {
-	font-size: 14px !important;
-	display: none !important;
-	}
-}
-
-@media screen and (max-width: 350px) {
-.f-header {
-	font-size: 17px !important;
-}
-.footer-form {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 10px;
 }
 }

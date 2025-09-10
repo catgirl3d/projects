@@ -28,9 +28,10 @@
 .offer-title {
 	font-size: 15px !important;
 	font-weight: 600 !important;
-	display: block !important;
-	padding-left: 38px !important;
-	padding-bottom: 7px !important;
+	display: block;
+	padding-left: 38px;
+	padding-bottom: 7px;
+	padding-right: 3px;
 }
 
 .text-muted {
@@ -38,9 +39,9 @@
 	padding-left: 40px !important;
 }
 
-.builder-item.part-position {
+.part-position {
 	background: #fff !important;
-	padding: 0px !important;
+	/*padding: 0px !important;*/
 	margin-bottom: 10px !important;
 	margin-top: 10px !important;
 }
