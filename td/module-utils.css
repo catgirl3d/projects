@@ -90,33 +90,27 @@ hr {
 .p-30{
 	padding:30px !important;
 }
-/*.f-s30-b32{
-	margin-bottom: 32px !important;
-}*/
-
 .f-s30-b32, .f-s30-b32 div p {
 	margin-bottom: 32px !important;
 	font-size: 30px !important;
 }
-
-/*.f-s30-b32 > div > p {
+.f-s30, .f-s30 > div > p {
 	font-size: 30px !important;
-}*/
-
-.f-s30 > div > p {
-	font-size: 30px;
 	margin-bottom: 16px !important;
 }
+
 
 @media screen and (max-width: 450px) {
-.f-s30-b32{
-	margin-bottom: 32px !important;
+.f-s30-b32, .f-s30-b32 > div > p {
+		font-size: 21px !important;
+		margin-bottom: 32px !important;
 }
-.f-s30-b32 > div > p {
-		font-size: 21px !important;;
-}
-.f-s30 > div > p {
+.f-s30, .f-s30 > div > p {
 	font-size: 21px;
 	margin-bottom: 16px !important;
+}
+hr {
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
 }
 }

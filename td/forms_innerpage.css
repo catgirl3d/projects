@@ -2,6 +2,7 @@
 @import url('https://catgirl3d.github.io/projects/td/module-buttons.css');
 @import url('https://catgirl3d.github.io/projects/td/module-utils.css');
 @import url('https://catgirl3d.github.io/projects/td/module-checkboxes.css');
+@import url('https://catgirl3d.github.io/projects/td/module-input.css');
 
 :root {
     --f-input-height: 53px;
@@ -73,26 +74,6 @@ font-family: 'Montserrat', serif !important;
   text-decoration: underline !important;
 }
 
-/*--- Блок полей ---*/
-.f-input, .f-input-wrapper select {
-	height: var(--f-input-height) !important;
-	background: #f2f2f5 !important;
-	padding: 0px 20px;
-	font-size: 16px !important;
-	border: 1px solid #0151ab !important;
-	border-radius: 8px !important;
-	font-weight: 400 !important;
-	color: #050505 !important;
-}
-.field-label, .field-label-custom {
-	font-size: 15px !important;
-	padding: 0px !important;
-}
-.part-userField{ /* отступ пользовательских полей */
-margin-bottom:16px !important;
-}
-/*--- Блок полей ---*/
-
 .footer_form {
 	margin-top: 15px;
 	padding-top: 10px;
@@ -118,29 +99,6 @@ margin-bottom:16px !important;
 	padding-right: 15px !important;
 	padding-left: 15px !important;
 }
-
-.lt-form .f-input {
-	color: black !important;
-}
-
-.f-input, .f-input-wrapper select {
-	height: var(--mob-f-input-height) !important;
-	font-size: 13.5px !important;
-	padding: 5px 20px !important;
-	appearance: none;
-	color: #000 !important;
-}
-
-
-/*@media (pointer: coarse) {
-    .lt-form .f-input-wrapper select {
-        padding: 0px 20px !important;
-        height: var(--mob-f-input-height) !important;
-        -webkit-appearance: none;
-        appearance: none;
-		font-size: 13.5px !important;
-    }
-}*/
 
 .part-header p {
 	font-size: 20px !important;
@@ -169,15 +127,6 @@ margin-bottom:16px !important;
 	font-size: 13px;
 }
 
-hr {
-	margin-top: 15px !important;
-	margin-bottom: 15px !important;
-}
-
-.field-label {
-	font-size: 12px !important;
-	font-weight: 500 !important;
-}
 
 #iti-0__country-listbox {
 	font-size: 12px;
