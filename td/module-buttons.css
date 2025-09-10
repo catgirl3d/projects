@@ -28,22 +28,22 @@
 	color: #e6514a !important;
 }
 
-.c_red_button, .c_red_button > .button-md {
+.c_red_button > .button-md {
 	background-color: #e6514a !important;
 	border: 2px solid #e6514a !important;
 }
 
-.c_red_button:hover, .c_red_button > .button-md:hover {
+.c_red_button > .button-md:hover {
 	background: #fff !important;
 	color: #e6514a !important;
 }
 
-.c_blue_button, .c_blue_button > .button-md {
+.c_blue_button > .button-md {
 	background-color: #3035C3 !important;
 	border: 2px solid #3035C3 !important;
 }
 
-.c_blue_button:hover, .c_blue_button  > .button-md:hover {
+.c_blue_button  > .button-md:hover {
 	background: #fff !important;
   	color: #3035C3 !important;
 }
