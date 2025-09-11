@@ -1,0 +1,1289 @@
+<style>
+
+/* Основные стили для body и контейнера */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    min-height: 100vh;
+}
+
+/* Стили для основной формы */
+.lt-form {
+    max-width: 800px !important;
+    margin: 20px auto !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2) !important;
+    border: none !important;
+}
+
+/* Заголовки */
+.f-subheader p {
+    color: #bf3949 !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 10px !important;
+}
+
+.f-header p {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    margin-bottom: 20px !important;
+}
+
+/* Промо блок с партнерским кодом */
+.f-text p[style*="background: #f2f2f2"] {
+    background: linear-gradient(135deg, #097d26, #0ea832) !important;
+    color: white !important;
+    border-left: none !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(9, 125, 38, 0.3) !important;
+    margin-bottom: 20px !important;
+}
+
+.f-input:focus {
+    outline: none !important;
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+.field-label {
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: #667eea !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+/* ОСНОВНЫЕ СТИЛИ ДЛЯ БЛОКОВ ВЫБОРА */
+.form-position {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    background:
+        linear-gradient(135deg, #667eea, #764ba2) 0 0 / 0 100% no-repeat,
+        #ffffff !important; /* layer 1: left stripe (collapsed), layer 2: white background */
+    border: 3px solid #e0e0e0 !important;
+    border-radius: 16px !important;
+    margin-bottom: 15px !important;
+    cursor: pointer !important;
+    /* Smooth, GPU-friendly transitions */
+    transition: background-size 480ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 360ms cubic-bezier(0.22, 1, 0.36, 1), border-color 220ms ease !important;
+    will-change: background-size, box-shadow !important;
+    overflow: visible !important;
+    padding: 25px 30px !important;
+    z-index: 0 !important; /* baseline stacking context so pseudo-elements can be layered */
+    -webkit-transform: translateZ(0) !important; /* promote to its own layer */
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+}
+
+/* Левая цветная полоса — отключаем псевдо-элемент (перенесено в фон) */
+.form-position::before {
+    content: none !important;
+}
+
+/* Hover эффекты */
+.form-position:hover {
+    border-color: #667eea !important;
+    /* smoother shadow without layout shift */
+    box-shadow: 0 14px 36px rgba(102, 126, 234, 0.16) !important;
+    /* раскрываем полосу до 6px при ховере */
+    background:
+        linear-gradient(135deg, #667eea, #764ba2) 0 0 / 6px 100% no-repeat,
+        #ffffff !important;
+    /* keep border consistent to avoid visible seam — don't change border-left color here */
+}
+
+.form-position:hover::before {
+    content: none !important;
+}
+
+/* Выбранное состояние */
+.form-position.selected {
+    border-color: #667eea !important;
+    /* полоса раскрыта + лёгкий градиент фона */
+    background:
+        linear-gradient(135deg, #667eea, #764ba2) 0 0 / 6px 100% no-repeat,
+        linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)) !important;
+    /* stronger shadow for selected state, keep consistent border */
+    box-shadow: 0 18px 44px rgba(102, 126, 234, 0.22) !important;
+}
+
+.form-position.selected::before {
+    content: none !important;
+}
+/* Вписываем полоску внутрь скругления — прячем левую окантовку при раскрытии полосы */
+.form-position {
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    background-origin: padding-box !important;
+}
+
+/* Прозрачная левая граница при hover/selected чтобы не было видно "краев" */
+.form-position:hover,
+.form-position.selected {
+    border-left-color: transparent !important;
+}
+
+/* Скрываем стандартные radio кнопки */
+.form-position-input {
+    display: none !important;
+}
+
+/* Красивые радио кнопки */
+.form-position-checker {
+    position: relative !important;
+    margin-right: 20px !important;
+    flex-shrink: 0 !important;
+    float: none !important;
+}
+
+.form-position-checker::after {
+    content: '' !important;
+    width: 24px !important;
+    height: 24px !important;
+    border: 3px solid #e0e0e0 !important;
+    border-radius: 50% !important;
+    background: white !important;
+    display: block !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.form-position-checker::before {
+    content: '✓' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(0) !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    z-index: 2 !important;
+    transition: all 0.3s ease !important;
+}
+
+.form-position.selected .form-position-checker::after {
+    border-color: #667eea !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+}
+
+.form-position.selected .form-position-checker::before {
+    transform: translate(-50%, -50%) scale(1) !important;
+}
+
+/* Заголовок и описание */
+.form-position-title {
+    flex: 1 !important;
+    padding-right: 20px !important;
+    float: none !important;
+}
+
+.offer-title {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+/* Цена */
+.form-position-price {
+    text-align: right !important;
+    min-width: 180px !important;
+    float: none !important;
+    position: relative !important; /* anchor for ::before badge */
+    z-index: 0 !important;
+}
+
+.final-price {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: #333 !important;
+    transition: color 0.3s ease !important;
+    display: block !important;
+}
+
+.form-position.selected .final-price {
+    color: #667eea !important;
+}
+
+/* Добавляем цену за урок через CSS для каждого пакета — используем селекторы по data-offer-id */
+.form-position[data-offer-id="1427856"] .final-price::after {
+    content: 'За урок: 2 760 ₽' !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #888 !important;
+    margin-top: 5px !important;
+    position: relative !important;
+    z-index: 1002 !important;
+}
+
+.form-position[data-offer-id="1427857"] .final-price::after {
+    content: 'За урок: 2 386 ₽' !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #888 !important;
+    margin-top: 5px !important;
+    position: relative !important;
+    z-index: 1002 !important;
+}
+
+.form-position[data-offer-id="1427858"] .final-price::after {
+    content: 'За урок: 1 759 ₽' !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #888 !important;
+    margin-top: 5px !important;
+    position: relative !important;
+    z-index: 1002 !important;
+}
+
+.form-position[data-offer-id="1427859"] .final-price::after {
+    content: 'За урок: 1 506 ₽' !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #888 !important;
+    margin-top: 5px !important;
+    position: relative !important;
+    z-index: 1002 !important;
+}
+
+.form-position[data-offer-id="2542946"] .final-price::after {
+    content: 'За урок: 1 254 ₽' !important;
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    color: #888 !important;
+    margin-top: 5px !important;
+    position: relative !important;
+    z-index: 1002 !important;
+}
+
+/* Индикаторы экономии — переключаем на селекторы по data-offer-id */
+.form-position[data-offer-id="1427857"] .form-position-price::before {
+    content: 'Экономия 13%' !important;
+    position: absolute !important;
+    top: -10px !important;
+    right: 0 !important;
+    background: #e8f5e8 !important;
+    color: #097d26 !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    z-index: 1003 !important;
+}
+
+.form-position[data-offer-id="1427858"] .form-position-price::before {
+    content: 'Экономия 36%' !important;
+    position: absolute !important;
+    top: -10px !important;
+    right: 0 !important;
+    background: #e8f5e8 !important;
+    color: #097d26 !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    z-index: 1003 !important;
+}
+
+.form-position[data-offer-id="1427859"] .form-position-price::before {
+    content: 'Экономия 45%' !important;
+    position: absolute !important;
+    top: -10px !important;
+    right: 0 !important;
+    background: #e8f5e8 !important;
+    color: #097d26 !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    z-index: 1003 !important;
+}
+
+.form-position[data-offer-id="2542946"] .form-position-price::before {
+    content: 'Экономия 55%' !important;
+    position: absolute !important;
+    top: -10px !important;
+    right: 0 !important;
+    background: #e8f5e8 !important;
+    color: #097d26 !important;
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    z-index: 1003 !important;
+}
+
+/* Лучшее предложение — привязка к конкретному предложению по data-offer-id */
+.form-position[data-offer-id="1427858"]::after {
+    content: 'Лучшее предложение' !important;
+    position: absolute !important;
+    top: -8px !important;
+    left: 30px !important;
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24) !important;
+    color: white !important;
+    padding: 6px 15px !important;
+    border-radius: 20px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    z-index: 1004 !important;
+    box-shadow: 0 4px 15px rgba(238, 90, 36, 0.3) !important;
+}
+
+/* Общая сумма */
+#totalSetting8639901 {
+    background: linear-gradient(135deg, #f8f9ff, #f1f3ff) !important;
+    border: 2px solid #e0e6ff !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    margin: 30px 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.total-text {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+}
+
+.total-price {
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    color: #667eea !important;
+}
+
+/* Кнопка отправки */
+.f-btn {
+    width: 100% !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: white !important;
+    border: none !important;
+    padding: 18px 30px !important;
+    border-radius: 15px !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.f-btn::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+    transition: left 0.5s !important;
+}
+
+.f-btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6) !important;
+}
+
+.f-btn:hover::before {
+    left: 100% !important;
+}
+
+.f-btn:active {
+    transform: translateY(0) !important;
+}
+
+/* Анимация пульса */
+.pulse {
+    animation: pulse 2s infinite !important;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4) !important;
+    }
+    50% {
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.7) !important;
+    }
+    100% {
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4) !important;
+    }
+}
+
+/* Скрываем служебные элементы */
+.add-redesign-subblock,
+.common-setting-link,
+.form-setting-link {
+    display: none !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .lt-form {
+        padding: 20px !important;
+        margin: 10px !important;
+    }
+    
+    .f-header p {
+        font-size: 2rem !important;
+    }
+    
+    .form-position {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
+    }
+    
+    .form-position-checker {
+        margin-right: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .form-position-title {
+        padding-right: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .form-position-price {
+        text-align: center !important;
+        min-width: auto !important;
+    }
+    
+    #totalSetting8639901 {
+        flex-direction: column !important;
+        gap: 15px !important;
+        text-align: center !important;
+    }
+}
+
+/* Обнуляем float */
+.pull-left, .pull-right {
+    float: none !important;
+}
+</style>
+
+<html>
+<form id="ltForm5500584" class="
+		lt-normal-form
+		lt-form-inner
+		lt-form
+							" data-id="1429250300" action="https://my.tomer.ru/pl/lite/block-public/process?id=1429250300" method="post" data-open-new-window="0">
+	<input type="hidden" name="formParams[setted_offer_id]" class="external-value offer_id">
+	<input type="hidden" name="formParams[willCreatePaidDeal]" value="0">
+		
+	<div class="form-result-block"></div>
+
+	<div class="form-content">
+		<div id="builder2777795" class="builder " data-path="form/items">
+	
+			<div data-param="form/items/parts/field5253" data-item-name="field5253" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 0px; border-radius: ; " data-setting-editable="true" class="builder-item part-html " id="adb6d7ac27">
+	<div data-raw-editable="true" data-param="form/items/parts/field5253/inner/value" data-mode="text/html"><script>
+    $(document).ready(function(){
+    var regex = new RegExp('[\\?&]utm_source=([^&#]+)');
+    var match = regex.exec(window.location.href);
+    if (match && match.length) {
+        $('.utm_source input').val(decodeURIComponent(match[1]));
+    }
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+    var regex = new RegExp('[\\?&]utm_medium=([^&#]+)');
+    var match = regex.exec(window.location.href);
+    if (match && match.length) {
+        $('.utm_medium input').val(decodeURIComponent(match[1]));
+    }
+});
+</script>
+
+<script>
+    $(document).ready(function(){
+    var regex = new RegExp('[\\?&]utm_campaign=([^&#]+)');
+    var match = regex.exec(window.location.href);
+    if (match && match.length) {
+        $('.utm_campaign input').val(decodeURIComponent(match[1]));
+    }
+});
+</script></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#adb6d7ac27 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field92564" data-item-name="field92564" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 20px; margin-top: -5px; color: #bf3949; border-radius: ; " data-setting-editable="true" class="builder-item part-subheader  text-center" id="acc6ac6c60">
+	<div data-editable="true" data-param="form/items/parts/field92564/inner/text" class="f-subheader f-subheader- f-text-transform-uppercase"><p style="font-size: 15px;">Оформление заказа</p></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#acc6ac6c60 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/header1" data-item-name="header1" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; color: #333; border-radius: ; " data-setting-editable="true" class="builder-item part-header  text-center" id="aa8b0dee8f">
+	<div data-editable="true" data-param="form/items/parts/header1/inner/text" class="f-header f-header-26 f-text-transform-uppercase"><p>Индивидуальные занятия</p></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#aa8b0dee8f .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field6434" data-item-name="field6434" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 0px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-text  subheader hide text-center" id="a84e8e1cfc">
+	<div style="" class="text-normal f-text" data-param="form/items/parts/field6434/inner/text" data-editable="true"><p><em>Premium</em></p></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a84e8e1cfc .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field19186" data-item-name="field19186" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 0px; border-radius: ; " data-setting-editable="true" class="builder-item part-separator " id="a3af77a997">
+	<hr>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a3af77a997 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field55311" data-item-name="field55311" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 25px; border-radius: ; " data-setting-editable="true" class="builder-item part-text " id="a540368ab2">
+	<div style="" class="text-normal f-text" data-param="form/items/parts/field55311/inner/text" data-editable="true"><p>Чтобы вы и ваш друг получили по 2 бесплатных урока, оставьте заказ заполнив форму ниже и оплатите его. После оплаты вам и вашему другу будут подарены 2 бесплатных индивидуальных урока.&nbsp;</p></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a540368ab2 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field58783" data-item-name="field58783" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; border-radius: ; " data-setting-editable="true" class="builder-item part-text " id="a26917099a">
+	<div style="" class="text-normal f-text" data-param="form/items/parts/field58783/inner/text" data-editable="true"><p style="padding: 10px;background: #f2f2f2;border-left: 4px solid #097d26;"><strong class="redactor-inline-converted">✅&nbsp;Партнёрский код: </strong><span class="redactor-inline-converted"><span class="redactor-inline-converted">Указан</span></span><em class="redactor-inline-converted"></em></p></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a26917099a .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field9015" data-item-name="field9015" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 0px; border-radius: ; " data-setting-editable="true" class="builder-item part-text " id="a739b83a53">
+	<div style="font-size: 14px; " class="text-accurate f-text" data-param="form/items/parts/field9015/inner/text" data-editable="true"><p>👌 Все в порядке! Вы и ваш друг получите подарки после вашей оплаты</p></div>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a739b83a53 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field9300" data-item-name="field9300" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 25px; border-radius: ; " data-setting-editable="true" class="builder-item part-separator " id="ae8aec5db1">
+	<hr>	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#ae8aec5db1 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/nameField" data-item-name="nameField" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 15px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-userField " id="a9659fe2ff">
+	<div id="fieldStandard2214227" data-hide-filled="1" class="hidden">
+	
+	<div class="field-content">
+					<div class="field-label">ИМЯ</div>
+		
+				<input type="text" maxlength="60" class="f-input" placeholder="Введите ваше имя" name="formParams[full_name]" value="Alina Lisova">
+		</div>
+</div>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a9659fe2ff .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/emailField" data-item-name="emailField" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 15px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-userField " id="a456bc98d3">
+	<div id="fieldStandard3992795" data-hide-filled="0">
+	
+	<div class="field-content">
+					<div class="field-label">E-MAIL</div>
+		
+				<input type="text" maxlength="60" class="f-input" placeholder="Введите ваш эл. адрес" name="formParams[email]" value="catgirl3d@ya.ru" readonly="readonly">
+		<div style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;" data-lastpass-icon-root=""></div></div>
+</div>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a456bc98d3 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/phoneField" data-item-name="phoneField" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 20px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-userField " id="a1dbcb11c5">
+	<div id="fieldStandard5051590" data-hide-filled="0">
+	
+	<div class="field-content">
+					<div class="field-label">ТЕЛЕФОН</div>
+		
+			    <input type="text" class="f-input" name="formParams[phone]" value="9111222334455" maxlength="60" placeholder="Введите ваш телефон">    	</div>
+</div>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a1dbcb11c5 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field61845_47_74" data-item-name="field61845_47_74" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-position " id="a54e165cf2">
+	
+<input id="input-formPosition277388" name="formParams[need_offer]" type="hidden" value="1">
+
+
+<label class="clearfix form-position selected" id="formPosition277388" data-offer-id="1427856">
+				<div class="pull-left form-position-checker">
+			<input class="form-position-input form-position-offer-1427856" data-price-value="22080" data-old-price-value="22080" data-price-currency="руб." data-qty-value="1" data-decimal-separator="." data-thousands-separator=" " id="input-formPosition277388" name="formParams[offer_id][]" type="radio" checked="" value="1427856">
+		</div>
+		<div class="pull-left form-position-title" data-start="">
+		<span class="offer-title">Индивидуальные занятия по турецкому | Пакет из 8 занятий. Cтоимость занятия 2760 руб (IND-08-01)</span>
+		
+												
+			</div>
+	
+	<div class="form-position-price pull-right">
+														<span class="final-price">
+			22 080 руб.			</span>
+						</div>
+    	</label>
+
+
+<script>
+	$( function() {
+		var $el = $('#formPosition277388');
+		var $input = $el.find('input:not([type=text])');
+		var $qty = $el.find('input:not([type=checkbox],[type=radio])');
+
+		var recalcStatus = function() {
+			if ( $input.prop('checked') ) {
+				$el.parents('form').find('.selected').removeClass("selected");
+				$el.addClass('selected');
+			} else {
+				$el.removeClass('selected');
+			}
+		}
+
+		$input.change( function() {
+			recalcStatus();
+		} );
+		if ( $qty.length ) {
+			$qty.on('input',function () {
+				var qty = $(this).val();
+				if ( ! qty || Math.floor(qty) != qty || ! $.isNumeric(qty) || qty < 1 ) {
+					qty = 1;
+				}
+				$input.attr('data-qty-value', qty);
+				$input.trigger('click');
+				if ( ! $input.prop('checked') ) {
+					$input.trigger('click');
+				}
+			});
+		}
+		recalcStatus();
+			} );
+</script>
+
+<style>
+	input.offer-count-input {
+		width: 70px;
+	}
+
+	</style>
+
+
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a54e165cf2 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field61845_47_74_93" data-item-name="field61845_47_74_93" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-position " id="a1667bb244">
+	
+<input id="input-formPosition6395139" name="formParams[need_offer]" type="hidden" value="1">
+
+
+<label class="clearfix form-position" id="formPosition6395139" data-offer-id="1427857">
+				<div class="pull-left form-position-checker">
+			<input class="form-position-input form-position-offer-1427857" data-price-value="38180" data-old-price-value="38180" data-price-currency="руб." data-qty-value="1" data-decimal-separator="." data-thousands-separator=" " id="input-formPosition6395139" name="formParams[offer_id][]" type="radio" value="1427857">
+		</div>
+		<div class="pull-left form-position-title" data-start="">
+		<span class="offer-title">Индивидуальные занятия по турецкому | Пакет из 16 занятий. Cтоимость занятия 2386 руб (IND-16-01)</span>
+		
+												
+			</div>
+	
+	<div class="form-position-price pull-right">
+														<span class="final-price">
+			38 180 руб.			</span>
+						</div>
+    	</label>
+
+
+<script>
+	$( function() {
+		var $el = $('#formPosition6395139');
+		var $input = $el.find('input:not([type=text])');
+		var $qty = $el.find('input:not([type=checkbox],[type=radio])');
+
+		var recalcStatus = function() {
+			if ( $input.prop('checked') ) {
+				$el.parents('form').find('.selected').removeClass("selected");
+				$el.addClass('selected');
+			} else {
+				$el.removeClass('selected');
+			}
+		}
+
+		$input.change( function() {
+			recalcStatus();
+		} );
+		if ( $qty.length ) {
+			$qty.on('input',function () {
+				var qty = $(this).val();
+				if ( ! qty || Math.floor(qty) != qty || ! $.isNumeric(qty) || qty < 1 ) {
+					qty = 1;
+				}
+				$input.attr('data-qty-value', qty);
+				$input.trigger('click');
+				if ( ! $input.prop('checked') ) {
+					$input.trigger('click');
+				}
+			});
+		}
+		recalcStatus();
+			} );
+</script>
+
+<style>
+	input.offer-count-input {
+		width: 70px;
+	}
+
+	</style>
+
+
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a1667bb244 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field61845_47_74_93_95_45" data-item-name="field61845_47_74_93_95_45" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-position " id="a93a34501b">
+	
+<input id="input-formPosition3353387" name="formParams[need_offer]" type="hidden" value="1">
+
+
+<label class="clearfix form-position" id="formPosition3353387" data-offer-id="1427858">
+				<div class="pull-left form-position-checker">
+			<input class="form-position-input form-position-offer-1427858" data-price-value="56290" data-old-price-value="56290" data-price-currency="руб." data-qty-value="1" data-decimal-separator="." data-thousands-separator=" " id="input-formPosition3353387" name="formParams[offer_id][]" type="radio" value="1427858">
+		</div>
+		<div class="pull-left form-position-title" data-start="">
+		<span class="offer-title">Индивидуальные занятия по турецкому | Пакет из 32 занятий. Cтоимость занятия 1759 руб (IND-32-01)</span>
+		
+												
+			</div>
+	
+	<div class="form-position-price pull-right">
+														<span class="final-price">
+			56 290 руб.			</span>
+						</div>
+    	</label>
+
+
+<script>
+	$( function() {
+		var $el = $('#formPosition3353387');
+		var $input = $el.find('input:not([type=text])');
+		var $qty = $el.find('input:not([type=checkbox],[type=radio])');
+
+		var recalcStatus = function() {
+			if ( $input.prop('checked') ) {
+				$el.parents('form').find('.selected').removeClass("selected");
+				$el.addClass('selected');
+			} else {
+				$el.removeClass('selected');
+			}
+		}
+
+		$input.change( function() {
+			recalcStatus();
+		} );
+		if ( $qty.length ) {
+			$qty.on('input',function () {
+				var qty = $(this).val();
+				if ( ! qty || Math.floor(qty) != qty || ! $.isNumeric(qty) || qty < 1 ) {
+					qty = 1;
+				}
+				$input.attr('data-qty-value', qty);
+				$input.trigger('click');
+				if ( ! $input.prop('checked') ) {
+					$input.trigger('click');
+				}
+			});
+		}
+		recalcStatus();
+			} );
+</script>
+
+<style>
+	input.offer-count-input {
+		width: 70px;
+	}
+
+	</style>
+
+
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a93a34501b .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field61845_47_74_93_95_45_10" data-item-name="field61845_47_74_93_95_45_10" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-position " id="a9282707e1">
+	
+<input id="input-formPosition8199648" name="formParams[need_offer]" type="hidden" value="1">
+
+
+<label class="clearfix form-position" id="formPosition8199648" data-offer-id="1427859">
+				<div class="pull-left form-position-checker">
+			<input class="form-position-input form-position-offer-1427859" data-price-value="96385" data-old-price-value="96385" data-price-currency="руб." data-qty-value="1" data-decimal-separator="." data-thousands-separator=" " id="input-formPosition8199648" name="formParams[offer_id][]" type="radio" value="1427859">
+		</div>
+		<div class="pull-left form-position-title" data-start="">
+		<span class="offer-title">Индивидуальные занятия по турецкому | Пакет из 64 занятий. Cтоимость занятия 1506 руб (IND-64-01)</span>
+		
+												
+			</div>
+	
+	<div class="form-position-price pull-right">
+														<span class="final-price">
+			96 385 руб.			</span>
+						</div>
+    	</label>
+
+
+<script>
+	$( function() {
+		var $el = $('#formPosition8199648');
+		var $input = $el.find('input:not([type=text])');
+		var $qty = $el.find('input:not([type=checkbox],[type=radio])');
+
+		var recalcStatus = function() {
+			if ( $input.prop('checked') ) {
+				$el.parents('form').find('.selected').removeClass("selected");
+				$el.addClass('selected');
+			} else {
+				$el.removeClass('selected');
+			}
+		}
+
+		$input.change( function() {
+			recalcStatus();
+		} );
+		if ( $qty.length ) {
+			$qty.on('input',function () {
+				var qty = $(this).val();
+				if ( ! qty || Math.floor(qty) != qty || ! $.isNumeric(qty) || qty < 1 ) {
+					qty = 1;
+				}
+				$input.attr('data-qty-value', qty);
+				$input.trigger('click');
+				if ( ! $input.prop('checked') ) {
+					$input.trigger('click');
+				}
+			});
+		}
+		recalcStatus();
+			} );
+</script>
+
+<style>
+	input.offer-count-input {
+		width: 70px;
+	}
+
+	</style>
+
+
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a9282707e1 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field61845_47_74_93_95_45_67" data-item-name="field61845_47_74_93_95_45_67" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 5px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-position " id="a1b0eb7bf3">
+	
+<input id="input-formPosition5399363" name="formParams[need_offer]" type="hidden" value="1">
+
+
+<label class="clearfix form-position" id="formPosition5399363" data-offer-id="2542946">
+				<div class="pull-left form-position-checker">
+			<input class="form-position-input form-position-offer-2542946" data-price-value="160500" data-old-price-value="160500" data-price-currency="руб." data-qty-value="1" data-decimal-separator="." data-thousands-separator=" " id="input-formPosition5399363" name="formParams[offer_id][]" type="radio" value="2542946">
+		</div>
+		<div class="pull-left form-position-title" data-start="">
+		<span class="offer-title">Индивидуальные занятия по турецкому | Пакет из 128 занятий. Cтоимость занятия 1254 руб (IND-128-01)</span>
+		
+												
+			</div>
+	
+	<div class="form-position-price pull-right">
+														<span class="final-price">
+			160 500 руб.			</span>
+						</div>
+    	</label>
+
+
+<script>
+	$( function() {
+		var $el = $('#formPosition5399363');
+		var $input = $el.find('input:not([type=text])');
+		var $qty = $el.find('input:not([type=checkbox],[type=radio])');
+
+		var recalcStatus = function() {
+			if ( $input.prop('checked') ) {
+				$el.parents('form').find('.selected').removeClass("selected");
+				$el.addClass('selected');
+			} else {
+				$el.removeClass('selected');
+			}
+		}
+
+		$input.change( function() {
+			recalcStatus();
+		} );
+		if ( $qty.length ) {
+			$qty.on('input',function () {
+				var qty = $(this).val();
+				if ( ! qty || Math.floor(qty) != qty || ! $.isNumeric(qty) || qty < 1 ) {
+					qty = 1;
+				}
+				$input.attr('data-qty-value', qty);
+				$input.trigger('click');
+				if ( ! $input.prop('checked') ) {
+					$input.trigger('click');
+				}
+			});
+		}
+		recalcStatus();
+			} );
+</script>
+
+<style>
+	input.offer-count-input {
+		width: 70px;
+	}
+
+	</style>
+
+
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a1b0eb7bf3 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field20115" data-item-name="field20115" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 25px; color: #333333; border-radius: ; " data-setting-editable="true" class="builder-item part-total " id="a185c050ca">
+	<div id="totalSetting8639901" style="border-top: 1px solid #999; padding-top: 10px;">
+	<span class="total-text">Общая сумма:</span>
+	<span class="old-price" style="display:none;text-decoration:line-through;"><b class="value"></b> <b class="currency"></b></span>
+	<b class="total-price">22 080.00 руб.</b>
+	<span class="discount" style="display:none;">
+		Скидка: <b class="value"></b><b class="percent">%</b>
+	</span>
+</div>
+
+<script>
+	$( function() {
+		var recalc = function() {
+			var priceValue = 0;
+			var priceOldValue = 0;
+			var qty = 1;
+			var priceCurrency = " руб.";
+			var offersCount = {};
+			var hasFindOffers = false;
+			$('#totalSetting8639901').parents('form').find('.form-position-input').each(function() {
+				hasFindOffers = true;
+				if ( $(this).prop('checked') || $(this).attr('type') == 'hidden' ) {
+					qty = $(this).attr('data-qty-value') ? $(this).attr('data-qty-value') : 1;
+					priceValue += $(this).data('price-value') * qty;
+					priceCurrency = $(this).data('price-currency');
+										offersCount["offer_" + $(this).val()] = qty;
+				}
+			});
+
+			var promo = $('#totalSetting8639901').parents('form').find('.promo-position-count').val();
+			var link = !!hasFindOffers ? '/sales/shop/getPrice' : '/sales/shop/basket';
+			ajaxCall(link, {offersCount: offersCount, promo: promo}, {}, function (response) {
+				var data = response.data.basket;
+				$('#totalSetting8639901 .old-price').hide();
+				$('#totalSetting8639901 .discount').hide();
+				
+				$('#totalSetting8639901 .total-price').html(data.total_cost_str);
+			})
+		};
+
+		window.recalcLiteFormTotal = function() {
+			recalc();
+		};
+
+		$('#totalSetting8639901').parents('form').find('.form-position-input').click( function() {
+			recalc();
+		} );
+		recalc();
+	})
+</script>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a185c050ca .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/submitButton" data-item-name="submitButton" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 0px; border-radius: ; " data-setting-editable="true" class="builder-item part-button  text-center" id="af65520625">
+	
+
+<button type="submit" id="button7105457" data-btn-locked="" class="btn f-btn  button-md btn-success" style="color: white; background-color: #E6514A; border-radius: 6px !important; ">
+
+			Оформить заказ	</button>
+
+<script>
+$( function() {
+	var disableButton = function (e) {
+		if (window['prsbutton7105457']) {
+			e.preventDefault();
+			return false;
+		} else {
+			$('#button7105457').addClass('disabled');
+			window['prsbutton7105457'] = true;
+			setTimeout(function(){window['prsbutton7105457'] = false;$('#button7105457').removeClass('disabled');}, 6000);
+		}
+		return true;
+	};
+	$( '#button7105457' ).click( function(e) {
+		//disableButton(e);
+			} );
+});
+</script>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#af65520625 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field87153" data-item-name="field87153" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 25px; border-radius: ; " data-setting-editable="true" class="builder-item part-commentField  utm_source hide" id="a7aaf72f23">
+	<div id="fieldStandard7052629" data-hide-filled="0">
+	
+	<div class="field-content">
+		
+					<div id="fieldWidget7924598" class="f-input-wrapper">
+					<div class="custom-field type-string">
+				<div class="custom-field-input">
+											<label class="field-label">
+							<span class="label-value">
+								ЗАКАЗ_utm_source							</span>
+													</label>
+										<div class="field-input-block">
+<input id="field-input-524468" type="text" class="form-control f-input custom-field-value" name="formParams[dealCustomFields][524468]" placeholder="" value=""></div>
+									</div>
+			</div>
+			</div>
+	</div>
+</div>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#a7aaf72f23 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field54261" data-item-name="field54261" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 25px; border-radius: ; " data-setting-editable="true" class="builder-item part-commentField  utm_medium hide" id="af494bc870">
+	<div id="fieldStandard2925127" data-hide-filled="0">
+	
+	<div class="field-content">
+		
+					<div id="fieldWidget5425239" class="f-input-wrapper">
+					<div class="custom-field type-string">
+				<div class="custom-field-input">
+											<label class="field-label">
+							<span class="label-value">
+								ЗАКАЗ_utm_medium							</span>
+													</label>
+										<div class="field-input-block">
+<input id="field-input-524470" type="text" class="form-control f-input custom-field-value" name="formParams[dealCustomFields][524470]" placeholder="" value=""></div>
+									</div>
+			</div>
+			</div>
+	</div>
+</div>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#af494bc870 .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+			<div data-param="form/items/parts/field20787" data-item-name="field20787" data-title="Элемент" data-animation-mode="no" style="margin-bottom: 25px; border-radius: ; " data-setting-editable="true" class="builder-item part-commentField  utm_campaign hide" id="ae343a536b">
+	<div id="fieldStandard6192923" data-hide-filled="0">
+	
+	<div class="field-content">
+		
+					<div id="fieldWidget1613801" class="f-input-wrapper">
+					<div class="custom-field type-string">
+				<div class="custom-field-input">
+											<label class="field-label">
+							<span class="label-value">
+								ЗАКАЗ_utm_campaign							</span>
+													</label>
+										<div class="field-input-block">
+<input id="field-input-524471" type="text" class="form-control f-input custom-field-value" name="formParams[dealCustomFields][524471]" placeholder="" value=""></div>
+									</div>
+			</div>
+			</div>
+	</div>
+</div>
+	<div class="add-redesign-subblock" data-id="1429250300">
+		<span class="fa fa-plus"></span>
+	</div>
+</div>
+<style>
+		.add-redesign-subblock,
+	div#ae343a536b .add-redesign-subblock
+	{
+		display: none;
+	}
+</style>
+	</div>
+
+
+
+
+
+<script>
+	$( function() {
+
+		if( $('#builder2777795 input[type="radio"]').length == 1 && $('#builder2777795 input[type="radio"]').prop('checked') ) {
+			$('#builder2777795 input[type="radio"]').hide();
+		}
+
+		if ($('.animated-block').animatedBlock) {
+            $('.animated-block').animatedBlock();
+		}
+	} );
+</script>
+	</div>
+
+	<div class="common-setting-link box-setting-link" data-icon-class="fa fa-adjust" data-param="form/formBox" data-title="Стиль блока" data-setting-editable="true"></div>
+	<div class="common-setting-link form-setting-link" data-icon-class="fa fa-wpforms" data-param="form/handler" data-title="Что делать после заполнения" data-setting-editable="true"></div>
+<input type="hidden" name="formParams[clarity_uid]" value="v1w8hglswTLDxFFRhboqVPk6JwTJV_l4" style="display:none;position:absolute;width:0;max-width:0;height:0;max-height:0;left:-999999999px;pointer-events:none;vizability:hidden;"></form>
+
+</html>

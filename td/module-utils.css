@@ -1,5 +1,6 @@
 hr {
-	margin-top: 18px !important;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .part-separator {
@@ -201,22 +202,22 @@ hr {
 	margin-bottom: 30px !important;
 }
 
-.lt-form .f-s30-b32, .f-s30-b32 div p {
+.lt-form .f-s30-b32, .lt-form .f-s30-b32 div p {
 	margin-bottom: 32px !important;
 	font-size: 30px !important;
 }
-.lt-form .f-s30, .f-s30 > div > p {
+.lt-form .f-s30, .lt-form .f-s30 > div > p {
 	font-size: 30px !important;
 	margin-bottom: 16px !important;
 }
 
 
 @media screen and (max-width: 450px) {
-.lt-form .f-s30-b32, .f-s30-b32 > div > p {
+.lt-form .f-s30-b32, .lt-form .f-s30-b32 > div > p {
 		font-size: 21px !important;
 		margin-bottom: 32px !important;
 }
-.lt-form .f-s30, .f-s30 > div > p {
+.lt-form .f-s30, .lt-form .f-s30 > div > p {
 	font-size: 21px;
 	margin-bottom: 16px !important;
 }
