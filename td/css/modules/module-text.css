@@ -44,6 +44,10 @@
 	margin-top: -5px;
 }
 
+.custom-field-input {
+	margin-top: -5px !important;
+}
+
 .dotted-link {
 	font-size: 14px !important;
 }
