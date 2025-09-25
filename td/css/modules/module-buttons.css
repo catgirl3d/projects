@@ -21,6 +21,7 @@
 	background-color: #e6514a !important;
 	border: 2px solid #e6514a !important;
 	border-radius: 40px !important;
+	font-style: normal !important;
 }
 
 .button-md:hover {
