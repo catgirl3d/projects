@@ -38,6 +38,12 @@
 	margin-left: -11px;
 }
 
+.custom-field.type-checkbox .field-description-block {
+	padding-left: 38px;
+	font-size: 11px;
+	margin-top: -5px;
+}
+
 .dotted-link {
 	font-size: 14px !important;
 }
