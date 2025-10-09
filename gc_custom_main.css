@@ -603,6 +603,11 @@ border-left: 3px solid;
 	border-color: antiquewhite;
 }
 
+.flowchart-container .flowchart-block.subtask-flowchart-block {
+	background: #f4f4f4 !important;
+	font-weight: bold !important;
+}
+
 .flowchart-container {
 	width: 500vh;
 }
