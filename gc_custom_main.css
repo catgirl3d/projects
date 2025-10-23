@@ -776,6 +776,14 @@ border-left: 3px solid;
 	padding: 10px 8px 10px 8px;
 }
 
+.btn.submit-button {
+	border-radius: 40px !important;
+}
+
+.btn.skip-button.btn-link {
+	display: none !important;
+}
+
 @media screen and (min-width: 1000px) {
 	#s2id_addmailingmessageoperation-mailing_id {
 	width: 100% !important;
