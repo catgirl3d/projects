@@ -93,6 +93,7 @@
 
 .text-accurate {
 	font-size: 12px;
+	font-weight: 400 !important;
 }
 
 .field-description-block {
