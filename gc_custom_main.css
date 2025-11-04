@@ -587,10 +587,6 @@ border-left: 3px solid;
 	font-size: 14px;
 }
 
-.flowchart-container {
-	background: none !important;
-}
-
 .flowchart-block .flowchart-block-icon {
 	width: 19px!important;
 	height: 19px !important;
@@ -599,41 +595,25 @@ border-left: 3px solid;
 
 .operation-flowchart-block {
 	color: #000;
-	background: var(--flowchart-operation-block-color);
+	/*background: var(--flowchart-operation-block-color);*/
 	border-color: antiquewhite;
-}
-
-.flowchart-container .flowchart-block.subtask-flowchart-block {
-	background: #f4f4f4 !important;
- 	font-weight: bold !important;
- 	border-left: 3px #686868 solid !important;
- 	border-right: 3px #686868 solid !important;
-}
-
-.flowchart-container {
-	width: 500vh;
+	background: #fff !important;
 }
 
 #flowchart .not-own-process-message, #testing {
 	padding: 45px 20px 20px 20px !important;
 }
 
-.flowchart-container .flowchart-block.condition-flowchart-block {
-	background: #fff8e3;
-	font-size: 12px;
-   	width: max-content !important;
-	border-color: whitesmoke !important;
-}
-
-.operation-flowchart-block {
-	background: #fff !important;
+.flowchart-container {
+	background: none !important;
+	width: 500vh;
 }
 
 .flowchart-container .flowchart-block {
 	border: 1px solid #f0f0f0;
 	text-align: center;
 	max-width: 200px;
-	min-width: 180px;
+	min-width: 200px;
 	position: absolute;
 	padding: 5px 10px;
 	font-size: 13px !important;
@@ -646,9 +626,19 @@ border-left: 3px solid;
 	border-radius: 6px !important;
 }
 
-/*.standard-page-content a:focus, .standard-page-content a:hover {
-	color: unset !important;
-}*/
+.flowchart-container .flowchart-block.condition-flowchart-block {
+	background: #fff8e3;
+	font-size: 12px;
+   	width: max-content !important;
+	border-color: whitesmoke !important;
+}
+
+.flowchart-container .flowchart-block.subtask-flowchart-block {
+	background: #f4f4f4 !important;
+ 	font-weight: bold !important;
+ 	border-left: 3px #686868 solid !important;
+ 	border-right: 3px #686868 solid !important;
+}
 
 .flowchart-container .flowchart-block.delayed-flowchart-block {
 	background: #ffdada;
@@ -675,6 +665,10 @@ border-left: 3px solid;
 #flowchart .block-modal-window select {
 	min-height: unset !important;
 }
+
+/*.standard-page-content a:focus, .standard-page-content a:hover {
+	color: unset !important;
+}*/
 
 .select2-container {
 	max-width: unset;
