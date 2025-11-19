@@ -17,6 +17,17 @@
     display: none;
 }
 
+.form-result-block .f-header {
+	font-weight: 800 !important;
+	line-height: 1.23;
+	font-size: clamp(19px, 5vw, 25px) !important;
+	padding-bottom: 3px !important;
+}
+
+.lt-form .form-result-block {
+	margin-bottom: 0px !important;
+}
+
 /* Подзаголовок формы */
 .sub-label {
 	margin-bottom: 0px !important;
