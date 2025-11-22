@@ -44,6 +44,11 @@
 	font-size: 17px;
 }
 
+.text-accurate.f-text {
+	font-size: 12px !important;
+	font-weight: 400 !important;
+}
+
 .lt-text-header-expand .text {
 	padding-top: 8px !important;
 	margin-left: -11px;
@@ -100,11 +105,6 @@
 	margin-bottom: 2px !important;
 	font-size: 12px !important;
     display: none !important;
-}
-
-.text-accurate.f-text {
-	font-size: 12px;
-	font-weight: 400 !important;
 }
 
 .field-description-block {
