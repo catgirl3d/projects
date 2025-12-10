@@ -220,10 +220,12 @@ hr {
 }
 
 .lt-form .f-s30-b32, .lt-form .f-s30-b32 div p {
+	margin-top: 0px !important;
 	margin-bottom: 32px !important;
 	font-size: 30px !important;
 }
 .lt-form .f-s30, .lt-form .f-s30 > div > p {
+	margin-top: 0px !important;
 	font-size: 30px !important;
 	margin-bottom: 16px !important;
 }
