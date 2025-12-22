@@ -1,3 +1,7 @@
+.help-widget-button {
+	display: none !important;
+}
+
 .block-library .blocks-list {
 	grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)) !important;
 	grid-gap: 10px !important;
