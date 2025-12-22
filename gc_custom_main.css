@@ -778,10 +778,6 @@ border-left: 3px solid;
 	display: none !important;
 }
 
-html body, .form-control {
-	font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif !important;
-}
-
 @media screen and (min-width: 1000px) {
 	#s2id_addmailingmessageoperation-mailing_id {
 	width: 100% !important;
