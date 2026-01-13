@@ -805,6 +805,11 @@ border-left: 3px solid;
 	transform: unset !important;
 	margin-left: auto;
 	margin-right: auto;
+	background: none !important;
+}
+
+.gc-notice-modal.in .modal-dialog {
+	background: none !important;
 }
 
 .gc-notice-modal.in div {
