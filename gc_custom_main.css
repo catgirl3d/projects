@@ -533,7 +533,10 @@ color: #3c3c3c;
 }*/
 
 .talks-widget-button {
-	background: #345980 !important;
+	background: #2e3337 !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-image: url("/public/img/talks_widget/dialog.svg") !important;
 }
 
 .task-form .active-task-script {
@@ -790,6 +793,27 @@ border-left: 3px solid;
 	display: none !important;
 }
 
+.gc-notice-modal.in div {
+	margin: auto !important;
+	padding: 5px !important;
+}
+
+.gc-notice-modal.in {
+	width: 500px !important;
+	top: 0px !important;
+	left: 0px !important;
+	transform: unset !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gc-notice-modal.in div {
+	padding: 3px !important;
+}
+.gc-notice-modal.in .confirm-email-popup-form form {
+	gap: 3px !important;
+}
+
 @media screen and (min-width: 1000px) {
 	#s2id_addmailingmessageoperation-mailing_id {
 	width: 100% !important;
@@ -805,15 +829,36 @@ border-left: 3px solid;
 }
 
 .page-header h1 {
-	color: #3c3c3c;
 	font-size: clamp(20px, 6vw, 25px) !important;
 }
 
 .breadcrumb {
-	margin-bottom: 0px;
+	margin-bottom: 0px !important;
+	margin-top: 10px;
 }
 
 .lesson-title-value {
 	font-size: clamp(20px, 6vw, 25px) !important;
 }
+
+.gc-account-leftbar .gc-account-user-menu {
+	background: #2e3337;
+	width: 60px;
+}
+
+.gc-notice-modal.in {
+	width: 360px !important;
+}
+.gc-notice-modal.in div {
+	padding: 2px !important;
+}
+
+.lt-video {
+	overflow: hidden;
+}
+
+.lesson-list li {
+	margin: 0px 10px 10px !important;
+}
+
 }
