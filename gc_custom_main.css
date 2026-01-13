@@ -421,6 +421,14 @@ background-image: none;
 	background: #3c3c3c;
 }
 
+.breadcrumb {
+	margin-bottom: 0px !important;
+}
+
+.page-header {
+	margin: 0px 0 20px !important;
+}
+
 .page-header h1 a {
 	color: #3c3c3c;
 }
@@ -786,3 +794,26 @@ border-left: 3px solid;
 	#s2id_addmailingmessageoperation-mailing_id {
 	width: 100% !important;
 }}
+
+@media screen and (max-width: 768px) {
+.page-header {
+	margin: 0px 0 20px;
+}
+
+.page-header .clearfix {
+	display: none;
+}
+
+.page-header h1 {
+	color: #3c3c3c;
+	font-size: clamp(20px, 6vw, 25px) !important;
+}
+
+.breadcrumb {
+	margin-bottom: 0px;
+}
+
+.lesson-title-value {
+	font-size: clamp(20px, 6vw, 25px) !important;
+}
+}
