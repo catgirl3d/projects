@@ -4,23 +4,20 @@
    ======================================================================== */
 
 :root {
+	/* ===== FONTS ===== */
 	--font-main: "proxima-nova", "Lato", Helvetica, Arial, sans-serif;
 	--font-condensed: "Fira Sans Condensed", sans-serif;
 	--font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+	/* ===== PRIMARY & ACCENT COLORS ===== */
 	--color-primary: #5e79bb;
 	--color-primary-hover: #4a65a4;
 	--color-primary-active: #455a8e;
-	--color-dark-bg: #2e3337;
-	--color-text-dark: #3c3c3c;
 	--color-accent: coral;
 	--color-accent-hover: #d26f48;
-	--color-bg-light: #f4f4f4;
-	--color-bg-transparent: rgba(77, 77, 77, 0.05);
-	--color-border: #eaeaea;
-	--color-border-gray: #ddd;
-	--color-border-dark: #686868;
+	--color-dark-bg: #2e3337;
 
+	/* ===== BASE COLORS ===== */
 	--color-white: #fff;
 	--color-black: #000;
 	--color-link: #3e65ae;
@@ -28,44 +25,56 @@
 	--color-success: #18a850;
 	--color-danger: #f41c1c;
 	--color-warning: #ffb201;
+
+	/* ===== BACKGROUND COLORS ===== */
+	--color-bg-light: #f4f4f4;
+	--color-bg-transparent: rgba(77, 77, 77, 0.05);
+	--color-bg-lesson: #f2f2f2e8;
+	--color-bg-cornsilk: cornsilk;
+	/* Yellow backgrounds */
+	--color-bg-yellow: #fdf3cd;
+	--color-bg-yellow-bright: rgba(255, 220, 81, 0.9);
+	--color-bg-yellow-pale: rgba(255, 220, 81, 0.31);
+	--color-bg-yellow-soft: #fff8e3;
+	/* Gray backgrounds */
+	--color-bg-gray-light: rgb(232, 232, 232);
+	--color-bg-gray-pale: #f0f0f0;
+	--color-bg-gray-soft: #ececec;
+	--color-bg-gray-muted: #e8e8e8;
+	--color-bg-gray-dark: #404044;
+	--color-bg-gray-ultra-light: #f2f2f2;
+	/* Other backgrounds */
+	--color-bg-purple: #4e5293;
+	--color-bg-blue-pale: #edf0ff;
+	--color-bg-red-pale: #ffdada;
+
+	/* ===== BORDER COLORS ===== */
+	--color-border: #eaeaea;
+	--color-border-gray: #ddd;
+	--color-border-gray-light: #d9d9d9;
+	--color-border-gray-pale: #f0f0f0;
+	--color-border-gray-soft: #e3e3e3a3;
+	--color-border-gray-muted: #ddd6;
+	--color-border-dark: #686868;
+	--color-border-orange: #F0AA7F;
+	--color-border-white-pale: #FDFDFD4A;
+
+	/* ===== TEXT COLORS ===== */
+	--color-text-dark: #3c3c3c;
 	--color-text-muted: #7d7d7d;
 	--color-text-light: #6a6a6a;
+	--color-text-gray: #646464;
+	--color-text-gray-dark: #333;
+	--color-text-gray-soft: #44474a;
+	--color-text-blue: #285395de;
 
-	--color-bg-yellow: #fdf3cd;
-	--color-bg-cornsilk: cornsilk;
-	--color-bg-lesson: #f2f2f2e8;
-
+	/* ===== STATUS COLORS ===== */
 	--color-status-new: #e64646;
 	--color-status-payed: #2b952bd6;
 	--color-status-part-payed: #4da64d85;
 	--color-status-pending: #efe1ff;
 	--color-status-cancelled: #605e5e;
 	--color-status-waiting: #2c5ab0;
-
-	--color-bg-yellow-bright: rgba(255, 220, 81, 0.9);
-	--color-bg-yellow-pale: rgba(255, 220, 81, 0.31);
-	--color-bg-gray-light: rgb(232, 232, 232);
-	--color-bg-gray-pale: #f0f0f0;
-	--color-bg-gray-soft: #ececec;
-	--color-bg-gray-muted: #e8e8e8;
-	--color-bg-gray-dark: #404044;
-	--color-bg-purple: #4e5293;
-	--color-bg-blue-pale: #edf0ff;
-	--color-bg-yellow-soft: #fff8e3;
-	--color-bg-red-pale: #ffdada;
-	--color-bg-gray-ultra-light: #f2f2f2;
-
-	--color-border-orange: #F0AA7F;
-	--color-border-gray-light: #d9d9d9;
-	--color-border-gray-pale: #f0f0f0;
-	--color-border-gray-soft: #e3e3e3a3;
-	--color-border-gray-muted: #ddd6;
-	--color-border-white-pale: #FDFDFD4A;
-
-	--color-text-gray: #646464;
-	--color-text-gray-dark: #333;
-	--color-text-blue: #285395de;
-	--color-text-gray-soft: #44474a;
 }
 
 /* Base tags */
