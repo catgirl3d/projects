@@ -1,68 +1,83 @@
-/* Checkboxes / labels group */
+/* ========================================================================
+   MODULE: CHECKBOXES
+   Custom checkbox styles and labels
+   ======================================================================== */
+
+:root {
+	--checkbox-border: #B4B7C1;
+	--checkbox-bg: #F2F2F5;
+	--checkbox-checked: #0151AB;
+	--checkbox-hover: #0151ab;
+}
+
+/* Checkbox Base Styles */
 .form-content input[type="checkbox"] {
 	appearance: none;
 	width: 24px;
 	height: 24px;
-	border: 1px solid #B4B7C1;
+	border: 1px solid var(--checkbox-border);
 	border-radius: 4px;
-	background-color: #F2F2F5;
+	background-color: var(--checkbox-bg);
 	cursor: pointer;
 	transition: all 0.35s ease;
 	position: relative;
 	left: 0;
 	top: 1px;
-	margin: 0px 15px 2px 0px !important;
+	margin: 0 15px 2px 0 !important;
 	flex-shrink: 0;
 }
 
 .form-content input[type="checkbox"]:hover {
-    border-color: #0151ab;
-    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
+	border-color: var(--checkbox-hover);
+	box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
 }
 
 .form-content input[type="checkbox"]:active {
-    transition: all 0.6s ease;
+	transition: all 0.6s ease;
 }
 
 .form-content input[type="checkbox"]:checked {
-    background-color: #0151AB;
-    border-color: #0151AB;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: center;
+	background-color: var(--checkbox-checked);
+	border-color: var(--checkbox-checked);
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
+/* Checkbox Components */
 .global-confirm-checkbox-block {
 	display: none;
 }
 
 .field-label.control-label {
 	position: relative !important;
-	padding-left: 0px !important;
-	padding-top: 0px !important;
-	margin-bottom: 0px !important;
+	padding-left: 0 !important;
+	padding-top: 0 !important;
+	margin-bottom: 0 !important;
 	display: flex !important;
 }
 
-.custom-field.type-checkbox .field-label .label-value { /* Подпись на чекбоксе */
+.custom-field.type-checkbox .field-label .label-value {
 	display: block;
-	margin-left: 0px;
+	margin-left: 0;
 	font-size: 12px;
 	line-height: 100%;
-	padding: 0px;
+	padding: 0;
 	margin-top: auto !important;
 	margin-bottom: auto !important;
 	padding-bottom: 1px;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 450px) {
-.custom-field.type-checkbox .field-label .label-value {
-	font-size: 11px !important;
-	padding-top: 0px !important;
-	margin-left: 5px !important;
-}
-.field-label.control-label {
-	margin-bottom: -6px !important;
-	padding-left: 0px !important;
-}
+	.custom-field.type-checkbox .field-label .label-value {
+		font-size: 11px !important;
+		padding-top: 0 !important;
+		margin-left: 5px !important;
+	}
+
+	.field-label.control-label {
+		margin-bottom: -6px !important;
+		padding-left: 0 !important;
+	}
 }

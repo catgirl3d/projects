@@ -1,69 +1,96 @@
-.part-button {
-	margin-bottom: 0px !important;
-	margin-top: 0px !important;
+/* ========================================================================
+   MODULE: BUTTONS
+   Button styles and variants
+   ======================================================================== */
+
+:root {
+	/* Default Button Colors (can be overridden) */
+	--btn-default-bg: #e6514a;
+	--btn-default-border: #e6514a;
+	
+	/* Button Color Palette */
+	--btn-color-white: #fff;
+	--btn-color-red: #e6514a;
+	--btn-color-blue: #3035C3;
+	--btn-color-gray: #4f4f4f;
 }
 
+/* Base Button Layout */
+.part-button {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+/* Medium Button */
 .button-md {
 	position: relative !important;
 	font-weight: 700 !important;
 	font-size: 16px !important;
 	line-height: 160% !important;
 	text-align: center !important;
-	color: #FFF !important;
+	color: var(--btn-color-white) !important;
 	margin-top: 10px !important;
 	min-height: 55px !important;
-	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
 	width: clamp(250px, 69vw, 350px) !important;
 	-webkit-transition: all .3s ease 0s !important;
-	-o-transition: all .3s ease 0s !important;
 	transition: all .3s ease 0s !important;
 	padding: 16px !important;
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
+	background-color: var(--btn-default-bg) !important;
+	border: 2px solid var(--btn-default-border) !important;
 	border-radius: 40px !important;
 	font-style: normal !important;
 }
 
 .button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
+	background: var(--btn-color-white) !important;
+	color: var(--btn-default-bg) !important;
 }
 
-#button_01, .c_red_button > .button-md {
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
+/* Button Variants - Red */
+#button_01,
+.c_red_button > .button-md {
+	background-color: var(--btn-color-red) !important;
+	border: 2px solid var(--btn-color-red) !important;
 }
 
-#button_01:hover, .c_red_button > .button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
+#button_01:hover,
+.c_red_button > .button-md:hover {
+	background: var(--btn-color-white) !important;
+	color: var(--btn-color-red) !important;
 }
 
-#button_02, .c_blue_button > .button-md {
-	background-color: #3035C3 !important;
-	border: 2px solid #3035C3 !important;
+/* Button Variants - Blue */
+#button_02,
+.c_blue_button > .button-md {
+	background-color: var(--btn-color-blue) !important;
+	border: 2px solid var(--btn-color-blue) !important;
 }
 
-#button_02:hover, .c_blue_button  > .button-md:hover {
-	background: #fff !important;
-  	color: #3035C3 !important;
+#button_02:hover,
+.c_blue_button > .button-md:hover {
+	background: var(--btn-color-white) !important;
+	color: var(--btn-color-blue) !important;
 }
 
-#button_03, .c_gray_button > .button-md {
-	background-color: #4f4f4f !important;
-	border: 2px solid #4f4f4f !important;
+/* Button Variants - Gray */
+#button_03,
+.c_gray_button > .button-md {
+	background-color: var(--btn-color-gray) !important;
+	border: 2px solid var(--btn-color-gray) !important;
 }
 
-#button_03:hover, .c_gray_button  > .button-md:hover {
-	background: #fff !important;
-  	color: #4f4f4f !important;
+#button_03:hover,
+.c_gray_button > .button-md:hover {
+	background: var(--btn-color-white) !important;
+	color: var(--btn-color-gray) !important;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 450px) {
-.button-md {
-	font-size: 16px !important;
-	width: 95% !important;
-	min-height: 53px !important;
-  	padding: 13px !important;
-}
+	.button-md {
+		font-size: 16px !important;
+		width: 95% !important;
+		min-height: 53px !important;
+		padding: 13px !important;
+	}
 }

@@ -1,247 +1,362 @@
+/* ========================================================================
+   MODULE: UTILITIES
+   Helper classes for spacing, typography and components
+   ======================================================================== */
+
+/* Base Elements */
 hr {
 	margin-top: 16px;
 	margin-bottom: 16px;
 }
 
+/* Component Utilities */
 .part-separator {
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 }
 
 .builder-item.part-userField.c-recaptcha {
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 }
 
 .c-recaptcha div {
-	padding: 0px !important;
-	margin: 0px !important;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .part-html {
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 }
 
 .modal-content {
 	border-radius: 10px !important;
 }
 
+/* Font Weight Utilities */
 .fw-700 .field-label {
 	font-weight: 700;
 }
+
 .fw-600 .field-label {
 	font-weight: 600;
 }
+
 .fw-500 .field-label {
 	font-weight: 500;
 }
+
 .fw-400 .field-label {
 	font-weight: 400;
 }
+
 .fw-300 .field-label {
 	font-weight: 300;
 }
+
 .fw-200 .field-label {
 	font-weight: 200;
 }
 
-.lt-form .p-0, .lt-form .p0{
-	padding:0px !important;
+/* Spacing Utilities - 0 */
+.lt-form .p-0,
+.lt-form .p0 {
+	padding: 0 !important;
 }
 
-.lt-form .m-0, .lt-form .m0{
-	margin:0px !important;
+.lt-form .m-0,
+.lt-form .m0 {
+	margin: 0 !important;
 }
 
-.lt-form .p-2, .lt-form .p2{
-	padding:2px !important;
-}
-.lt-form .pt-2, .lt-form .pt2{
-	padding-top:2px !important;
-}
-.lt-form .pb-2, .lt-form .pb2{
-	padding-bottom:2px !important;
+/* Spacing Utilities - 2px */
+.lt-form .p-2,
+.lt-form .p2 {
+	padding: 2px !important;
 }
 
-.lt-form .m-2, .lt-form .m2{
-	margin:2px !important;
+.lt-form .pt-2,
+.lt-form .pt2 {
+	padding-top: 2px !important;
 }
-.lt-form .mt-2, .lt-form .mt2{
-	margin-top:2px !important;
+
+.lt-form .pb-2,
+.lt-form .pb2 {
+	padding-bottom: 2px !important;
 }
-.lt-form .mb-2, .lt-form .mb2{
-	margin-bottom:2px !important;
+
+.lt-form .m-2,
+.lt-form .m2 {
+	margin: 2px !important;
 }
-.lt-form .m-t-b2, .lt-form .mtb2{
+
+.lt-form .mt-2,
+.lt-form .mt2 {
+	margin-top: 2px !important;
+}
+
+.lt-form .mb-2,
+.lt-form .mb2 {
+	margin-bottom: 2px !important;
+}
+
+.lt-form .m-t-b2,
+.lt-form .mtb2 {
 	margin-top: 2px !important;
 	margin-bottom: 2px !important;
 }
 
-.lt-form .p-5, .lt-form .p5{
-	padding:5px !important;
-}
-.lt-form .pt-5, .lt-form .pt5{
-	padding-top:5px !important;
-}
-.lt-form .pb-5, .lt-form .pb5{
-	padding-bottom:5px !important;
+/* Spacing Utilities - 5px */
+.lt-form .p-5,
+.lt-form .p5 {
+	padding: 5px !important;
 }
 
-.lt-form .m-5, .lt-form .m5{
-	margin:5px !important;
+.lt-form .pt-5,
+.lt-form .pt5 {
+	padding-top: 5px !important;
 }
-.lt-form .mt-5, .lt-form .mt5{
-	margin-top:5px !important;
+
+.lt-form .pb-5,
+.lt-form .pb5 {
+	padding-bottom: 5px !important;
 }
-.lt-form .mb-5, .lt-form .mb5{
-	margin-bottom:5px !important;
+
+.lt-form .m-5,
+.lt-form .m5 {
+	margin: 5px !important;
 }
-.lt-form .m-t-b5, .lt-form .mtb5{
+
+.lt-form .mt-5,
+.lt-form .mt5 {
+	margin-top: 5px !important;
+}
+
+.lt-form .mb-5,
+.lt-form .mb5 {
+	margin-bottom: 5px !important;
+}
+
+.lt-form .m-t-b5,
+.lt-form .mtb5 {
 	margin-top: 5px !important;
 	margin-bottom: 5px !important;
 }
 
-.lt-form .p-10, .lt-form .p10{
-	padding:10px !important;
-}
-.lt-form .pt-10, .lt-form .pt10{
-	padding-top:10px !important;
-}
-.lt-form .pb-10, .lt-form .pb10{
-	padding-bottom:10px !important;
+/* Spacing Utilities - 10px */
+.lt-form .p-10,
+.lt-form .p10 {
+	padding: 10px !important;
 }
 
-.lt-form .m-10, .lt-form .m10{
-	margin:10px !important;
+.lt-form .pt-10,
+.lt-form .pt10 {
+	padding-top: 10px !important;
 }
-.lt-form .mt-10, .lt-form .mt10{
-	margin-top:10px !important;
+
+.lt-form .pb-10,
+.lt-form .pb10 {
+	padding-bottom: 10px !important;
 }
-.lt-form .mb-10, .lt-form .mb10{
-	margin-bottom:10px !important;
+
+.lt-form .m-10,
+.lt-form .m10 {
+	margin: 10px !important;
 }
-.lt-form .m-t-b10, .lt-form .mtb10{
+
+.lt-form .mt-10,
+.lt-form .mt10 {
+	margin-top: 10px !important;
+}
+
+.lt-form .mb-10,
+.lt-form .mb10 {
+	margin-bottom: 10px !important;
+}
+
+.lt-form .m-t-b10,
+.lt-form .mtb10 {
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }
 
-.lt-form .p-15, .lt-form .p15{
-	padding:15px !important;
-}
-.lt-form .pt-15, .lt-form .pt15{
-	padding-top:15px !important;
-}
-.lt-form .pb-15, .lt-form .pb15{
-	padding-bottom:15px !important;
+/* Spacing Utilities - 15px */
+.lt-form .p-15,
+.lt-form .p15 {
+	padding: 15px !important;
 }
 
-.lt-form .m-15, .lt-form .m15{
-	margin:15px !important;
+.lt-form .pt-15,
+.lt-form .pt15 {
+	padding-top: 15px !important;
 }
-.lt-form .mt-15, .lt-form .mt15{
-	margin-top:15px !important;
+
+.lt-form .pb-15,
+.lt-form .pb15 {
+	padding-bottom: 15px !important;
 }
-.lt-form .mb-15, .lt-form .mb15{
-	margin-bottom:15px !important;
+
+.lt-form .m-15,
+.lt-form .m15 {
+	margin: 15px !important;
 }
-.lt-form .m-t-b15, .lt-form .mtb15{
+
+.lt-form .mt-15,
+.lt-form .mt15 {
+	margin-top: 15px !important;
+}
+
+.lt-form .mb-15,
+.lt-form .mb15 {
+	margin-bottom: 15px !important;
+}
+
+.lt-form .m-t-b15,
+.lt-form .mtb15 {
 	margin-top: 15px !important;
 	margin-bottom: 15px !important;
 }
 
-.lt-form .p-20, .lt-form .p20{
-	padding:20px !important;
-}
-.lt-form .pt-20, .lt-form .pt20{
-	padding-top:20px !important;
-}
-.lt-form .pb-20, .lt-form .pb20{
-	padding-bottom:20px !important;
+/* Spacing Utilities - 20px */
+.lt-form .p-20,
+.lt-form .p20 {
+	padding: 20px !important;
 }
 
-.lt-form .m-20, .lt-form .m20{
-	margin:20px !important;
+.lt-form .pt-20,
+.lt-form .pt20 {
+	padding-top: 20px !important;
 }
-.lt-form .mt-20, .lt-form .mt20{
-	margin-top:20px !important;
+
+.lt-form .pb-20,
+.lt-form .pb20 {
+	padding-bottom: 20px !important;
 }
-.lt-form .mb-20, .lt-form .mb20{
-	margin-bottom:20px !important;
+
+.lt-form .m-20,
+.lt-form .m20 {
+	margin: 20px !important;
 }
-.lt-form .m-t-b20, .lt-form .mtb20{
+
+.lt-form .mt-20,
+.lt-form .mt20 {
+	margin-top: 20px !important;
+}
+
+.lt-form .mb-20,
+.lt-form .mb20 {
+	margin-bottom: 20px !important;
+}
+
+.lt-form .m-t-b20,
+.lt-form .mtb20 {
 	margin-top: 20px !important;
 	margin-bottom: 20px !important;
 }
 
-.lt-form .p-25, .lt-form .p25{
-	padding:25px !important;
-}
-.lt-form .pt-25, .lt-form .pt25{
-	padding-top:25px !important;
-}
-.lt-form .pb-25, .lt-form .pb25{
-	padding-bottom:25px !important;
+/* Spacing Utilities - 25px */
+.lt-form .p-25,
+.lt-form .p25 {
+	padding: 25px !important;
 }
 
-.lt-form .m-25, .lt-form .m25{
-	margin:25px !important;
+.lt-form .pt-25,
+.lt-form .pt25 {
+	padding-top: 25px !important;
 }
-.lt-form .mt-25, .lt-form .mt25{
-	margin-top:25px !important;
+
+.lt-form .pb-25,
+.lt-form .pb25 {
+	padding-bottom: 25px !important;
 }
-.lt-form .mb-25, .lt-form .mb25{
-	margin-bottom:25px !important;
+
+.lt-form .m-25,
+.lt-form .m25 {
+	margin: 25px !important;
 }
-.lt-form .m-t-b25, .lt-form .mtb25{
+
+.lt-form .mt-25,
+.lt-form .mt25 {
+	margin-top: 25px !important;
+}
+
+.lt-form .mb-25,
+.lt-form .mb25 {
+	margin-bottom: 25px !important;
+}
+
+.lt-form .m-t-b25,
+.lt-form .mtb25 {
 	margin-top: 25px !important;
 	margin-bottom: 25px !important;
 }
 
-.lt-form .p-30, .lt-form .p30{
-	padding:30px !important;
-}
-.lt-form .pt-30, .lt-form .pt30{
-	padding-top:30px !important;
-}
-.lt-form .pb-30, .lt-form .pb30{
-	padding-bottom:30px !important;
+/* Spacing Utilities - 30px */
+.lt-form .p-30,
+.lt-form .p30 {
+	padding: 30px !important;
 }
 
-.lt-form .m-30, .lt-form .m30{
-	margin:30px !important;
+.lt-form .pt-30,
+.lt-form .pt30 {
+	padding-top: 30px !important;
 }
-.lt-form .mt-30, .lt-form .mt30{
-	margin-top:30px !important;
+
+.lt-form .pb-30,
+.lt-form .pb30 {
+	padding-bottom: 30px !important;
 }
-.lt-form .mb-30, .lt-form .mb30{
-	margin-bottom:30px !important;
+
+.lt-form .m-30,
+.lt-form .m30 {
+	margin: 30px !important;
 }
-.lt-form .m-t-b30, .lt-form .mtb30{
+
+.lt-form .mt-30,
+.lt-form .mt30 {
+	margin-top: 30px !important;
+}
+
+.lt-form .mb-30,
+.lt-form .mb30 {
+	margin-bottom: 30px !important;
+}
+
+.lt-form .m-t-b30,
+.lt-form .mtb30 {
 	margin-top: 30px !important;
 	margin-bottom: 30px !important;
 }
 
-.lt-form .f-s30-b32, .lt-form .f-s30-b32 div p {
-	margin-top: 0px !important;
+/* Typography Utilities */
+.lt-form .f-s30-b32,
+.lt-form .f-s30-b32 div p {
+	margin-top: 0 !important;
 	margin-bottom: 32px !important;
 	font-size: 30px !important;
 }
-.lt-form .f-s30, .lt-form .f-s30 > div > p {
-	margin-top: 0px !important;
+
+.lt-form .f-s30,
+.lt-form .f-s30 > div > p {
+	margin-top: 0 !important;
 	font-size: 30px !important;
 	margin-bottom: 16px !important;
 }
 
-
+/* Responsive Styles */
 @media screen and (max-width: 450px) {
-.lt-form .f-s30-b32, .lt-form .f-s30-b32 > div > p {
-	font-size: 21px !important;
-	margin-bottom: 32px !important;
-}
-.lt-form .f-s30, .lt-form .f-s30 > div > p {
-	font-size: 21px;
-	margin-bottom: 16px !important;
-}
-hr {
-	margin-top: 15px !important;
-	margin-bottom: 15px !important;
-}
+	.lt-form .f-s30-b32,
+	.lt-form .f-s30-b32 > div > p {
+		font-size: 21px !important;
+		margin-bottom: 32px !important;
+	}
+
+	.lt-form .f-s30,
+	.lt-form .f-s30 > div > p {
+		font-size: 21px;
+		margin-bottom: 16px !important;
+	}
+
+	hr {
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+	}
 }

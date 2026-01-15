@@ -1,32 +1,48 @@
+/* ========================================================================
+   MODULE: OFFER PARTS
+   Offer positions, pricing and selection
+   ======================================================================== */
+
+:root {
+	--offer-border: #f0f0f0;
+	--offer-bg: white;
+	--offer-selected-bg: #9999991f;
+	--offer-selected-border: #8c8b8a;
+	--offer-price-bg: #ffeec6;
+	--offer-text-muted: #777;
+	--offer-parts-bg: #fff;
+}
+
+/* Form Position */
 .form-position {
 	display: block !important;
 	cursor: pointer !important;
 	padding: 20px 12px !important;
-	margin-bottom: 0px !important;
-	border: 1px solid #f0f0f0;
+	margin-bottom: 0 !important;
+	border: 1px solid var(--offer-border);
 	line-height: 1.2;
-	background: white;
-  	border-radius: 4px;
+	background: var(--offer-bg);
+	border-radius: 4px;
 	margin-top: 6px !important;
 }
 
 .form-position-price.pull-right {
-	background-color: #ffeec6 !important;
+	background-color: var(--offer-price-bg) !important;
 	padding: 7px !important;
 	font-size: 15px !important;
 	font-weight: 600 !important;
 	margin-bottom: 4px !important;
 	margin-top: 7px !important;
-	/* color: white; */
 }
 
 .form-position.selected {
-	background: #9999991f !important;
-	margin-bottom: 0px !important;
-	border-left: 5px solid #8c8b8a;
-	box-shadow: 2px 2px 3px rgba(0,0,0,0.05);
+	background: var(--offer-selected-bg) !important;
+	margin-bottom: 0 !important;
+	border-left: 5px solid var(--offer-selected-border);
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* Offer Title and Text */
 .offer-title {
 	font-size: 14px !important;
 	font-weight: 600 !important;
@@ -37,15 +53,15 @@
 }
 
 .text-muted {
-	color: #777 !important;
+	color: var(--offer-text-muted) !important;
 	padding-left: 40px !important;
 	font-size: 13px !important;
 	font-weight: 400;
 }
 
+/* Parts Components */
 .part-position {
-	background: #fff !important;
-	/*padding: 0px !important;*/
+	background: var(--offer-parts-bg) !important;
 	margin-bottom: 10px !important;
 	margin-top: 10px !important;
 }
@@ -56,13 +72,12 @@
 }
 
 .part-total > div {
-	margin-top: 0px !important;
+	margin-top: 0 !important;
 	padding-top: 5px !important;
 }
 
 .part-manyPositions {
-	background: #fff !important;
-	/*border: 1px solid #f2f2f2 !important;*/
+	background: var(--offer-parts-bg) !important;
 	margin-bottom: 5px !important;
 }
 
@@ -70,28 +85,29 @@
 	position: absolute;
 }
 
-/*.pull-left.form-position-title {
-	float: initial !important;
-}*/
-
+/* Responsive Styles */
 @media screen and (max-width: 450px) {
-.offer-title {
-	font-size: 12px !important;
-    padding-left: 34px !important;
-}
-.text-muted {
-	padding-left: 34px !important;
-}
-.builder-item.part-total {
-	font-size: 16px !important;
-}
-.pull-left.form-position-title {
-	float: initial !important;
-}
-.form-position-price.pull-right {
-    padding: 6px 6px !important;
-	margin-bottom: -3px !important;
-	margin-top: 12px !important;
-    font-size: 14px !important;
-}
+	.offer-title {
+		font-size: 12px !important;
+		padding-left: 34px !important;
+	}
+
+	.text-muted {
+		padding-left: 34px !important;
+	}
+
+	.builder-item.part-total {
+		font-size: 16px !important;
+	}
+
+	.pull-left.form-position-title {
+		float: initial !important;
+	}
+
+	.form-position-price.pull-right {
+		padding: 6px 6px !important;
+		margin-bottom: -3px !important;
+		margin-top: 12px !important;
+		font-size: 14px !important;
+	}
 }

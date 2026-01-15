@@ -1,20 +1,34 @@
-.part-header, .part-header p {
-    margin-bottom: 0px !important;
-	margin-top: 0px !important;
+/* ========================================================================
+   MODULE: TEXT
+   Typography, headers, labels and text elements
+   ======================================================================== */
+
+:root {
+	--text-subheader-color: #b82525;
+	--text-popup-color: #050505;
 }
 
-.part-header .f-header, .part-header .f-header p {
+/* Headers */
+.part-header,
+.part-header p {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+.part-header .f-header,
+.part-header .f-header p {
 	font-weight: 800 !important;
 	line-height: 1.23;
 	font-size: clamp(19px, 5vw, 25px) !important;
 }
 
-.part-subheader, .part-subheader p {
-	padding-bottom: 0px !important;
+.part-subheader,
+.part-subheader p {
+	padding-bottom: 0 !important;
 	margin-bottom: 2px !important;
-	color: #b82525;
+	color: var(--text-subheader-color);
 	font-size: 15px !important;
-    display: none;
+	display: none;
 }
 
 .form-result-block .f-header {
@@ -25,20 +39,21 @@
 }
 
 .lt-form .form-result-block {
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 }
 
-/* Подзаголовок формы */
+/* Subheader and Labels */
 .sub-label {
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 }
 
-.sub-label p, .c-subheader p {
+.sub-label p,
+.c-subheader p {
 	font-size: 17px !important;
-	padding-top:2px;
+	padding-top: 2px;
 }
-/*--*/
 
+/* Text Variants */
 .text-normal.f-text {
 	font-weight: 400 !important;
 	font-size: 17px;
@@ -53,6 +68,7 @@
 	margin-left: -11px;
 }
 
+/* Custom Fields */
 .custom-field.type-checkbox .field-description-block {
 	padding-left: 38px;
 	font-size: 11px;
@@ -63,6 +79,7 @@
 	margin-top: -5px !important;
 }
 
+/* Links and Special Elements */
 .dotted-link {
 	font-size: 14px !important;
 }
@@ -76,63 +93,71 @@
 	font-size: 17px;
 	line-height: 16px;
 	margin: 0 0 32px 0;
-	color: #050505;
+	color: var(--text-popup-color);
 }
 
 .label-value a:link {
-  text-decoration: underline !important;
+	text-decoration: underline !important;
 }
 
+/* Country List */
 .iti__country-list {
 	font-size: 14px !important;
 	font-weight: 500 !important;
 }
 
+/* Responsive Styles - Mobile (450px) */
 @media screen and (max-width: 450px) {
-.part-header .f-header, .part-header .f-header p {
-	font-size: clamp(17px, 4vw, 30px) !important;
-	margin-top:0px !important;
-}
+	.part-header .f-header,
+	.part-header .f-header p {
+		font-size: clamp(17px, 4vw, 30px) !important;
+		margin-top: 0 !important;
+	}
 
-.sub-label p, .c-subheader p {
-    padding-top: 5px !important;
-	font-size: 15px !important;
-	line-height: 1.3 !important;
-}
+	.sub-label p,
+	.c-subheader p {
+		padding-top: 5px !important;
+		font-size: 15px !important;
+		line-height: 1.3 !important;
+	}
 
-.part-subheader, .part-subheader p {
-	margin-bottom: 2px !important;
-	font-size: 12px !important;
-    display: none !important;
-}
+	.part-subheader,
+	.part-subheader p {
+		margin-bottom: 2px !important;
+		font-size: 12px !important;
+		display: none !important;
+	}
 
-.field-description-block {
-	font-size: 11px;
-}
+	.field-description-block {
+		font-size: 11px;
+	}
 
-.text-normal.f-text {
-	font-size: 13.5px !important;
-}
+	.text-normal.f-text {
+		font-size: 13.5px !important;
+	}
 
-.iti__country-list {
-	font-size: 12px;
-}
-}
-
-@media screen and (max-width: 420px) {
-.f-subheader.f-subheader- {
-	font-size: 14px !important;
-	display: none !important;
+	.iti__country-list {
+		font-size: 12px;
 	}
 }
 
+/* Responsive Styles - Mobile (450px) */
+@media screen and (max-width: 450px) {
+	.f-subheader.f-subheader- {
+		font-size: 14px !important;
+		display: none !important;
+	}
+}
+
+/* Responsive Styles - Mobile (330px) */
 @media screen and (max-width: 330px) {
-.f-header {
-	font-size: 17px !important;
-}
-.footer-form {
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 10px;
-}
+	.f-header {
+		font-size: 17px !important;
+	}
+
+	.footer-form {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
 }

@@ -1,56 +1,65 @@
+/* ========================================================================
+   MODULE: INPUTS
+   Input fields, selects and labels
+   ======================================================================== */
+
 :root {
-    --f-input-height: 53px;
+	--f-input-height: 53px;
 	--mob-f-input-height: 45px;
+	--input-bg: #f2f2f5;
+	--input-border: #0151ab;
+	--input-color: #050505;
+	--input-color-black: #000;
 }
-.f-input, .f-input-wrapper select {
+
+/* Input Base Styles */
+.f-input,
+.f-input-wrapper select {
 	height: var(--f-input-height) !important;
-	background: #f2f2f5 !important;
-	padding: 0px 20px;
+	background: var(--input-bg) !important;
+	padding: 0 20px;
 	font-size: 16px !important;
-	border: 1px solid #0151ab !important;
+	border: 1px solid var(--input-border) !important;
 	border-radius: 8px !important;
 	font-weight: 400 !important;
-	color: #050505 !important;
-}
-.field-label, .field-label-custom {
-	padding: 0px !important;
-	font-weight: 500 !important;
-    font-size: 14px !important;
-    margin-bottom: 5px;
-}
-.part-userField{ /* userfield margin */
-margin-bottom:16px !important;
+	color: var(--input-color) !important;
 }
 
+/* Label Styles */
+.field-label,
+.field-label-custom {
+	padding: 0 !important;
+	font-weight: 500 !important;
+	font-size: 14px !important;
+	margin-bottom: 5px;
+}
+
+/* User Field Styles */
+.part-userField {
+	margin-bottom: 16px !important;
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 450px) {
-.lt-form .f-input {
-	color: black !important;
-}
+	.lt-form .f-input {
+		color: var(--input-color-black) !important;
+	}
 
-.field-label {
-	font-size: 12px !important;
-	font-weight: 500 !important;
-}
+	.field-label {
+		font-size: 12px !important;
+		font-weight: 500 !important;
+	}
 
-.field-content > .field-label {
-	font-size: 12px !important;
-}
+	.field-content > .field-label {
+		font-size: 12px !important;
+	}
 
-.f-input, .f-input-wrapper select {
-	height: var(--mob-f-input-height) !important;
-	font-size: 13.5px !important;
-	padding: 5px 20px !important;
-	appearance: none;
-	color: #000 !important;
-}
-
-/*@media (pointer: coarse) {
-    .lt-form .f-input-wrapper select {
-        padding: 0px 20px !important;
-        height: var(--mob-f-input-height) !important;
-        -webkit-appearance: none;
-        appearance: none;
+	.f-input,
+	.f-input-wrapper select {
+		height: var(--mob-f-input-height) !important;
 		font-size: 13.5px !important;
-    }
-}*/
+		padding: 5px 20px !important;
+		appearance: none;
+		color: var(--input-color-black) !important;
+	}
 }

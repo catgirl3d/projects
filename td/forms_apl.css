@@ -1,121 +1,186 @@
+/* ========================================================================
+   SECTION 1: IMPORTS
+   External module imports
+   ======================================================================== */
+
 @import url('https://catgirl3d.github.io/projects/td/css/modules/module-utils.css');
 
+
+/* ========================================================================
+   SECTION 2: VARIABLES
+   Color constants and reusable values
+   ======================================================================== */
+
+:root {
+	/* Button Colors */
+	--color-white: #fff;
+	--color-btn-red: #e6514a;
+	--color-btn-blue: #3035C3;
+	
+	/* Input & Checkbox Colors */
+	--color-input-bg: #f2f2f5;
+	--color-input-border: #0151ab;
+	--color-checkbox-border: #B4B7C1;
+	--color-checkbox-checked: #0151AB;
+	
+	/* Border & Background Colors */
+	--color-border-light: #f0f0f0;
+	--color-bg-price: #ffeec6;
+	--color-bg-selected: #9999991f;
+}
+
+
+/* ========================================================================
+   SECTION 2: RESET & BASE
+   Universal box-sizing and layout resets
+   ======================================================================== */
+
 *, *::before, *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .lt-form-inner {
 	padding: 25px 35px 30px 35px !important;
-	margin-bottom: 0px !important;
+	margin-bottom: 0 !important;
 	border-radius: 40px !important;
 }
 
 .lt-block-wrapper {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 }
 
-/* Buttons group */
+
+/* ========================================================================
+   SECTION 3: BUTTONS
+   Button styles and variants
+   ======================================================================== */
+
 .button-md {
 	position: relative !important;
 	font-weight: 700 !important;
 	font-size: 16px !important;
 	line-height: 160% !important;
 	text-align: center !important;
-	color: #FFF !important;
+	color: var(--color-white) !important;
 	margin-top: 10px !important;
 	min-height: 55px !important;
-	font-family: Montserrat,sans-serif !important;
-	/*transition: background-color 0.3s cubic-bezier(0,0,0,.7);*/
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
-  	width: 75% !important;
+	font-family: Montserrat, sans-serif !important;
+	background-color: var(--color-btn-red) !important;
+	border: 2px solid var(--color-btn-red) !important;
+	width: 75% !important;
 	border-radius: 40px !important;
 	-webkit-transition: all .3s ease 0s !important;
-    -o-transition: all .3s ease 0s !important;
-    transition: all .3s ease 0s !important;
-    padding: 16px !important;
+	transition: all .3s ease 0s !important;
+	padding: 16px !important;
 }
 
 .button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
+	background: var(--color-white) !important;
+	color: var(--color-btn-red) !important;
 }
 
 .c_red_button > .button-md {
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
+	background-color: var(--color-btn-red) !important;
+	border: 2px solid var(--color-btn-red) !important;
 }
 
 .c_red_button > .button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
+	background: var(--color-white) !important;
+	color: var(--color-btn-red) !important;
 }
 
 .c_blue_button > .button-md {
-	background-color: #3035C3 !important;
-	border: 2px solid #3035C3 !important;
+	background-color: var(--color-btn-blue) !important;
+	border: 2px solid var(--color-btn-blue) !important;
 }
 
 .c_blue_button > .button-md:hover {
-	background: #fff !important;
-  	color: #3035C3 !important;
+	background: var(--color-white) !important;
+	color: var(--color-btn-blue) !important;
 }
 
-#button_01, .c_red_button > .button-md {
-	background-color: #e6514a !important;
-	border: 2px solid #e6514a !important;
+#button_01,
+.c_red_button > .button-md {
+	background-color: var(--color-btn-red) !important;
+	border: 2px solid var(--color-btn-red) !important;
 }
 
-#button_01:hover, .c_red_button > .button-md:hover {
-	background: #fff !important;
-	color: #e6514a !important;
+#button_01:hover,
+.c_red_button > .button-md:hover {
+	background: var(--color-white) !important;
+	color: var(--color-btn-red) !important;
 }
 
-#button_02, .c_blue_button > .button-md {
-	background-color: #3035C3 !important;
-	border: 2px solid #3035C3 !important;
+#button_02,
+.c_blue_button > .button-md {
+	background-color: var(--color-btn-blue) !important;
+	border: 2px solid var(--color-btn-blue) !important;
 }
 
-#button_02:hover, .c_blue_button  > .button-md:hover {
-	background: #fff !important;
-  	color: #3035C3 !important;
+#button_02:hover,
+.c_blue_button > .button-md:hover {
+	background: var(--color-white) !important;
+	color: var(--color-btn-blue) !important;
 }
 
 .part-button {
-	margin-bottom: 0px !important;
-	margin-top: 0px !important;
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
 }
 
-.part-subheader {
-	padding-bottom: 0px !important;
-	margin-bottom: 5px !important;
-}
 
-.builder-item.part-userField.c-recaptcha {
-	margin-bottom: 0px !important;
-}
+/* ========================================================================
+   SECTION 4: TYPOGRAPHY
+   Text, headers and font family rules
+   ======================================================================== */
 
-.c-recaptcha div {
-	padding: 0px !important;
-	margin: 0px !important;
-}
-
-/* Text / headers group (and shared font family rules) */
-.block-set, .f-text, .description, .f-subheader, .f-header, .offer-title, .text, .image-box, .lt-form .f-input, .lt-form .field-label, .lt-form, .lt-block .f-btn, .popup__subtitle, .lt-menu .right-descr, .stsr05 .description, .comment-form-wrapper, .tag-editor, .comments-tree a, div.juxtapose, .fotorama__caption, .lt-column-with-icons .column .title, .stsr05{
-font-family: 'Montserrat', serif !important;
+.block-set,
+.f-text,
+.description,
+.f-subheader,
+.f-header,
+.offer-title,
+.text,
+.image-box,
+.lt-form .f-input,
+.lt-form .field-label,
+.lt-form,
+.lt-block .f-btn,
+.popup__subtitle,
+.lt-menu .right-descr,
+.stsr05 .description,
+.comment-form-wrapper,
+.tag-editor,
+.comments-tree a,
+div.juxtapose,
+.fotorama__caption,
+.lt-column-with-icons .column .title,
+.stsr05 {
+	font-family: 'Montserrat', sans-serif !important;
 }
 
 .text-normal.f-text {
-    font-size: 16px !important;
+	font-size: 16px !important;
 	font-weight: 400 !important;
-    line-height: 140% !important;
-  }
+	line-height: 140% !important;
+}
 
 .iti__country-list {
 	font-weight: 500 !important;
@@ -151,10 +216,9 @@ hr {
 	color: #333 !important;
 	font-weight: 800 !important;
 	line-height: 1.23;
-
 }
 
-.blue > .f-header > p{
+.blue > .f-header > p {
 	color: #3035C3 !important;
 }
 
@@ -180,17 +244,22 @@ hr {
 	color: #050505;
 }
 
-/* Fields / forms group */
-.field-label-custom{
-font-size: 15px !important;
+
+/* ========================================================================
+   SECTION 5: FORM FIELDS
+   Input fields and form elements
+   ======================================================================== */
+
+.field-label-custom {
+	font-size: 15px !important;
 }
 
-.part-userField{
-margin-bottom:16px !important;
+.part-userField {
+	margin-bottom: 16px !important;
 }
 
-.field-content > .field-label{
-font-size: 15px !important;
+.field-content > .field-label {
+	font-size: 15px !important;
 }
 
 .form-position {
@@ -200,31 +269,30 @@ font-size: 15px !important;
 	padding-top: 5px !important;
 	padding-right: 10px !important;
 	padding-bottom: 5px !important;
-	margin-bottom: 0px !important;
-	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 0 !important;
+	border-bottom: 1px solid var(--color-border-light);
 }
 
 .form-position-price.pull-right {
-	background-color: #ffeec6 !important;
+	background-color: var(--color-bg-price) !important;
 	padding: 7px !important;
 	font-size: 15px !important;
 	font-weight: 600 !important;
 	margin-bottom: 4px !important;
 	margin-top: 7px !important;
-	/* color: white; */
 }
 
 .form-position.selected {
-	background: #9999991f !important;
-	margin-bottom: 0px !important;
+	background: var(--color-bg-selected) !important;
+	margin-bottom: 0 !important;
 }
 
 .f-input {
-	background: #f2f2f5;
+	background: var(--color-input-bg);
 	height: 55px !important;
 	padding: 19.5px 20px;
 	font-size: 16px !important;
-	border: 1px solid #0151ab !important;
+	border: 1px solid var(--color-input-border) !important;
 	border-radius: 8px !important;
 	font-weight: 400 !important;
 }
@@ -233,51 +301,56 @@ font-size: 15px !important;
 	float: initial !important;
 }
 
-/* Checkboxes / labels group */
+
+/* ========================================================================
+   SECTION 6: CHECKBOXES
+   Checkbox styles and labels
+   ======================================================================== */
+
 input[type="checkbox"] {
 	appearance: none;
 	width: 24px;
 	height: 24px;
-	border: 1px solid #B4B7C1;
+	border: 1px solid var(--color-checkbox-border);
 	border-radius: 4px;
-	background-color: #F2F2F5;
+	background-color: var(--color-input-bg);
 	cursor: pointer;
 	transition: all 0.35s ease;
 	position: relative;
 	left: 0;
 	top: 1px;
-	margin: 0px 0px 2px 0px;
+	margin: 0 0 2px 0;
 	padding-right: 22px;
 }
 
 input[type="checkbox"]:hover {
-    border-color: #0151ab;
-    box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
+	border-color: var(--color-input-border);
+	box-shadow: 0 0 8px rgba(1, 81, 171, 0.3);
 }
 
 input[type="checkbox"]:active {
-    transition: all 0.6s ease;
+	transition: all 0.6s ease;
 }
 
 input[type="checkbox"]:checked {
-    background-color: #0151AB;
-    border-color: #0151AB;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: center;
+	background-color: var(--color-checkbox-checked);
+	border-color: var(--color-checkbox-checked);
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .field-label.control-label {
 	position: relative !important;
-	padding-left: 0px !important;
+	padding-left: 0 !important;
 	line-height: 1.4 !important;
-	padding-top: 0px !important;
-	margin-bottom: 0px !important;
+	padding-top: 0 !important;
+	margin-bottom: 0 !important;
 	display: flex !important;
 }
 
 .label-value a:link {
-  text-decoration: underline !important;
+	text-decoration: underline !important;
 }
 
 .chkbox-label {
@@ -288,10 +361,10 @@ input[type="checkbox"]:checked {
 
 .custom-field.type-checkbox .field-label .label-value {
 	display: block;
-	margin-left: 0px;
+	margin-left: 0;
 	font-size: 12px;
 	line-height: 100%;
-	padding: 0px;
+	padding: 0;
 	margin-top: auto !important;
 	margin-bottom: auto !important;
 	padding-bottom: 1px;
@@ -301,23 +374,33 @@ input[type="checkbox"]:checked {
 	display: none;
 }
 
-/*.custom-field-input.custom-field.type-checkbox {
-	font-size: 13px;
-}*/
 
-/* Misc / parts */
+/* ========================================================================
+   SECTION 7: COMPONENTS
+   Miscellaneous parts and components
+   ======================================================================== */
+
+.part-subheader {
+	padding-bottom: 0 !important;
+	margin-bottom: 5px !important;
+}
+
+.builder-item.part-userField.c-recaptcha {
+	margin-bottom: 0 !important;
+}
+
+.c-recaptcha div {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 .builder-item.part-total {
 	font-size: 16px !important;
 }
 
-.part-subheader {
-	padding-bottom: 0px !important;
-	margin-bottom: 5px !important;
-}
-
 .builder-item.part-position {
 	background: #fff !important;
-	padding: 0px !important;
+	padding: 0 !important;
 	margin-bottom: 10px !important;
 	margin-top: 10px !important;
 }
@@ -340,65 +423,83 @@ input[type="checkbox"]:checked {
 	margin-bottom: 5px !important;
 }
 
+
+/* ========================================================================
+   SECTION 8: MEDIA QUERIES
+   Responsive styles for different screen sizes
+   ======================================================================== */
+
 @media screen and (max-width: 450px) {
-.f-subheader.f-subheader-sm {
-	font-size: 14px !important;
-}
-.sub-label {
-	padding-top: 5px !important;
-	font-size: 15px !important;
-	line-height: 1.3 !important;
-}
+	.f-subheader.f-subheader-sm {
+		font-size: 14px !important;
+	}
+
+	.sub-label {
+		padding-top: 5px !important;
+		font-size: 15px !important;
+		line-height: 1.3 !important;
+	}
 }
 
 @media screen and (max-width: 420px) {
-.f-input {
-	height: 50px !important;
-	font-size: 13.5px !important;
-}
-.f-subheader.f-subheader-sm {
-	font-size: 14px !important;
-	display: none !important;
+	.f-input {
+		height: 50px !important;
+		font-size: 13.5px !important;
 	}
-.part-subheader {
-	padding-bottom: 0px !important;
-	margin-bottom: 0px !important;
-}
-.f-header {
-	font-size: 21px !important;
-	margin-top:0px !important;
-}
-.field-label {
-	font-size: 12px !important;
-}
-.block-set {
-	font-size: 14px !important;
-}
-.button-md {
-	font-size: 16px !important;
-	width: 95% !important;
-	min-height: 53px !important;
-  	padding: 13px !important;
-}
-.custom-field.type-checkbox .field-label .label-value {
-	font-size: 11px !important;
-	padding-top: 0px !important;
-	margin-left: 5px !important;
-}
-.field-label.control-label {
-	margin-bottom: -6px !important;
-	padding-left: 0px !important;
-}
-.iti__country-list  {
-	font-weight: 500 !important;
-	font-size: 12px !important;
-}
-.text-normal.f-text {
-	font-size: 14px !important;
-}
+
+	.f-subheader.f-subheader-sm {
+		font-size: 14px !important;
+		display: none !important;
+	}
+
+	.part-subheader {
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	.f-header {
+		font-size: 21px !important;
+		margin-top: 0 !important;
+	}
+
+	.field-label {
+		font-size: 12px !important;
+	}
+
+	.block-set {
+		font-size: 14px !important;
+	}
+
+	.button-md {
+		font-size: 16px !important;
+		width: 95% !important;
+		min-height: 53px !important;
+		padding: 13px !important;
+	}
+
+	.custom-field.type-checkbox .field-label .label-value {
+		font-size: 11px !important;
+		padding-top: 0 !important;
+		margin-left: 5px !important;
+	}
+
+	.field-label.control-label {
+		margin-bottom: -6px !important;
+		padding-left: 0 !important;
+	}
+
+	.iti__country-list {
+		font-weight: 500 !important;
+		font-size: 12px !important;
+	}
+
+	.text-normal.f-text {
+		font-size: 14px !important;
+	}
 }
 
 @media screen and (max-width: 400px) {
-.lt-form-inner {
-	padding: 20px !important;
-}}
+	.lt-form-inner {
+		padding: 20px !important;
+	}
+}
