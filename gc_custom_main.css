@@ -99,18 +99,6 @@ h3 {
     color: var(--color-text-dark);
 }
 
-.breadcrumb {
-	margin-bottom: 0 !important;
-}
-
-.breadcrumbs a {
-	font-weight: lighter;
-	color: var(--color-text-dark);
-}
-
-.page-header {
-	margin: 0 0 20px !important;
-}
 
 
 /* ========================================================================
@@ -287,6 +275,23 @@ h3 {
 .standard-page-content .breadcrumb a {
 	font-weight: lighter;
 	color: var(--color-text-light);
+}
+
+.breadcrumb {
+	margin-bottom: 0 !important;
+}
+
+.breadcrumbs a {
+	font-weight: lighter;
+	color: var(--color-text-dark);
+}
+
+.page-header {
+	margin: 0 0 20px !important;
+}
+
+.page-header h1 {
+	margin-top: 15px;
 }
 
 .gc-right-active-block .block-items-menu li:hover, .gc-right-active-block .block-items-menu li.active {
