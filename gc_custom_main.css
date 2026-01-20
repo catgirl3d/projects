@@ -286,12 +286,8 @@ h3 {
 	color: var(--color-text-dark);
 }
 
-.page-header {
-	margin: 0 0 20px !important;
-}
-
-.page-header h1 {
-	margin-top: 15px;
+.standard-page-content .page-header {
+	margin-top: 20px;
 }
 
 .gc-right-active-block .block-items-menu li:hover, .gc-right-active-block .block-items-menu li.active {
