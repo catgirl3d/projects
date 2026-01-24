@@ -60,6 +60,7 @@
 	--color-border-orange: #f0aa7f;
 	--color-border-white-pale: #fdfdfd4a;
 	--color-border-semi: #eaeaea85; /* Semi-transparent border */
+	--color-border-pink: #FBCEE4;
 
 	/* ===== TEXT COLORS ===== */
 	--color-text-dark: #3c3c3c;
@@ -715,6 +716,10 @@ h3 {
 
 .flowchart-container .flowchart-block.currentTime-flowchart-block {
 	background: var(--color-bg-gray-ultra-light) !important;
+}
+
+.flowchart-container .proxy-flowchart-block {
+	border-color: var(--color-border-pink);
 }
 
 .flowchart-container .flowchart-connection-label, .flowchart-container .flowchart-endpoint-label {
