@@ -36,7 +36,15 @@ function getTelegramUserId() {
     }
 }
 
+let isFillTelegramIdAttempted = false;
+
 function fillTelegramId() {
+    if (isFillTelegramIdAttempted) {
+        return;
+    }
+
+    isFillTelegramIdAttempted = true;
+
     const userId = getTelegramUserId();
     const nameHolder = 'tgid';
     
