@@ -25,6 +25,10 @@
 	color: var(--input-color) !important;
 }
 
+.custom-field-input .f-input {
+    height: auto !important;
+}
+
 /* Label Styles */
 .field-label,
 .field-label-custom {
