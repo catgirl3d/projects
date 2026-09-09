@@ -3,12 +3,12 @@
    External module imports (with buttons-wo-color variant)
    ======================================================================== */
 
-@import url('https://catgirl3d.github.io/projects/td/css/modules/module-buttons(wo-color).css');
-@import url('https://catgirl3d.github.io/projects/td/css/modules/module-utils.css');
-@import url('https://catgirl3d.github.io/projects/td/css/modules/module-checkboxes.css');
-@import url('https://catgirl3d.github.io/projects/td/css/modules/module-input.css');
-@import url('https://catgirl3d.github.io/projects/td/css/modules/module-offer-parts.css');
-@import url('https://catgirl3d.github.io/projects/td/css/modules/module-text.css');
+@import url('https://cdn.jsdelivr.net/gh/catgirl3d/projects@main/td/css/modules/module-buttons(wo-color).css');
+@import url('https://cdn.jsdelivr.net/gh/catgirl3d/projects@main/td/css/modules/module-utils.css');
+@import url('https://cdn.jsdelivr.net/gh/catgirl3d/projects@main/td/css/modules/module-checkboxes.css');
+@import url('https://cdn.jsdelivr.net/gh/catgirl3d/projects@main/td/css/modules/module-input.css');
+@import url('https://cdn.jsdelivr.net/gh/catgirl3d/projects@main/td/css/modules/module-offer-parts.css');
+@import url('https://cdn.jsdelivr.net/gh/catgirl3d/projects@main/td/css/modules/module-text.css');
 
 
 /* ========================================================================
