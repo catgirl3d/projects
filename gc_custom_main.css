@@ -747,7 +747,10 @@ h3 {
 .testing-widget .question .question-title-big {
 	text-align: center;
 	margin-bottom: 10px;
-	font-weight: lighter;
+}
+
+.testing-widget .question .question-data .question-answer-block {
+	padding-top: 0;
 }
 
 .question-description {
